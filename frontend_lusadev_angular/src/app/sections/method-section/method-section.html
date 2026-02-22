@@ -4,6 +4,18 @@
   <p class="intro">{{ copy().intro }}</p>
 </header>
 
+<div class="method-illustration" aria-hidden="true">
+  <svg viewBox="0 0 320 110" role="presentation">
+    <rect x="8" y="22" width="90" height="66" rx="12" />
+    <rect x="116" y="22" width="90" height="66" rx="12" />
+    <rect x="224" y="22" width="88" height="66" rx="12" />
+    <path d="M98 55H116M206 55H224" />
+    <path d="M42 54H64M52 44V64" />
+    <path d="M138 54H186M152 43V65" />
+    <path d="M245 62H292M245 48H278" />
+  </svg>
+</div>
+
 <ol class="method-steps">
   <li class="method-step" *ngFor="let step of copy().steps; let i = index">
     <p class="step-index">0{{ i + 1 }}</p>

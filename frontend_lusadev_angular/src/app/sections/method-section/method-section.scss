@@ -30,6 +30,30 @@ h2 {
   line-height: 1.67;
 }
 
+.method-illustration {
+  margin-top: 1.05rem;
+  display: inline-flex;
+  border: 1px solid rgb(120 161 186 / 24%);
+  border-radius: 0.95rem;
+  background: rgb(7 24 37 / 70%);
+  padding: 0.4rem 0.52rem;
+}
+
+.method-illustration svg {
+  width: clamp(11rem, 44vw, 20rem);
+  height: auto;
+  display: block;
+}
+
+.method-illustration rect,
+.method-illustration path {
+  fill: none;
+  stroke: rgb(150 193 220);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 .method-steps {
   margin: 1.5rem 0 0;
   padding: 0;
