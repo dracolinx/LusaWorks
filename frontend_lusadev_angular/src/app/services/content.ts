@@ -53,7 +53,7 @@ export class ContentService {
           {
             title: 'Gestión de citas con WhatsApp y mensajería profesional',
             overview:
-              'Se implementan sistemas conversacionales capaces de atender solicitudes, organizar disponibilidad y confirmar o reprogramar citas. Cuando la conversación exige intervención humana, se deriva con contexto, evitando pérdidas de información y evitando saturación del equipo.',
+              'Se implementan sistemas conversacionales capaces de atender solicitudes, organizar disponibilidad y confirmar o reprogramar citas. Cuando la conversación exige intervención humana, se deriva con contexto, evitando pérdidas de información y evitando saturación del equipo. Este enfoque permite potenciar la desconexión digital delegando en sistemas autónomos que gestionen agenda y atención al cliente.',
             technicalFocus:
               'A nivel técnico, el sistema incorpora control de disponibilidad, confirmaciones y recordatorios, gestión de cambios, registro de conversación y panel de control, con posibilidad de integración con calendarios y con el software de gestión que ya exista.',
           },
@@ -235,7 +235,7 @@ export class ContentService {
           {
             title: 'Appointment management with WhatsApp and professional messaging',
             overview:
-              'Conversational systems are implemented to handle requests, organize availability, and confirm or reschedule appointments. When a conversation needs human intervention, it is handed over with full context, preventing information loss and team overload.',
+              'Conversational systems are implemented to handle requests, organize availability, and confirm or reschedule appointments. When a conversation needs human intervention, it is handed over with full context, preventing information loss and team overload. This approach also supports healthier digital disconnection by delegating agenda handling and customer attention tasks to autonomous systems.',
             technicalFocus:
               'Technically, the system includes availability control, confirmations and reminders, change management, conversation logging, and a control panel, with optional integration into calendars and existing management software.',
           },
