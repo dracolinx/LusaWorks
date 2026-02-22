@@ -182,7 +182,7 @@ export class ContentService {
           { label: 'Ubicación', value: 'Jaén, España' },
         ],
         supportMessage:
-          'Especialización en soluciones software adaptadas con tecnología de vanguardia, soporte técnico continuo y precios económicos, transparentes y justos.',
+          'Especialización en soluciones software adaptadas con tecnología de vanguardia y proximidad.',
         rights: '© LusaWorks. Todos los derechos reservados.',
       },
       logoAlt: 'Logo corporativo de LusaWorks',
