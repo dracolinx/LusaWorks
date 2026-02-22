@@ -183,37 +183,6 @@
   pointer-events: none;
 }
 
-.hero-layout {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  align-items: center;
-  gap: clamp(1rem, 3vw, 1.8rem);
-}
-
-.hero-visual {
-  margin: 0;
-  border-radius: 1.1rem;
-  border: 1px solid rgb(121 158 182 / 24%);
-  background: linear-gradient(165deg, rgb(4 19 30 / 86%), rgb(6 31 47 / 77%));
-  overflow: hidden;
-  padding: 0.8rem;
-}
-
-.hero-illustration svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.hero-visual-caption {
-  margin: 0.62rem 0 0;
-  color: var(--color-cream-220);
-  font-size: 0.85rem;
-  text-align: center;
-}
-
 .site-footer {
   margin-top: 1.25rem;
 }
@@ -275,10 +244,6 @@
   .mobile-nav a:hover {
     background: rgb(121 163 187 / 22%);
     color: var(--color-cream-070);
-  }
-
-  .hero-layout {
-    grid-template-columns: 1fr;
   }
 }
 
