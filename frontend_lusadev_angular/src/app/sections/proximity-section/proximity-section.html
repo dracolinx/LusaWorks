@@ -1,0 +1,25 @@
+<header class="section-header">
+  <p class="eyebrow">{{ copy().eyebrow }}</p>
+  <h2>{{ copy().title }}</h2>
+  <p>{{ copy().description }}</p>
+</header>
+
+<div class="proximity-layout">
+  <article class="pillars-card">
+    <ul>
+      <li *ngFor="let pillar of copy().pillars">{{ pillar }}</li>
+    </ul>
+  </article>
+
+  <article class="map-card">
+    <h3>{{ copy().mapTitle }}</h3>
+    <iframe
+      [src]="mapUrl()"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Jaén map"
+      aria-label="Jaén map"
+    ></iframe>
+    <p>{{ copy().mapCaption }}</p>
+  </article>
+</div>

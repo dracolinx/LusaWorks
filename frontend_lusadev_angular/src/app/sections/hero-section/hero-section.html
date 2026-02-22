@@ -1,0 +1,17 @@
+<div class="hero-copy">
+  <p class="kicker">{{ copy().kicker }}</p>
+  <h1>{{ copy().title }}</h1>
+  <p class="description">{{ copy().description }}</p>
+
+  <div class="cta-row">
+    <a class="btn btn-primary" href="mailto:lusadev@icloud.com">{{ copy().primaryCta }}</a>
+    <a class="btn btn-secondary" href="#specialization">{{ copy().secondaryCta }}</a>
+  </div>
+
+  <dl class="metrics">
+    <div class="metric" *ngFor="let metric of copy().metrics">
+      <dt>{{ metric.value }}</dt>
+      <dd>{{ metric.label }}</dd>
+    </div>
+  </dl>
+</div>

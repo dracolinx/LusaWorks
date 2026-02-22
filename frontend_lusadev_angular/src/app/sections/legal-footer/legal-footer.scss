@@ -1,0 +1,72 @@
+:host {
+  display: block;
+}
+
+.legal-shell {
+  border-top: 1px solid rgb(109 143 165 / 29%);
+  padding-top: 1.35rem;
+}
+
+h2 {
+  margin: 0;
+  font-family: var(--font-heading);
+  color: var(--color-cream-080);
+  font-size: clamp(1.35rem, 1.9vw, 1.85rem);
+}
+
+dl {
+  margin: 1rem 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem 1.3rem;
+}
+
+.record {
+  border: 1px solid rgb(105 144 164 / 23%);
+  border-radius: 0.82rem;
+  padding: 0.72rem;
+  background: rgb(4 17 27 / 58%);
+}
+
+dt {
+  margin: 0;
+  color: var(--color-copper-300);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 700;
+}
+
+dd {
+  margin: 0.38rem 0 0;
+  color: var(--color-cream-120);
+  line-height: 1.45;
+}
+
+a {
+  color: var(--color-copper-200);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.support,
+.rights {
+  margin: 1rem 0 0;
+  color: var(--color-cream-250);
+  line-height: 1.6;
+}
+
+.rights {
+  color: var(--color-cream-350);
+  font-size: 0.86rem;
+}
+
+@media (max-width: 700px) {
+  dl {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+
+  --font-heading: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'Manrope', 'Segoe UI', sans-serif;
+
+  --color-ink-900: #02111c;
+  --color-ink-700: #07273d;
+  --color-ink-500: #1f5679;
+
+  --color-copper-500: #ba6f38;
+  --color-copper-300: #e39d5d;
+  --color-copper-200: #f5b883;
+  --color-copper-100: #ffd8b4;
+
+  --color-cream-050: #f8f2ec;
+  --color-cream-080: #e8ded6;
+  --color-cream-100: #ddd0c6;
+  --color-cream-120: #d7c7bc;
+  --color-cream-150: #ccb9a9;
+  --color-cream-170: #c4b09f;
+  --color-cream-180: #bca896;
+  --color-cream-200: #b19d8d;
+  --color-cream-220: #a08d80;
+  --color-cream-230: #968677;
+  --color-cream-250: #8f7f71;
+  --color-cream-350: #72695f;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-cream-100);
+  background: var(--color-ink-900);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

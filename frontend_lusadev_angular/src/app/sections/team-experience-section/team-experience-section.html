@@ -1,0 +1,25 @@
+<header class="section-header">
+  <p class="eyebrow">{{ copy().eyebrow }}</p>
+  <h2>{{ copy().title }}</h2>
+  <p>{{ copy().intro }}</p>
+</header>
+
+<div class="team-layout">
+  <article class="pillars-card">
+    <h3>{{ copy().pillarsHeading }}</h3>
+    <ul>
+      <li *ngFor="let pillar of copy().pillars">{{ pillar }}</li>
+    </ul>
+  </article>
+
+  <article class="timeline-card">
+    <h3>{{ copy().timelineHeading }}</h3>
+    <ol>
+      <li *ngFor="let item of copy().timeline">
+        <p class="period">{{ item.period }}</p>
+        <h4>{{ item.title }}</h4>
+        <p class="description">{{ item.description }}</p>
+      </li>
+    </ol>
+  </article>
+</div>

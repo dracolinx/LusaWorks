@@ -1,0 +1,16 @@
+<div class="legal-shell">
+  <h2>{{ copy().heading }}</h2>
+
+  <dl>
+    <div class="record" *ngFor="let record of copy().records">
+      <dt>{{ record.label }}</dt>
+      <dd>
+        <a *ngIf="isEmail(record.value)" [href]="'mailto:' + record.value">{{ record.value }}</a>
+        <span *ngIf="!isEmail(record.value)">{{ record.value }}</span>
+      </dd>
+    </div>
+  </dl>
+
+  <p class="support">{{ copy().supportMessage }}</p>
+  <p class="rights">{{ copy().rights }}</p>
+</div>

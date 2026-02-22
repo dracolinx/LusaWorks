@@ -1,0 +1,84 @@
+<div class="site-background"></div>
+<div class="bg-orb orb-left"></div>
+<div class="bg-orb orb-right"></div>
+
+<div class="page-shell">
+  <header class="site-header">
+    <a class="brand" href="#hero" (click)="closeMobileMenu()">
+      <img src="assets/logo/lusadev-logo.jpeg" [alt]="copy().logoAlt" />
+      <div class="brand-copy">
+        <strong>LusaWorks</strong>
+        <span>PUNTO DE COMERCIO SL</span>
+      </div>
+    </a>
+
+    <nav class="desktop-nav">
+      <a
+        *ngFor="let link of copy().nav; trackBy: trackNavLink"
+        [href]="'#' + link.id"
+        (click)="closeMobileMenu()"
+      >
+        {{ link.label }}
+      </a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="language-switch" [attr.aria-label]="copy().languageLabel">
+        <button type="button" [class.active]="isLanguageActive('es')" (click)="setLanguage('es')">ES</button>
+        <button type="button" [class.active]="isLanguageActive('en')" (click)="setLanguage('en')">EN</button>
+      </div>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        (click)="toggleMobileMenu()"
+        [attr.aria-label]="mobileMenuOpen() ? copy().closeMenuLabel : copy().mobileMenuLabel"
+      >
+        {{ mobileMenuOpen() ? copy().closeMenuText : copy().mobileMenuText }}
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" [class.open]="mobileMenuOpen()">
+    <a
+      *ngFor="let link of copy().nav; trackBy: trackNavLink"
+      [href]="'#' + link.id"
+      (click)="closeMobileMenu()"
+    >
+      {{ link.label }}
+    </a>
+  </nav>
+
+  <main class="site-main">
+    <section id="hero" class="section hero-stage" appRevealOnScroll>
+      <div class="hero-layout">
+        <app-hero-section [copy]="copy().hero"></app-hero-section>
+
+        <figure class="hero-visual">
+          <img src="assets/logo/lusadev-logo.jpeg" [alt]="copy().heroImageAlt" loading="lazy" />
+          <figcaption>{{ copy().hero.kicker }}</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="specialization" class="section" appRevealOnScroll>
+      <app-specialization-section [copy]="copy().specialization"></app-specialization-section>
+    </section>
+
+    <section id="team" class="section" appRevealOnScroll>
+      <app-team-experience-section [copy]="copy().team"></app-team-experience-section>
+    </section>
+
+    <section id="proximity" class="section" appRevealOnScroll>
+      <app-proximity-section [copy]="copy().proximity"></app-proximity-section>
+    </section>
+
+    <section id="contact" class="section section-contact" appRevealOnScroll>
+      <app-contact-section [copy]="copy().contact"></app-contact-section>
+    </section>
+  </main>
+
+  <footer id="legal" class="site-footer section" appRevealOnScroll>
+    <app-legal-footer [copy]="copy().legal"></app-legal-footer>
+  </footer>
+</div>

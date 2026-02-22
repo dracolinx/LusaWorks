@@ -1,0 +1,97 @@
+:host {
+  display: block;
+}
+
+.section-header {
+  max-width: 44rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.65rem;
+  color: var(--color-copper-300);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0;
+  font-family: var(--font-heading);
+  color: var(--color-cream-050);
+  font-size: clamp(1.65rem, 2.8vw, 2.75rem);
+  line-height: 1.2;
+}
+
+.section-header p:last-child {
+  margin: 0.9rem 0 0;
+  color: var(--color-cream-250);
+  line-height: 1.68;
+}
+
+.specialization-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.6rem;
+}
+
+.specialization-card {
+  border: 1px solid rgb(96 139 167 / 24%);
+  border-radius: 1.1rem;
+  background: linear-gradient(165deg, rgb(10 31 46 / 85%), rgb(4 15 24 / 86%));
+  padding: 1.3rem;
+  box-shadow: 0 16px 36px rgb(2 8 14 / 34%);
+  transition: transform 240ms ease, border-color 240ms ease;
+}
+
+.specialization-card:nth-child(1) {
+  grid-column: span 5;
+}
+
+.specialization-card:nth-child(2) {
+  grid-column: span 7;
+}
+
+.specialization-card:nth-child(3) {
+  grid-column: span 12;
+}
+
+.specialization-card:hover {
+  transform: translateY(-3px);
+  border-color: rgb(150 180 199 / 42%);
+}
+
+h3 {
+  margin: 0;
+  color: var(--color-cream-100);
+  font-family: var(--font-heading);
+  font-size: 1.16rem;
+  line-height: 1.35;
+}
+
+.card-description {
+  margin: 0.78rem 0 0;
+  color: var(--color-cream-250);
+  line-height: 1.62;
+}
+
+ul {
+  margin: 1rem 0 0;
+  padding: 0 0 0 1.05rem;
+  display: grid;
+  gap: 0.44rem;
+}
+
+li {
+  color: var(--color-cream-150);
+}
+
+@media (max-width: 900px) {
+  .specialization-card:nth-child(1),
+  .specialization-card:nth-child(2),
+  .specialization-card:nth-child(3) {
+    grid-column: span 12;
+  }
+}

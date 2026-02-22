@@ -1,0 +1,15 @@
+<header class="section-header">
+  <p class="eyebrow">{{ copy().eyebrow }}</p>
+  <h2>{{ copy().title }}</h2>
+  <p>{{ copy().intro }}</p>
+</header>
+
+<div class="specialization-grid">
+  <article class="specialization-card" *ngFor="let card of copy().cards">
+    <h3>{{ card.title }}</h3>
+    <p class="card-description">{{ card.description }}</p>
+    <ul>
+      <li *ngFor="let highlight of card.highlights">{{ highlight }}</li>
+    </ul>
+  </article>
+</div>

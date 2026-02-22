@@ -1,0 +1,133 @@
+:host {
+  display: block;
+}
+
+.section-header {
+  max-width: 45rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.65rem;
+  color: var(--color-copper-300);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0;
+  color: var(--color-cream-050);
+  font-family: var(--font-heading);
+  font-size: clamp(1.65rem, 2.7vw, 2.65rem);
+  line-height: 1.2;
+}
+
+.section-header p:last-child {
+  margin: 0.95rem 0 0;
+  color: var(--color-cream-250);
+  line-height: 1.66;
+}
+
+.team-layout {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.55rem;
+}
+
+.pillars-card,
+.timeline-card {
+  border-radius: 1.2rem;
+  border: 1px solid rgb(108 145 165 / 26%);
+  background: linear-gradient(165deg, rgb(7 24 37 / 87%), rgb(6 16 25 / 90%));
+  padding: 1.25rem;
+}
+
+.pillars-card {
+  grid-column: span 5;
+}
+
+.timeline-card {
+  grid-column: span 7;
+}
+
+h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  color: var(--color-cream-100);
+  font-size: 1.07rem;
+}
+
+ul,
+ol {
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  display: grid;
+  gap: 0.63rem;
+}
+
+ul li {
+  position: relative;
+  padding-left: 1.2rem;
+  color: var(--color-cream-180);
+  line-height: 1.56;
+}
+
+ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62rem;
+  width: 0.48rem;
+  height: 0.48rem;
+  border-radius: 50%;
+  background: var(--color-copper-300);
+}
+
+ol {
+  list-style: none;
+  display: grid;
+  gap: 0.86rem;
+}
+
+ol li {
+  border-left: 2px solid rgb(227 157 93 / 43%);
+  padding-left: 0.75rem;
+}
+
+.period {
+  margin: 0;
+  color: var(--color-copper-300);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h4 {
+  margin: 0.3rem 0 0;
+  color: var(--color-cream-100);
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.description {
+  margin: 0.35rem 0 0;
+  color: var(--color-cream-230);
+  line-height: 1.6;
+}
+
+@media (max-width: 960px) {
+  .pillars-card,
+  .timeline-card {
+    grid-column: span 12;
+  }
+}
