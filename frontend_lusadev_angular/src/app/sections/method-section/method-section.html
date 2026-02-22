@@ -1,0 +1,15 @@
+<header class="section-header">
+  <p class="eyebrow">{{ copy().eyebrow }}</p>
+  <h2>{{ copy().title }}</h2>
+  <p class="intro">{{ copy().intro }}</p>
+</header>
+
+<ol class="method-steps">
+  <li class="method-step" *ngFor="let step of copy().steps; let i = index">
+    <p class="step-index">0{{ i + 1 }}</p>
+    <h3>{{ step.title }}</h3>
+    <p>{{ step.description }}</p>
+  </li>
+</ol>
+
+<p class="method-outcome">{{ copy().outcome }}</p>

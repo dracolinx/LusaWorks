@@ -107,15 +107,41 @@ h3 {
   line-height: 1.62;
 }
 
-ul {
-  margin: 1rem 0 0;
-  padding: 0 0 0 1.05rem;
-  display: grid;
-  gap: 0.44rem;
+.card-technical {
+  margin: 0.9rem 0 0;
+  color: var(--color-cream-170);
+  line-height: 1.64;
+  font-size: 0.95rem;
 }
 
-li {
-  color: var(--color-cream-150);
+.guarantees-block {
+  margin-top: 1.2rem;
+  border: 1px solid rgb(118 158 184 / 24%);
+  border-radius: 1.05rem;
+  background: linear-gradient(160deg, rgb(8 24 37 / 84%), rgb(5 16 26 / 90%));
+  padding: clamp(1rem, 2.4vw, 1.4rem);
+}
+
+.guarantees-eyebrow {
+  margin: 0;
+  color: var(--color-copper-220);
+  font-family: var(--font-heading);
+  font-size: 0.77rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.guarantees-title {
+  margin: 0.55rem 0 0;
+  color: var(--color-cream-070);
+  font-size: clamp(1.18rem, 2vw, 1.5rem);
+}
+
+.guarantees-block p {
+  margin: 0.8rem 0 0;
+  color: var(--color-cream-210);
+  line-height: 1.67;
 }
 
 @media (max-width: 900px) {

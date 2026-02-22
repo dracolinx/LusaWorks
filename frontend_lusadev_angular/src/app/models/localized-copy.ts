@@ -19,17 +19,26 @@ export interface HeroSectionCopy {
   metrics: HeroMetric[];
 }
 
-export interface SpecializationCard {
+export interface SpecializationDomain {
   title: string;
+  overview: string;
+  technicalFocus: string;
+}
+
+export interface SpecializationGuaranteesCopy {
+  heading: string;
+  subheading: string;
   description: string;
-  highlights: string[];
+  riskControls: string;
+  infrastructureNote: string;
 }
 
 export interface SpecializationSectionCopy {
   eyebrow: string;
   title: string;
   intro: string;
-  cards: SpecializationCard[];
+  domains: SpecializationDomain[];
+  guarantees: SpecializationGuaranteesCopy;
 }
 
 export interface TeamTimelineItem {
@@ -65,6 +74,19 @@ export interface ContactSectionCopy {
   responseNote: string;
 }
 
+export interface MethodStep {
+  title: string;
+  description: string;
+}
+
+export interface MethodSectionCopy {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  steps: MethodStep[];
+  outcome: string;
+}
+
 export interface LegalRecord {
   label: string;
   value: string;
@@ -88,6 +110,7 @@ export interface LocalizedCopy {
   closeMenuText: string;
   hero: HeroSectionCopy;
   specialization: SpecializationSectionCopy;
+  method: MethodSectionCopy;
   team: TeamExperienceSectionCopy;
   proximity: ProximitySectionCopy;
   contact: ContactSectionCopy;

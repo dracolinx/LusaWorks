@@ -1,0 +1,84 @@
+:host {
+  display: block;
+}
+
+.section-header {
+  max-width: 54rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.65rem;
+  color: var(--color-copper-300);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0;
+  font-family: var(--font-heading);
+  color: var(--color-cream-050);
+  font-size: clamp(1.6rem, 2.7vw, 2.6rem);
+  line-height: 1.2;
+}
+
+.intro {
+  margin: 0.95rem 0 0;
+  color: var(--color-cream-210);
+  line-height: 1.67;
+}
+
+.method-steps {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.method-step {
+  border: 1px solid rgb(112 153 179 / 24%);
+  border-radius: 1rem;
+  background: linear-gradient(160deg, rgb(8 26 39 / 84%), rgb(4 14 23 / 88%));
+  padding: 1rem;
+}
+
+.step-index {
+  margin: 0;
+  color: var(--color-copper-260);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h3 {
+  margin: 0.46rem 0 0;
+  color: var(--color-cream-090);
+  font-family: var(--font-heading);
+  font-size: 1.08rem;
+  line-height: 1.35;
+}
+
+.method-step p:last-child {
+  margin: 0.66rem 0 0;
+  color: var(--color-cream-190);
+  line-height: 1.6;
+}
+
+.method-outcome {
+  margin: 1rem 0 0;
+  color: var(--color-cream-120);
+  font-size: 0.97rem;
+  line-height: 1.63;
+}
+
+@media (max-width: 960px) {
+  .method-steps {
+    grid-template-columns: 1fr;
+  }
+}

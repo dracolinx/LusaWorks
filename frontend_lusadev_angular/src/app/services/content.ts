@@ -14,6 +14,7 @@ export class ContentService {
       nav: [
         { id: 'hero', label: 'Inicio' },
         { id: 'specialization', label: 'Especialización' },
+        { id: 'method', label: 'Método' },
         { id: 'team', label: 'Equipo' },
         { id: 'proximity', label: 'Jaén y proximidad' },
         { id: 'contact', label: 'Contacto' },
@@ -40,27 +41,65 @@ export class ContentService {
         eyebrow: 'Especialización',
         title: 'Tecnología aplicada a resultados empresariales',
         intro:
-          'LusaWorks se centra en construir ecosistemas de software robustos y evolutivos para pymes y equipos que necesitan fiabilidad, trazabilidad y capacidad de crecimiento.',
-        cards: [
+          'Se construyen ecosistemas de software preparados para uso diario, con foco en fiabilidad, trazabilidad y crecimiento. El resultado esperado es que la empresa dependa menos de trabajo manual, reduzca fricción interna y tenga claridad en decisiones y seguimiento.',
+        domains: [
           {
-            title: 'Automatización inteligente de procesos',
-            description:
-              'Digitalizamos flujos operativos para reducir tareas manuales, minimizar errores y acelerar tiempos de respuesta en áreas clave del negocio.',
-            highlights: ['Orquestación de tareas repetitivas', 'Integración entre sistemas', 'Métricas y control operativo'],
+            title: 'Automatización e integración de procesos',
+            overview:
+              'Se digitalizan flujos operativos para que cada tarea tenga un estado, una validación y un responsable, evitando que la información se disperse en correos, hojas o mensajes. Cuando existen sistemas previos, se conectan para evitar duplicidades y se normaliza la información para que el dato sea consistente.',
+            technicalFocus:
+              'A nivel técnico, la automatización se apoya en reglas de negocio, integraciones por API, validaciones consistentes y un registro de eventos que permite reconstruir qué se hizo, cuándo y por quién, de forma auditable.',
           },
           {
-            title: 'Gestión de citas con chatbot humanizado',
-            description:
-              'Implementamos sistemas conversacionales para WhatsApp y Telegram capaces de atender, organizar y escalar la gestión de citas de forma natural y profesional.',
-            highlights: ['Interacción contextual con clientes', 'Gestión de disponibilidad', 'Escalado a atención humana cuando procede'],
+            title: 'Gestión de citas con WhatsApp y mensajería profesional',
+            overview:
+              'Se implementan sistemas conversacionales capaces de atender solicitudes, organizar disponibilidad y confirmar o reprogramar citas. Cuando la conversación exige intervención humana, se deriva con contexto, evitando pérdidas de información y evitando saturación del equipo.',
+            technicalFocus:
+              'A nivel técnico, el sistema incorpora control de disponibilidad, confirmaciones y recordatorios, gestión de cambios, registro de conversación y panel de control, con posibilidad de integración con calendarios y con el software de gestión que ya exista.',
           },
           {
             title: 'Plataformas de gestión específicas por negocio',
-            description:
-              'Creamos aplicaciones web adaptadas a la realidad de cada empresa, orientadas al control diario, la toma de decisiones y la continuidad del servicio.',
-            highlights: ['Arquitectura modular', 'Seguridad y trazabilidad', 'Soporte y mejora continua'],
+            overview:
+              'Se crean aplicaciones web orientadas al trabajo diario, con paneles por rol, búsquedas y filtros, exportación de información y control de permisos. El objetivo es que la operativa se apoye en una herramienta propia que refleje la realidad del negocio, no una plantilla genérica.',
+            technicalFocus:
+              'A nivel técnico, se diseña una arquitectura modular, se define un modelo de datos coherente y se incorporan medidas de seguridad, auditoría, copias de seguridad y mantenimiento evolutivo.',
           },
         ],
+        guarantees: {
+          heading: 'Garantías técnicas que reducen riesgo',
+          subheading: 'Lo que marca la diferencia cuando el sistema ya está en producción',
+          description:
+            'Un sistema útil no es el que funciona en una demo, sino el que se mantiene estable cuando cambian los procesos, crece el volumen y aumenta la exigencia operativa. Por eso el trabajo se orienta a criterios verificables.',
+          riskControls:
+            'En seguridad, se aplican permisos por usuario y por rol, protección de credenciales, cifrado de comunicaciones y control de acceso. En trazabilidad, se registra la actividad relevante para que exista historial de cambios y se pueda reconstruir la secuencia de acciones. En continuidad, se contemplan copias de seguridad, recuperación ante incidentes, monitorización básica y mantenimiento.',
+          infrastructureNote:
+            'Cuando el cliente lo requiere, se prioriza un enfoque de procesamiento local o en infraestructura controlada por el propio cliente, reduciendo exposición de datos y manteniendo gobierno del dato.',
+        },
+      },
+      method: {
+        eyebrow: 'Método de trabajo',
+        title: 'De problema operativo a plan técnico ejecutable',
+        intro:
+          'Primero se analiza el proceso real, con especial atención a puntos de fricción, duplicidades, errores habituales y dependencias de personas clave. Después se diseña una solución por fases con entregables verificables. Por último, se despliega, se forma al equipo y se mantiene el sistema para que siga alineado con la evolución del negocio.',
+        steps: [
+          {
+            title: 'Análisis del proceso real',
+            description:
+              'Se identifica cómo trabaja hoy el negocio, dónde se pierde tiempo y qué riesgos operativos se repiten para priorizar mejoras de alto impacto.',
+          },
+          {
+            title: 'Diseño por fases y entregables verificables',
+            description:
+              'Se define una hoja de ruta técnica con hitos medibles para implementar con control, validar avances y ajustar antes de escalar.',
+          },
+          {
+            title: 'Despliegue, formación y mantenimiento',
+            description:
+              'Se implanta la solución en operación real, se forma al equipo y se mantiene la plataforma para acompañar cambios del negocio.',
+          },
+        ],
+        outcome:
+          'El resultado es una implantación con control, sin saltos al vacío, y con capacidad de ajuste antes de escalar.',
       },
       team: {
         eyebrow: 'Experiencia del equipo',
@@ -140,6 +179,7 @@ export class ContentService {
       nav: [
         { id: 'hero', label: 'Home' },
         { id: 'specialization', label: 'Specialization' },
+        { id: 'method', label: 'Method' },
         { id: 'team', label: 'Team' },
         { id: 'proximity', label: 'Jaén & proximity' },
         { id: 'contact', label: 'Contact' },
@@ -166,27 +206,65 @@ export class ContentService {
         eyebrow: 'Specialization',
         title: 'Technology designed for business outcomes',
         intro:
-          'LusaWorks focuses on robust, evolvable software ecosystems for SMEs and teams that need reliability, traceability, and growth capacity.',
-        cards: [
+          'Software ecosystems are built for everyday execution, with focus on reliability, traceability, and growth. The expected result is lower dependency on manual work, reduced internal friction, and clearer decisions and follow-up.',
+        domains: [
           {
-            title: 'Intelligent process automation',
-            description:
-              'We digitize operational workflows to reduce manual effort, lower error rates, and improve turnaround times in critical areas.',
-            highlights: ['Workflow orchestration', 'System integration', 'Operational monitoring'],
+            title: 'Process automation and integration',
+            overview:
+              'Operational flows are digitized so each task has a state, validation, and accountable owner, preventing information from spreading across emails, sheets, or messages. When previous systems exist, they are connected to avoid duplication and data is normalized for consistency.',
+            technicalFocus:
+              'At the technical level, automation relies on business rules, API integrations, consistent validations, and an event log that makes it possible to reconstruct what was done, when, and by whom in an auditable way.',
           },
           {
-            title: 'Humanized chatbot appointment flows',
-            description:
-              'We implement conversational systems for WhatsApp and Telegram to manage appointments naturally, efficiently, and at scale.',
-            highlights: ['Context-aware customer interaction', 'Availability management', 'Human handoff when needed'],
+            title: 'Appointment management with WhatsApp and professional messaging',
+            overview:
+              'Conversational systems are implemented to handle requests, organize availability, and confirm or reschedule appointments. When a conversation needs human intervention, it is handed over with full context, preventing information loss and team overload.',
+            technicalFocus:
+              'Technically, the system includes availability control, confirmations and reminders, change management, conversation logging, and a control panel, with optional integration into calendars and existing management software.',
           },
           {
             title: 'Business-specific management platforms',
-            description:
-              'We build web platforms aligned with each company’s operational reality, supporting daily execution and decision-making.',
-            highlights: ['Modular architecture', 'Security and traceability', 'Continuous support and evolution'],
+            overview:
+              'Web applications are built for daily operations, including role-based dashboards, search and filtering, data exports, and permission control. The goal is to support operations with a dedicated tool that reflects the business reality, not a generic template.',
+            technicalFocus:
+              'At the technical level, a modular architecture is designed, a coherent data model is defined, and security, auditing, backups, and evolutionary maintenance are included.',
           },
         ],
+        guarantees: {
+          heading: 'Technical safeguards that reduce risk',
+          subheading: 'What makes the difference once the system is in production',
+          description:
+            'A useful system is not one that works in a demo, but one that stays stable when processes change, volume grows, and operational pressure increases. That is why delivery is guided by verifiable criteria.',
+          riskControls:
+            'In security, user and role-based permissions, credential protection, encrypted communications, and access control are applied. In traceability, relevant activity is logged to keep a change history and reconstruct action sequences. In continuity, backups, incident recovery, basic monitoring, and maintenance are considered.',
+          infrastructureNote:
+            'When required by the client, a local-processing approach or client-controlled infrastructure is prioritized, reducing data exposure and preserving data governance.',
+        },
+      },
+      method: {
+        eyebrow: 'Working method',
+        title: 'From operational problem to executable technical plan',
+        intro:
+          'First, the real process is analyzed, with special attention to friction points, duplications, common errors, and dependencies on key people. Then a phased solution is designed with verifiable deliverables. Finally, deployment, team onboarding, and maintenance keep the system aligned with business evolution.',
+        steps: [
+          {
+            title: 'Real-process analysis',
+            description:
+              'Current workflows are mapped to detect bottlenecks, recurring risks, and critical dependencies before defining the technical scope.',
+          },
+          {
+            title: 'Phased design with verifiable deliverables',
+            description:
+              'An implementation roadmap is structured with measurable milestones to validate progress and adjust before scaling.',
+          },
+          {
+            title: 'Deployment, enablement, and maintenance',
+            description:
+              'The solution is deployed in real operations, teams are trained, and the platform is maintained to evolve with business needs.',
+          },
+        ],
+        outcome:
+          'The result is a controlled implementation, without blind leaps, and with room for adjustment before scaling.',
       },
       team: {
         eyebrow: 'Team experience',
