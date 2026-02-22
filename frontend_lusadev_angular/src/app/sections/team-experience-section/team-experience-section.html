@@ -6,6 +6,14 @@
 
 <div class="team-layout">
   <article class="pillars-card">
+    <div class="section-illustration" aria-hidden="true">
+      <svg viewBox="0 0 180 78" role="presentation">
+        <circle cx="34" cy="39" r="16" />
+        <circle cx="90" cy="22" r="12" />
+        <circle cx="146" cy="39" r="16" />
+        <path d="M50 36L78 27M102 27L130 36M90 34V62" />
+      </svg>
+    </div>
     <h3>{{ copy().pillarsHeading }}</h3>
     <ul>
       <li *ngFor="let pillar of copy().pillars">{{ pillar }}</li>
@@ -13,6 +21,15 @@
   </article>
 
   <article class="timeline-card">
+    <div class="section-illustration" aria-hidden="true">
+      <svg viewBox="0 0 180 78" role="presentation">
+        <path d="M20 56H160" />
+        <circle cx="36" cy="56" r="7" />
+        <circle cx="90" cy="56" r="7" />
+        <circle cx="144" cy="56" r="7" />
+        <path d="M36 56V28M90 56V20M144 56V34" />
+      </svg>
+    </div>
     <h3>{{ copy().timelineHeading }}</h3>
     <ol>
       <li *ngFor="let item of copy().timeline">

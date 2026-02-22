@@ -34,5 +34,5 @@ La landing quedara publicada en:
 - Idioma del navegador en ES: abre en espanol.
 - Idioma del navegador en EN: abre en ingles.
 - Cambiar idioma con selector ES/EN y recargar: se mantiene preferencia.
-- CTA abre `mailto:lusadev@icloud.com`.
+- CTA abre `mailto:rpas_app@icloud.com`.
 - Mapa de Jaen visible.

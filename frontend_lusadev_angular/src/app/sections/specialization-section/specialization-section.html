@@ -5,7 +5,25 @@
 </header>
 
 <div class="specialization-grid">
-  <article class="specialization-card" *ngFor="let card of copy().cards">
+  <article class="specialization-card" *ngFor="let card of copy().cards; let i = index">
+    <div class="card-illustration" [ngSwitch]="i" aria-hidden="true">
+      <svg *ngSwitchCase="0" viewBox="0 0 160 70" role="presentation">
+        <rect x="8" y="12" width="40" height="40" rx="8" />
+        <rect x="58" y="12" width="40" height="40" rx="8" />
+        <rect x="108" y="12" width="40" height="40" rx="8" />
+        <path d="M48 32H58M98 32H108" />
+      </svg>
+      <svg *ngSwitchCase="1" viewBox="0 0 160 70" role="presentation">
+        <rect x="10" y="18" width="52" height="34" rx="10" />
+        <rect x="98" y="18" width="52" height="34" rx="10" />
+        <path d="M62 35H98" />
+        <circle cx="80" cy="35" r="8" />
+      </svg>
+      <svg *ngSwitchDefault viewBox="0 0 160 70" role="presentation">
+        <rect x="8" y="14" width="144" height="42" rx="10" />
+        <path d="M24 35H136M44 24V46M80 24V46M116 24V46" />
+      </svg>
+    </div>
     <h3>{{ card.title }}</h3>
     <p class="card-description">{{ card.description }}</p>
     <ul>

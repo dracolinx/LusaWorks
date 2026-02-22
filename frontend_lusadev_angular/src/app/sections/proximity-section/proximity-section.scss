@@ -53,6 +53,33 @@ h2 {
   grid-column: span 7;
 }
 
+.section-illustration {
+  display: inline-flex;
+  border-radius: 0.8rem;
+  border: 1px solid rgb(122 162 188 / 25%);
+  background: rgb(7 26 39 / 66%);
+  padding: 0.38rem 0.44rem;
+  margin-bottom: 0.62rem;
+}
+
+.section-illustration svg {
+  width: 9rem;
+  height: auto;
+}
+
+.section-illustration path,
+.section-illustration circle {
+  fill: none;
+  stroke: rgb(152 194 219);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.section-illustration circle {
+  stroke: rgb(227 157 93);
+}
+
 ul {
   margin: 0;
   padding: 0;

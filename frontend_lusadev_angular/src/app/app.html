@@ -8,7 +8,6 @@
       <img src="assets/logo/lusadev-logo.jpeg" [alt]="copy().logoAlt" />
       <div class="brand-copy">
         <strong>LusaWorks</strong>
-        <span>PUNTO DE COMERCIO SL</span>
       </div>
     </a>
 
@@ -54,10 +53,34 @@
       <div class="hero-layout">
         <app-hero-section [copy]="copy().hero"></app-hero-section>
 
-        <figure class="hero-visual">
-          <img src="assets/logo/lusadev-logo.jpeg" [alt]="copy().heroImageAlt" loading="lazy" />
-          <figcaption>{{ copy().hero.kicker }}</figcaption>
-        </figure>
+        <div class="hero-visual hero-illustration" aria-hidden="true">
+          <svg viewBox="0 0 640 420" role="presentation">
+            <defs>
+              <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#0f2b3f" />
+                <stop offset="100%" stop-color="#06111c" />
+              </linearGradient>
+              <linearGradient id="line" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#6da3c7" />
+                <stop offset="100%" stop-color="#e39d5d" />
+              </linearGradient>
+            </defs>
+            <rect x="18" y="18" width="604" height="384" rx="28" fill="url(#panel)" />
+            <rect x="84" y="88" width="170" height="110" rx="14" fill="#15344b" stroke="#3f7392" />
+            <rect x="286" y="74" width="266" height="144" rx="16" fill="#0c2334" stroke="#4d86a8" />
+            <rect x="84" y="234" width="468" height="98" rx="14" fill="#0a1e2e" stroke="#416f8d" />
+            <path d="M254 145H286M552 145H610M319 218V234M436 218V234M168 198V234" stroke="url(#line)" stroke-width="6" stroke-linecap="round" />
+            <circle cx="254" cy="145" r="10" fill="#e39d5d" />
+            <circle cx="286" cy="145" r="10" fill="#6da3c7" />
+            <circle cx="319" cy="234" r="10" fill="#e39d5d" />
+            <circle cx="436" cy="234" r="10" fill="#6da3c7" />
+            <circle cx="168" cy="234" r="10" fill="#e39d5d" />
+            <path d="M114 282H522M114 314H404" stroke="#5d8ca9" stroke-width="8" stroke-linecap="round" />
+            <rect x="320" y="108" width="198" height="74" rx="10" fill="#13344b" />
+            <path d="M346 145H494" stroke="#86b7d3" stroke-width="8" stroke-linecap="round" />
+          </svg>
+          <p class="hero-visual-caption">{{ copy().hero.kicker }}</p>
+        </div>
       </div>
     </section>
 
@@ -78,7 +101,7 @@
     </section>
   </main>
 
-  <footer id="legal" class="site-footer section" appRevealOnScroll>
+  <footer id="legal" class="site-footer legal-compact" appRevealOnScroll>
     <app-legal-footer [copy]="copy().legal"></app-legal-footer>
   </footer>
 </div>

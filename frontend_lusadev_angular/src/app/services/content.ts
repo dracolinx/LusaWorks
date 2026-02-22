@@ -117,7 +117,7 @@ export class ContentService {
         title: 'Hablemos de la solución que necesita tu empresa',
         description:
           'Si buscas una solución software adaptada a tu realidad operativa, podemos ayudarte a diseñar, implementar y mantener una plataforma alineada con tus objetivos.',
-        ctaLabel: 'Escribir a lusadev@icloud.com',
+        ctaLabel: 'Escribir a rpas_app@icloud.com',
         responseNote: 'Atención técnica y funcional con enfoque de largo recorrido.',
       },
       legal: {
@@ -126,7 +126,7 @@ export class ContentService {
           { label: 'Nombre comercial', value: 'LusaWorks' },
           { label: 'Razón social', value: 'PUNTO DE COMERCIO SL' },
           { label: 'CIF', value: 'B93372324' },
-          { label: 'Email', value: 'lusadev@icloud.com' },
+          { label: 'Email', value: 'rpas_app@icloud.com' },
           { label: 'Ubicación', value: 'Jaén, España' },
         ],
         supportMessage: 'Especialización en soluciones software adaptadas y soporte técnico continuo.',
@@ -244,7 +244,7 @@ export class ContentService {
         title: 'Let us design the right solution for your business',
         description:
           'If your company needs software aligned with real operational constraints, we can help you design, implement, and sustain it.',
-        ctaLabel: 'Write to lusadev@icloud.com',
+        ctaLabel: 'Write to rpas_app@icloud.com',
         responseNote: 'Technical and functional support with a long-term perspective.',
       },
       legal: {
@@ -253,7 +253,7 @@ export class ContentService {
           { label: 'Trade name', value: 'LusaWorks' },
           { label: 'Corporate name', value: 'PUNTO DE COMERCIO SL' },
           { label: 'Tax ID (CIF)', value: 'B93372324' },
-          { label: 'Email', value: 'lusadev@icloud.com' },
+          { label: 'Email', value: 'rpas_app@icloud.com' },
           { label: 'Location', value: 'Jaén, Spain' },
         ],
         supportMessage: 'Specialized in tailored software solutions with continuous technical support.',

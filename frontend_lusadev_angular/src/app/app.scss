@@ -74,7 +74,8 @@
 }
 
 .brand-copy {
-  display: grid;
+  display: flex;
+  align-items: center;
   line-height: 1.2;
 }
 
@@ -82,13 +83,6 @@
   color: var(--color-cream-050);
   font-family: var(--font-heading);
   font-size: 1rem;
-}
-
-.brand-copy span {
-  color: var(--color-cream-350);
-  font-size: 0.66rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 .desktop-nav {
@@ -204,24 +198,31 @@
   border: 1px solid rgb(121 158 182 / 24%);
   background: linear-gradient(165deg, rgb(4 19 30 / 86%), rgb(6 31 47 / 77%));
   overflow: hidden;
+  padding: 0.8rem;
 }
 
-.hero-visual img {
-  display: block;
+.hero-illustration svg {
   width: 100%;
-  aspect-ratio: 5 / 4;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
-.hero-visual figcaption {
-  margin: 0;
-  padding: 0.76rem 0.9rem 0.95rem;
+.hero-visual-caption {
+  margin: 0.62rem 0 0;
   color: var(--color-cream-220);
-  font-size: 0.88rem;
+  font-size: 0.85rem;
+  text-align: center;
 }
 
 .site-footer {
   margin-top: 1.25rem;
+}
+
+.legal-compact {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 0.5rem 0.1rem 0;
 }
 
 .reveal {
@@ -293,7 +294,4 @@
     padding: 0.45rem 0.58rem;
   }
 
-  .brand-copy span {
-    display: none;
-  }
 }
