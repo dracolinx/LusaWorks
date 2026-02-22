@@ -35,6 +35,8 @@ export class ContentService {
           { value: '100%', label: 'Adaptación a procesos reales' },
           { value: 'ES / EN', label: 'Atención técnico-funcional bilingüe' },
           { value: 'Jaén', label: 'Base operativa y proximidad ágil' },
+          { value: '24/7', label: 'Agenda y atención automatizadas' },
+          { value: 'RGPD', label: 'Cumplimiento, trazabilidad y control' },
         ],
       },
       specialization: {
@@ -229,6 +231,8 @@ export class ContentService {
           { value: '100%', label: 'Real-process adaptation' },
           { value: 'ES / EN', label: 'Bilingual technical-functional support' },
           { value: 'Jaén', label: 'Operational base and agile proximity' },
+          { value: '24/7', label: 'Automated scheduling and customer handling' },
+          { value: 'GDPR', label: 'Compliance, traceability, and control' },
         ],
       },
       specialization: {
