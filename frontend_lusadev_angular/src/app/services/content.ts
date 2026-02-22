@@ -147,7 +147,7 @@ export class ContentService {
             period: 'Evolución continua',
             title: 'IA y automatización con visión práctica',
             description:
-              'Desarrollo de herramientas que convierten datos heterogéneos en decisiones accionables y documentación técnica consistente.',
+              'Desarrollo de herramientas que convierten datos heterogéneos en decisiones accionables y procesos más sencillos.',
           },
         ],
       },
@@ -329,7 +329,7 @@ export class ContentService {
             period: 'Continuous evolution',
             title: 'Applied AI and practical automation',
             description:
-              'Tooling that transforms heterogeneous data into actionable outputs and consistent technical deliverables.',
+              'Tooling that transforms heterogeneous data into actionable decisions and simpler processes.',
           },
         ],
       },
