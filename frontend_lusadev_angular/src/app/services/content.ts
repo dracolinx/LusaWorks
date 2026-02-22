@@ -9,7 +9,7 @@ export class ContentService {
     es: {
       pageTitle: 'LusaWorks | Soluciones software a medida para empresas',
       metaDescription:
-        'LusaWorks desarrolla soluciones software adaptadas a cada empresa: automatización, plataformas de gestión y atención conversacional con enfoque de proximidad desde Jaén.',
+        'LusaWorks desarrolla soluciones software con tecnología de vanguardia para procesos internos y atención al cliente, adaptadas a cualquier pyme con precios económicos, transparentes y justos.',
       languageLabel: 'Idioma',
       nav: [
         { id: 'hero', label: 'Inicio' },
@@ -28,7 +28,7 @@ export class ContentService {
         kicker: 'LusaWorks · Ingeniería de software para empresas',
         title: 'Soluciones software a medida para procesos reales de negocio',
         description:
-          'Diseñamos, desarrollamos y mantenemos soluciones digitales personalizadas que conectan operación, datos y atención al cliente. Combinamos rigor técnico, visión práctica y soporte continuo para que la tecnología resuelva necesidades concretas de cada empresa.',
+          'Diseñamos, desarrollamos y mantenemos soluciones digitales personalizadas que conectan operación, datos y atención al cliente. Aplicamos tecnología de vanguardia y servicios de última generación, habituales en entornos empresariales de alto nivel, aterrizados a la realidad de cualquier pyme.',
         primaryCta: 'Contactar por email',
         secondaryCta: 'Conocer especialización',
         metrics: [
@@ -41,7 +41,7 @@ export class ContentService {
         eyebrow: 'Especialización',
         title: 'Tecnología aplicada a resultados empresariales',
         intro:
-          'Se construyen ecosistemas de software preparados para uso diario, con foco en fiabilidad, trazabilidad y crecimiento. El resultado esperado es que la empresa dependa menos de trabajo manual, reduzca fricción interna y tenga claridad en decisiones y seguimiento.',
+          'Se construyen ecosistemas de software preparados para uso diario, con foco en fiabilidad, trazabilidad y crecimiento. Se incorporan sistemas y servicios de última generación para impulsar procesos internos y mejorar el trato con el cliente, manteniendo una implantación viable para cualquier pyme.',
         domains: [
           {
             title: 'Automatización e integración de procesos',
@@ -152,7 +152,7 @@ export class ContentService {
         eyebrow: 'Contacto',
         title: 'Hablemos de la solución que necesita tu empresa',
         description:
-          'Si buscas una solución software adaptada a tu realidad operativa, podemos ayudarte a diseñar, implementar y mantener una plataforma alineada con tus objetivos.',
+          'Si buscas una solución software adaptada a tu realidad operativa, podemos ayudarte a diseñar, implementar y mantener una plataforma alineada con tus objetivos, con precios económicos, transparentes y justos.',
         ctaLabel: 'Escribir a xxxx@icloud.com',
         responseNote: 'Atención técnica y funcional con enfoque de largo recorrido.',
       },
@@ -165,7 +165,8 @@ export class ContentService {
           { label: 'Email', value: 'xxxx@icloud.com' },
           { label: 'Ubicación', value: 'Jaén, España' },
         ],
-        supportMessage: 'Especialización en soluciones software adaptadas y soporte técnico continuo.',
+        supportMessage:
+          'Especialización en soluciones software adaptadas con tecnología de vanguardia, soporte técnico continuo y precios económicos, transparentes y justos.',
         rights: '© LusaWorks. Todos los derechos reservados.',
       },
       logoAlt: 'Logo corporativo de LusaWorks',
@@ -174,7 +175,7 @@ export class ContentService {
     en: {
       pageTitle: 'LusaWorks | Tailored software solutions for businesses',
       metaDescription:
-        'LusaWorks builds bespoke software for companies: process automation, business management platforms, and conversational appointment flows with a proximity-first approach from Jaén.',
+        'LusaWorks builds bespoke software using cutting-edge technology for internal processes and customer interactions, tailored to any SME with affordable, transparent, and fair pricing.',
       languageLabel: 'Language',
       nav: [
         { id: 'hero', label: 'Home' },
@@ -193,7 +194,7 @@ export class ContentService {
         kicker: 'LusaWorks · Business software engineering',
         title: 'Tailored software solutions for real business operations',
         description:
-          'We design, build, and maintain custom digital solutions that connect operations, data, and customer interactions. Our approach combines technical rigor, practical vision, and ongoing support to solve each client’s specific needs.',
+          'We design, build, and maintain custom digital solutions that connect operations, data, and customer interactions. We apply cutting-edge technology and next-generation services used in top business environments, adapted to the real context of any SME.',
         primaryCta: 'Contact by email',
         secondaryCta: 'Explore specialization',
         metrics: [
@@ -206,7 +207,7 @@ export class ContentService {
         eyebrow: 'Specialization',
         title: 'Technology designed for business outcomes',
         intro:
-          'Software ecosystems are built for everyday execution, with focus on reliability, traceability, and growth. The expected result is lower dependency on manual work, reduced internal friction, and clearer decisions and follow-up.',
+          'Software ecosystems are built for everyday execution, with focus on reliability, traceability, and growth. We incorporate next-generation systems and services to improve internal processes and customer handling, while keeping delivery realistic for any SME.',
         domains: [
           {
             title: 'Process automation and integration',
@@ -317,7 +318,7 @@ export class ContentService {
         eyebrow: 'Contact',
         title: 'Let us design the right solution for your business',
         description:
-          'If your company needs software aligned with real operational constraints, we can help you design, implement, and sustain it.',
+          'If your company needs software aligned with real operational constraints, we can help you design, implement, and sustain it with affordable, transparent, and fair pricing.',
         ctaLabel: 'Write to xxxx@icloud.com',
         responseNote: 'Technical and functional support with a long-term perspective.',
       },
@@ -330,7 +331,8 @@ export class ContentService {
           { label: 'Email', value: 'xxxx@icloud.com' },
           { label: 'Location', value: 'Jaén, Spain' },
         ],
-        supportMessage: 'Specialized in tailored software solutions with continuous technical support.',
+        supportMessage:
+          'Specialized in tailored software solutions with cutting-edge technology, continuous technical support, and affordable, transparent, and fair pricing.',
         rights: '© LusaWorks. All rights reserved.',
       },
       logoAlt: 'LusaWorks corporate logo',
