@@ -96,7 +96,7 @@ export class ContentService {
         eyebrow: 'Método de trabajo',
         title: 'De problema operativo a plan técnico ejecutable',
         intro:
-          'Primero se analiza el proceso real, con especial atención a puntos de fricción, duplicidades, errores habituales y dependencias de personas clave. Después se diseña una solución por fases con entregables verificables. Por último, se despliega, se forma al equipo y se mantiene el sistema para que siga alineado con la evolución del negocio.',
+          'Se trabaja de la mano del cliente analizando sus procesos reales y sus necesidades, con especial atención a puntos de fricción, duplicidades, errores habituales y dependencias de personas clave. Desde el inicio se prioriza la integración con sus sistemas actuales para no distorsionar su operativa de negocio. Después se diseña una solución por fases con entregables verificables. Por último, se despliega, se forma al equipo y se mantiene el sistema para que siga alineado con la evolución del negocio.',
         steps: [
           {
             title: 'Análisis del proceso real',
@@ -106,7 +106,7 @@ export class ContentService {
           {
             title: 'Diseño por fases y entregables verificables',
             description:
-              'Se define una hoja de ruta técnica con hitos medibles para implementar con control, validar avances y ajustar antes de escalar.',
+              'Se define una hoja de ruta técnica con hitos medibles, maximizando la integración con herramientas y sistemas ya existentes para implementar con control, validar avances y ajustar antes de escalar.',
           },
           {
             title: 'Despliegue, formación y mantenimiento',
@@ -278,7 +278,7 @@ export class ContentService {
         eyebrow: 'Working method',
         title: 'From operational problem to executable technical plan',
         intro:
-          'First, the real process is analyzed, with special attention to friction points, duplications, common errors, and dependencies on key people. Then a phased solution is designed with verifiable deliverables. Finally, deployment, team onboarding, and maintenance keep the system aligned with business evolution.',
+          'We work side by side with the client, analyzing real processes and business needs, with special attention to friction points, duplications, common errors, and dependencies on key people. From the start, integration with existing systems is prioritized to avoid disrupting day-to-day operations. Then a phased solution is designed with verifiable deliverables. Finally, deployment, team onboarding, and maintenance keep the system aligned with business evolution.',
         steps: [
           {
             title: 'Real-process analysis',
@@ -288,7 +288,7 @@ export class ContentService {
           {
             title: 'Phased design with verifiable deliverables',
             description:
-              'An implementation roadmap is structured with measurable milestones to validate progress and adjust before scaling.',
+              'An implementation roadmap is structured with measurable milestones, maximizing integration with existing tools and systems to validate progress and adjust before scaling.',
           },
           {
             title: 'Deployment, enablement, and maintenance',
