@@ -178,6 +178,46 @@ h3 {
   line-height: 1.66;
 }
 
+.opportunity-block {
+  margin-top: 1rem;
+  border: 1px solid rgb(120 160 185 / 24%);
+  border-radius: 1.05rem;
+  background: linear-gradient(150deg, rgb(9 28 42 / 82%), rgb(6 19 30 / 90%));
+  padding: clamp(1rem, 2.4vw, 1.35rem);
+}
+
+.opportunity-title {
+  margin: 0;
+  color: var(--color-cream-060);
+  font-family: var(--font-heading);
+  font-size: clamp(1.12rem, 1.9vw, 1.42rem);
+  line-height: 1.35;
+}
+
+.opportunity-intro {
+  margin: 0.72rem 0 0;
+  color: var(--color-cream-200);
+  line-height: 1.65;
+}
+
+.opportunity-list {
+  margin: 0.8rem 0 0;
+  padding: 0 0 0 1.05rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.opportunity-list li {
+  color: var(--color-cream-160);
+  line-height: 1.55;
+}
+
+.opportunity-closing {
+  margin: 0.82rem 0 0;
+  color: var(--color-cream-120);
+  line-height: 1.62;
+}
+
 @media (max-width: 900px) {
   .specialization-card:nth-child(1),
   .specialization-card:nth-child(2),

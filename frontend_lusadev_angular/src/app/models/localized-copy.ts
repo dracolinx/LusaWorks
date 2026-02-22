@@ -38,12 +38,20 @@ export interface SpecializationGuaranteesCopy {
   closingNote: string;
 }
 
+export interface SpecializationOpportunityCopy {
+  title: string;
+  intro: string;
+  points: string[];
+  closing: string;
+}
+
 export interface SpecializationSectionCopy {
   eyebrow: string;
   title: string;
   intro: string;
   domains: SpecializationDomain[];
   guarantees: SpecializationGuaranteesCopy;
+  opportunity: SpecializationOpportunityCopy;
 }
 
 export interface TeamTimelineItem {

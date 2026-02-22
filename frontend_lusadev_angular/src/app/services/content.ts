@@ -91,6 +91,18 @@ export class ContentService {
           closingNote:
             'Cuando el cliente lo requiere, se prioriza un enfoque de procesamiento local o en infraestructura controlada por el propio cliente, reforzando gobierno del dato y reduciendo exposición.',
         },
+        opportunity: {
+          title: 'Automatización aplicable a cualquier gestión, incluso en escenarios muy específicos',
+          intro:
+            'En necesidades de cumplimiento normativo, generación de informes personalizados para organismos públicos o privados y cualquier flujo administrativo u operativo, la automatización puede aportar orden, velocidad y trazabilidad.',
+          points: [
+            'Las obligaciones regulatorias pueden traducirse a controles y validaciones automatizadas.',
+            'Los informes personalizados pueden generarse con formatos y métricas adaptadas a cada entidad receptora.',
+            'Procesos que hoy se resuelven de forma manual pueden integrarse en flujos más estables y medibles.',
+          ],
+          closing:
+            'Se invita a plantear el problema y el contexto real para evaluar su resolución: incluso cuando parezca muy específico, puede abordarse con soluciones tecnológicas existentes bien implementadas.',
+        },
       },
       method: {
         eyebrow: 'Método de trabajo',
@@ -272,6 +284,18 @@ export class ContentService {
           ],
           closingNote:
             'When required by the client, local processing or client-controlled infrastructure is prioritized to reinforce data governance and reduce exposure.',
+        },
+        opportunity: {
+          title: 'Automation can be applied to any management flow, even highly specific cases',
+          intro:
+            'For regulatory compliance needs, custom reporting for public or private institutions, and virtually any administrative or operational workflow, automation can provide structure, speed, and traceability.',
+          points: [
+            'Regulatory obligations can be translated into automated controls and validations.',
+            'Custom reports can be generated with formats and metrics tailored to each receiving organization.',
+            'Processes currently handled manually can be integrated into more stable and measurable workflows.',
+          ],
+          closing:
+            'Clients are encouraged to share the problem and real context so resolution paths can be assessed: even very specific cases can be addressed with existing technology when implemented properly.',
         },
       },
       method: {

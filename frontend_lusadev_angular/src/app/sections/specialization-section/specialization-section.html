@@ -44,3 +44,12 @@
 
   <p class="guarantees-closing">{{ copy().guarantees.closingNote }}</p>
 </section>
+
+<section class="opportunity-block">
+  <h3 class="opportunity-title">{{ copy().opportunity.title }}</h3>
+  <p class="opportunity-intro">{{ copy().opportunity.intro }}</p>
+  <ul class="opportunity-list">
+    <li *ngFor="let point of copy().opportunity.points">{{ point }}</li>
+  </ul>
+  <p class="opportunity-closing">{{ copy().opportunity.closing }}</p>
+</section>
