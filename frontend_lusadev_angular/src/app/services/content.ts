@@ -32,9 +32,9 @@ export class ContentService {
         primaryCta: 'Contactar por email',
         secondaryCta: 'Conocer especialización',
         metrics: [
-          { value: '100%', label: 'Enfoque a medida' },
-          { value: 'ES / EN', label: 'Atención bilingüe' },
-          { value: 'Jaén', label: 'Base operativa' },
+          { value: '100%', label: 'Adaptación a procesos reales' },
+          { value: 'ES / EN', label: 'Atención técnico-funcional bilingüe' },
+          { value: 'Jaén', label: 'Base operativa y proximidad ágil' },
         ],
       },
       specialization: {
@@ -226,9 +226,9 @@ export class ContentService {
         primaryCta: 'Contact by email',
         secondaryCta: 'Explore specialization',
         metrics: [
-          { value: '100%', label: 'Tailored approach' },
-          { value: 'ES / EN', label: 'Bilingual support' },
-          { value: 'Jaén', label: 'Operational base' },
+          { value: '100%', label: 'Real-process adaptation' },
+          { value: 'ES / EN', label: 'Bilingual technical-functional support' },
+          { value: 'Jaén', label: 'Operational base and agile proximity' },
         ],
       },
       specialization: {
