@@ -33,7 +33,7 @@ export class ContentService {
         secondaryCta: 'Conocer especialización',
         metrics: [
           { value: '100%', label: 'Adaptación a procesos reales' },
-          { value: 'ES / EN', label: 'Atención técnico-funcional bilingüe' },
+          { value: 'API + Datos', label: 'Integración con sistemas actuales' },
           { value: 'Jaén', label: 'Base operativa y proximidad ágil' },
           { value: '24/7', label: 'Agenda y atención automatizadas' },
           { value: 'RGPD', label: 'Cumplimiento, trazabilidad y control' },
@@ -229,7 +229,7 @@ export class ContentService {
         secondaryCta: 'Explore specialization',
         metrics: [
           { value: '100%', label: 'Real-process adaptation' },
-          { value: 'ES / EN', label: 'Bilingual technical-functional support' },
+          { value: 'API + Data', label: 'Integration with existing systems' },
           { value: 'Jaén', label: 'Operational base and agile proximity' },
           { value: '24/7', label: 'Automated scheduling and customer handling' },
           { value: 'GDPR', label: 'Compliance, traceability, and control' },
