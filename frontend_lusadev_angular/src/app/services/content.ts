@@ -5,8 +5,6 @@ import { LanguageCode, LocalizedCopy } from '../models/localized-copy';
   providedIn: 'root',
 })
 export class ContentService {
-  private readonly mapEmbedUrl = 'https://www.google.com/maps?q=Ja%C3%A9n,+Espa%C3%B1a&output=embed';
-
   private readonly copy: Record<LanguageCode, LocalizedCopy> = {
     es: {
       pageTitle: 'LusaWorks | Soluciones software a medida para empresas',
@@ -110,7 +108,6 @@ export class ContentService {
         ],
         mapTitle: 'Jaén, centro de operaciones',
         mapCaption: 'Cobertura local y coordinación telemática para proyectos nacionales.',
-        mapEmbedUrl: this.mapEmbedUrl,
       },
       contact: {
         eyebrow: 'Contacto',
@@ -237,7 +234,6 @@ export class ContentService {
         ],
         mapTitle: 'Jaén, operational hub',
         mapCaption: 'Local proximity and remote collaboration for nationwide projects.',
-        mapEmbedUrl: this.mapEmbedUrl,
       },
       contact: {
         eyebrow: 'Contact',

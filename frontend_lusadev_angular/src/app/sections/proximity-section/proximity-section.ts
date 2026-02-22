@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, computed, input } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import { Component, input } from '@angular/core';
 import { ProximitySectionCopy } from '../../models/localized-copy';
 
 @Component({
@@ -11,10 +10,4 @@ import { ProximitySectionCopy } from '../../models/localized-copy';
 })
 export class ProximitySectionComponent {
   readonly copy = input.required<ProximitySectionCopy>();
-
-  readonly mapUrl = computed<SafeResourceUrl>(() =>
-    this.sanitizer.bypassSecurityTrustResourceUrl(this.copy().mapEmbedUrl),
-  );
-
-  constructor(private readonly sanitizer: DomSanitizer) {}
 }

@@ -55,7 +55,6 @@ export interface ProximitySectionCopy {
   pillars: string[];
   mapTitle: string;
   mapCaption: string;
-  mapEmbedUrl: string;
 }
 
 export interface ContactSectionCopy {

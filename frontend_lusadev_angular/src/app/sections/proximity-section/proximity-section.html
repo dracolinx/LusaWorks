@@ -22,13 +22,44 @@
 
   <article class="map-card">
     <h3>{{ copy().mapTitle }}</h3>
-    <iframe
-      [src]="mapUrl()"
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-      title="Jaén map"
-      aria-label="Jaén map"
-    ></iframe>
+    <div class="creative-map" role="img" aria-label="Mapa creativo de Jaén">
+      <svg viewBox="0 0 560 360" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="land" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#12364e" />
+            <stop offset="100%" stop-color="#081925" />
+          </linearGradient>
+          <linearGradient id="road" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#7db1d0" />
+            <stop offset="100%" stop-color="#e39d5d" />
+          </linearGradient>
+        </defs>
+
+        <rect x="14" y="14" width="532" height="332" rx="22" fill="url(#land)" />
+        <path
+          d="M92 272L138 214L112 166L172 124L246 138L298 108L372 138L436 122L470 172L448 236L392 272L322 286L266 260L196 286Z"
+          class="territory"
+        />
+
+        <path d="M114 214L222 206L286 174L390 182L458 164" class="road-main" />
+        <path d="M196 286L238 228L314 220L372 254" class="road-main" />
+        <path d="M172 124L236 162L286 174" class="road-secondary" />
+        <path d="M246 138L310 118L372 138" class="road-secondary" />
+        <path d="M138 214L112 166L172 124" class="road-secondary" />
+
+        <circle cx="286" cy="174" r="10" class="pin-core" />
+        <path d="M286 150C297 150 306 159 306 170C306 186 286 206 286 206C286 206 266 186 266 170C266 159 275 150 286 150Z" class="pin-outline" />
+
+        <circle cx="222" cy="206" r="6" class="node" />
+        <circle cx="390" cy="182" r="6" class="node" />
+        <circle cx="238" cy="228" r="5" class="node-small" />
+        <circle cx="314" cy="220" r="5" class="node-small" />
+
+        <text x="286" y="236" text-anchor="middle" class="label-main">JAEN</text>
+        <text x="202" y="312" class="label-sub">Cobertura local</text>
+        <text x="328" y="312" class="label-sub">Soporte agil</text>
+      </svg>
+    </div>
     <p>{{ copy().mapCaption }}</p>
   </article>
 </div>

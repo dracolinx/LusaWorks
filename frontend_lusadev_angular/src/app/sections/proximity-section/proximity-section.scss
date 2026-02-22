@@ -102,12 +102,70 @@ h3 {
   font-size: 1.1rem;
 }
 
-iframe {
+.creative-map {
   width: 100%;
-  min-height: 17rem;
   margin-top: 0.85rem;
   border: 1px solid rgb(130 167 191 / 22%);
   border-radius: 0.95rem;
+  overflow: hidden;
+}
+
+.creative-map svg {
+  width: 100%;
+  display: block;
+  aspect-ratio: 560 / 360;
+}
+
+.territory {
+  fill: rgb(14 48 71 / 58%);
+  stroke: rgb(116 163 192 / 48%);
+  stroke-width: 3;
+}
+
+.road-main {
+  fill: none;
+  stroke: url(#road);
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.road-secondary {
+  fill: none;
+  stroke: rgb(119 165 194 / 62%);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.pin-outline {
+  fill: rgb(227 157 93 / 26%);
+  stroke: rgb(227 157 93);
+  stroke-width: 3;
+}
+
+.pin-core {
+  fill: rgb(227 157 93);
+}
+
+.node {
+  fill: rgb(134 185 214);
+}
+
+.node-small {
+  fill: rgb(102 160 194);
+}
+
+.label-main {
+  fill: rgb(236 222 210);
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.label-sub {
+  fill: rgb(179 165 151);
+  font-family: var(--font-body);
+  font-size: 14px;
 }
 
 .map-card p {
