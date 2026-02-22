@@ -33,7 +33,10 @@ export class ContentService {
         secondaryCta: 'Conocer especialización',
         metrics: [
           { value: '100%', label: 'Adaptación a procesos reales' },
-          { value: 'API + Datos', label: 'Integración con sistemas actuales' },
+          {
+            value: 'Experiencia',
+            label: 'Conocimiento y experiencia técnica, operativa y multidisciplinar para garantizar el éxito del servicio',
+          },
           { value: 'Jaén', label: 'Base operativa y proximidad ágil' },
           {
             value: 'Automatizaciones',
@@ -232,7 +235,10 @@ export class ContentService {
         secondaryCta: 'Explore specialization',
         metrics: [
           { value: '100%', label: 'Real-process adaptation' },
-          { value: 'API + Data', label: 'Integration with existing systems' },
+          {
+            value: 'Expertise',
+            label: 'Technical, operational, and multidisciplinary expertise to ensure service success',
+          },
           { value: 'Jaén', label: 'Operational base and agile proximity' },
           {
             value: 'Automation',
