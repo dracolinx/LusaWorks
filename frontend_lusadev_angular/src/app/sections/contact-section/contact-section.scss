@@ -32,20 +32,17 @@
 .section-illustration svg {
   width: 9.2rem;
   height: auto;
+  display: block;
+  aspect-ratio: 200 / 130;
 }
 
 .section-illustration rect,
-.section-illustration path,
-.section-illustration circle {
+.section-illustration path {
   fill: none;
   stroke: rgb(150 191 217);
   stroke-width: 4;
   stroke-linecap: round;
   stroke-linejoin: round;
-}
-
-.section-illustration circle {
-  stroke: rgb(227 157 93);
 }
 
 h2 {
