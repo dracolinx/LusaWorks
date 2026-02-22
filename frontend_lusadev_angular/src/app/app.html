@@ -50,7 +50,12 @@
 
   <main class="site-main">
     <section id="hero" class="section hero-stage" appRevealOnScroll>
-      <app-hero-section [copy]="copy().hero"></app-hero-section>
+      <div class="hero-layout">
+        <app-hero-section [copy]="copy().hero"></app-hero-section>
+        <figure class="hero-logo-panel">
+          <img src="assets/logo/lusaworks-logo.png" [alt]="copy().logoAlt" />
+        </figure>
+      </div>
     </section>
 
     <section id="specialization" class="section" appRevealOnScroll>
