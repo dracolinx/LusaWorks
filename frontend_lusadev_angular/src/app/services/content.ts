@@ -35,7 +35,10 @@ export class ContentService {
           { value: '100%', label: 'Adaptación a procesos reales' },
           { value: 'API + Datos', label: 'Integración con sistemas actuales' },
           { value: 'Jaén', label: 'Base operativa y proximidad ágil' },
-          { value: '24/7', label: 'Agenda y atención automatizadas' },
+          {
+            value: 'Automatizaciones',
+            label: 'Programas de gestión integrales con enfoque de productividad, desconexión digital y atención al cliente',
+          },
           { value: 'RGPD', label: 'Cumplimiento, trazabilidad y control' },
         ],
       },
@@ -231,7 +234,10 @@ export class ContentService {
           { value: '100%', label: 'Real-process adaptation' },
           { value: 'API + Data', label: 'Integration with existing systems' },
           { value: 'Jaén', label: 'Operational base and agile proximity' },
-          { value: '24/7', label: 'Automated scheduling and customer handling' },
+          {
+            value: 'Automation',
+            label: 'Integrated management programs focused on productivity, digital disconnection, and customer service',
+          },
           { value: 'GDPR', label: 'Compliance, traceability, and control' },
         ],
       },
