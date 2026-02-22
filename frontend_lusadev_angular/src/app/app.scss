@@ -62,15 +62,19 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 0.65rem;
+  gap: 0.56rem;
 }
 
-.brand img {
-  width: 2.55rem;
-  height: 2.55rem;
-  border-radius: 0.8rem;
-  object-fit: cover;
-  border: 1px solid rgb(168 184 194 / 33%);
+.brand-logo {
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 0.86rem;
+  object-fit: contain;
+  background: rgb(7 24 37 / 76%);
+  border: 1px solid rgb(168 184 194 / 30%);
+  padding: 0.14rem;
+  box-shadow: 0 8px 18px rgb(1 6 11 / 28%);
+  flex: 0 0 auto;
 }
 
 .brand-copy {
@@ -257,6 +261,12 @@
     top: 0.45rem;
     gap: 0.5rem;
     padding: 0.45rem 0.58rem;
+  }
+
+  .brand-logo {
+    width: 2.45rem;
+    height: 2.45rem;
+    border-radius: 0.72rem;
   }
 
 }
