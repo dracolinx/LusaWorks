@@ -2,7 +2,7 @@
 
 ## 1) Activar GitHub Pages en el repositorio
 
-1. Abrir `dracolinx/AnonLusa` en GitHub.
+1. Abrir `dracolinx/LusaWorks` en GitHub.
 2. Ir a `Settings` -> `Pages`.
 3. En `Build and deployment`, seleccionar `GitHub Actions`.
 
@@ -19,13 +19,13 @@ Workflow usado: `.github/workflows/lusadev-pages.yml`.
 
 La landing quedara publicada en:
 
-`https://dracolinx.github.io/AnonLusa/lusadev/`
+`https://dracolinx.github.io/LusaWorks/lusadev/`
 
 ## 4) Incrustar en Google Sites
 
 1. Abrir la pagina de Google Sites en modo edicion.
 2. `Insertar` -> `Incrustar` -> `URL`.
-3. Pegar `https://dracolinx.github.io/AnonLusa/lusadev/`.
+3. Pegar `https://dracolinx.github.io/LusaWorks/lusadev/`.
 4. Ajustar altura recomendada del bloque (aprox. 4200-5200 px para mostrar toda la landing).
 5. Publicar cambios en Google Sites.
 

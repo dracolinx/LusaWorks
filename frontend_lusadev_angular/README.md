@@ -20,7 +20,7 @@ npm run build:pages
 
 - `npm run start`: desarrollo local (`http://localhost:4200`).
 - `npm run build`: build de produccion local.
-- `npm run build:pages`: build preparado para `https://dracolinx.github.io/AnonLusa/lusadev/`.
+- `npm run build:pages`: build preparado para `https://dracolinx.github.io/LusaWorks/lusadev/`.
 
 ## Estructura principal
 
@@ -41,5 +41,5 @@ El workflow `.github/workflows/lusadev-pages.yml` despliega en GitHub Pages el s
 Despues, incrusta la URL en Google Sites:
 
 1. `Insertar` -> `Incrustar` -> `URL`
-2. Pegar `https://dracolinx.github.io/AnonLusa/lusadev/`
+2. Pegar `https://dracolinx.github.io/LusaWorks/lusadev/`
 3. Ajustar alto/ancho del bloque
