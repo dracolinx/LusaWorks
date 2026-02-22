@@ -60,7 +60,7 @@ export class ContentService {
           {
             title: 'Plataformas de gestión específicas por negocio',
             overview:
-              'Se crean aplicaciones web orientadas al trabajo diario, con paneles por rol, búsquedas y filtros, exportación de información y control de permisos. El objetivo es que la operativa se apoye en una herramienta propia que refleje la realidad del negocio, no una plantilla genérica.',
+              'Se crean aplicaciones web orientadas al trabajo diario, con paneles por rol, búsquedas y filtros, exportación de información y control de permisos. El objetivo es maximizar la productividad de tus horas de trabajo, permitiendo enfocar los esfuerzos en lo que importa, lejos de gestiones repetitivas.',
             technicalFocus:
               'A nivel técnico, se diseña una arquitectura modular, se define un modelo de datos coherente y se incorporan medidas de seguridad, auditoría, copias de seguridad y mantenimiento evolutivo.',
           },
@@ -242,7 +242,7 @@ export class ContentService {
           {
             title: 'Business-specific management platforms',
             overview:
-              'Web applications are built for daily operations, including role-based dashboards, search and filtering, data exports, and permission control. The goal is to support operations with a dedicated tool that reflects the business reality, not a generic template.',
+              'Web applications are built for daily operations, including role-based dashboards, search and filtering, data exports, and permission control. The goal is to maximize the productivity of your working hours, so effort stays focused on what matters instead of repetitive administrative tasks.',
             technicalFocus:
               'At the technical level, a modular architecture is designed, a coherent data model is defined, and security, auditing, backups, and evolutionary maintenance are included.',
           },
