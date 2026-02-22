@@ -66,14 +66,30 @@ export class ContentService {
           },
         ],
         guarantees: {
-          heading: 'Garantía de ciberseguridad y cumplimiento normativo',
-          subheading: 'Lo que marca la diferencia cuando el sistema ya está en producción',
+          heading: 'Garantías técnicas en producción',
+          subheading: 'Ciberseguridad, cumplimiento y continuidad con controles diferenciados',
           description:
-            'Un sistema útil no es el que funciona en una demo, sino el que se mantiene estable cuando cambian los procesos, crece el volumen y aumenta la exigencia operativa. Por eso el trabajo se orienta a criterios verificables, con garantías técnicas de ciberseguridad y de cumplimiento normativo aplicable.',
-          riskControls:
-            'En seguridad, se aplican permisos por usuario y por rol, protección de credenciales, cifrado de comunicaciones y control de acceso. En cumplimiento normativo, se define un marco de trabajo alineado con RGPD/LOPDGDD y con los requisitos sectoriales que correspondan. En trazabilidad, se registra la actividad relevante para que exista historial de cambios y se pueda reconstruir la secuencia de acciones. En continuidad, se contemplan copias de seguridad, recuperación ante incidentes, monitorización básica y mantenimiento.',
-          infrastructureNote:
-            'Cuando el cliente lo requiere, se prioriza un enfoque de procesamiento local o en infraestructura controlada por el propio cliente, reduciendo exposición de datos y manteniendo gobierno del dato.',
+            'La diferencia real aparece cuando el sistema está en uso diario y la exigencia operativa crece. Por eso se trabaja con criterios verificables y con bloques de control separados para no mezclar conceptos.',
+          items: [
+            {
+              title: 'Ciberseguridad operativa',
+              text: 'Se aplican permisos por usuario y por rol, protección de credenciales, cifrado de comunicaciones y control de acceso para reducir exposición y riesgo.',
+            },
+            {
+              title: 'Cumplimiento normativo',
+              text: 'Se define un marco de trabajo alineado con RGPD/LOPDGDD y con los requisitos sectoriales aplicables, con responsabilidades y evidencias de control.',
+            },
+            {
+              title: 'Trazabilidad y auditoría',
+              text: 'Se registra la actividad relevante para disponer de historial de cambios y poder reconstruir qué ocurrió, cuándo y quién intervino.',
+            },
+            {
+              title: 'Continuidad del servicio',
+              text: 'Se contemplan copias de seguridad, recuperación ante incidentes, monitorización básica y mantenimiento para sostener la operación.',
+            },
+          ],
+          closingNote:
+            'Cuando el cliente lo requiere, se prioriza un enfoque de procesamiento local o en infraestructura controlada por el propio cliente, reforzando gobierno del dato y reduciendo exposición.',
         },
       },
       method: {
@@ -232,14 +248,30 @@ export class ContentService {
           },
         ],
         guarantees: {
-          heading: 'Cybersecurity and regulatory compliance assurance',
-          subheading: 'What makes the difference once the system is in production',
+          heading: 'Production-grade technical assurance',
+          subheading: 'Cybersecurity, compliance, and continuity with separated controls',
           description:
-            'A useful system is not one that works in a demo, but one that stays stable when processes change, volume grows, and operational pressure increases. That is why delivery is guided by verifiable criteria, with explicit cybersecurity and regulatory compliance safeguards.',
-          riskControls:
-            'In security, user and role-based permissions, credential protection, encrypted communications, and access control are applied. For regulatory compliance, the implementation follows a working framework aligned with GDPR and applicable sector requirements. In traceability, relevant activity is logged to keep a change history and reconstruct action sequences. In continuity, backups, incident recovery, basic monitoring, and maintenance are considered.',
-          infrastructureNote:
-            'When required by the client, a local-processing approach or client-controlled infrastructure is prioritized, reducing data exposure and preserving data governance.',
+            'The real difference appears when the system runs in day-to-day operations and pressure increases. That is why delivery is based on verifiable criteria and clearly separated control domains.',
+          items: [
+            {
+              title: 'Operational cybersecurity',
+              text: 'User and role-based permissions, credential protection, encrypted communications, and access control are applied to reduce exposure and risk.',
+            },
+            {
+              title: 'Regulatory compliance',
+              text: 'A working framework is aligned with GDPR and applicable sector requirements, with clear responsibilities and control evidence.',
+            },
+            {
+              title: 'Traceability and auditability',
+              text: 'Relevant activity is logged to maintain change history and reconstruct what happened, when it happened, and who acted.',
+            },
+            {
+              title: 'Service continuity',
+              text: 'Backups, incident recovery, basic monitoring, and maintenance are incorporated to sustain stable operation.',
+            },
+          ],
+          closingNote:
+            'When required by the client, local processing or client-controlled infrastructure is prioritized to reinforce data governance and reduce exposure.',
         },
       },
       method: {

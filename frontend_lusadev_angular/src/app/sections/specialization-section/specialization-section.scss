@@ -138,10 +138,44 @@ h3 {
   font-size: clamp(1.18rem, 2vw, 1.5rem);
 }
 
-.guarantees-block p {
+.guarantees-description {
   margin: 0.8rem 0 0;
   color: var(--color-cream-210);
   line-height: 1.67;
+}
+
+.guarantees-grid {
+  margin-top: 0.9rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.guarantee-item {
+  border: 1px solid rgb(118 158 184 / 22%);
+  border-radius: 0.9rem;
+  background: rgb(6 21 33 / 70%);
+  padding: 0.8rem 0.85rem;
+}
+
+.guarantee-item h4 {
+  margin: 0;
+  color: var(--color-cream-080);
+  font-family: var(--font-heading);
+  font-size: 0.98rem;
+  line-height: 1.36;
+}
+
+.guarantee-item p {
+  margin: 0.48rem 0 0;
+  color: var(--color-cream-180);
+  line-height: 1.6;
+}
+
+.guarantees-closing {
+  margin: 0.9rem 0 0;
+  color: var(--color-cream-200);
+  line-height: 1.66;
 }
 
 @media (max-width: 900px) {
@@ -149,5 +183,9 @@ h3 {
   .specialization-card:nth-child(2),
   .specialization-card:nth-child(3) {
     grid-column: span 12;
+  }
+
+  .guarantees-grid {
+    grid-template-columns: 1fr;
   }
 }

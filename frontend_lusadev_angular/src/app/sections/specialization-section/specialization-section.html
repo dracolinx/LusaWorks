@@ -33,7 +33,14 @@
 <section class="guarantees-block">
   <p class="guarantees-eyebrow">{{ copy().guarantees.heading }}</p>
   <h3 class="guarantees-title">{{ copy().guarantees.subheading }}</h3>
-  <p>{{ copy().guarantees.description }}</p>
-  <p>{{ copy().guarantees.riskControls }}</p>
-  <p>{{ copy().guarantees.infrastructureNote }}</p>
+  <p class="guarantees-description">{{ copy().guarantees.description }}</p>
+
+  <div class="guarantees-grid">
+    <article class="guarantee-item" *ngFor="let item of copy().guarantees.items">
+      <h4>{{ item.title }}</h4>
+      <p>{{ item.text }}</p>
+    </article>
+  </div>
+
+  <p class="guarantees-closing">{{ copy().guarantees.closingNote }}</p>
 </section>

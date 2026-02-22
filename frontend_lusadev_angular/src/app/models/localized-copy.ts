@@ -25,12 +25,17 @@ export interface SpecializationDomain {
   technicalFocus: string;
 }
 
+export interface SpecializationGuaranteeItem {
+  title: string;
+  text: string;
+}
+
 export interface SpecializationGuaranteesCopy {
   heading: string;
   subheading: string;
   description: string;
-  riskControls: string;
-  infrastructureNote: string;
+  items: SpecializationGuaranteeItem[];
+  closingNote: string;
 }
 
 export interface SpecializationSectionCopy {
