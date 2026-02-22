@@ -191,7 +191,7 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 0.36fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.46fr);
   align-items: center;
   gap: clamp(0.9rem, 2.2vw, 1.8rem);
 }
@@ -199,7 +199,7 @@
 .hero-logo-panel {
   margin: 0;
   justify-self: end;
-  width: clamp(160px, 22vw, 250px);
+  width: clamp(220px, 28vw, 340px);
   aspect-ratio: 1 / 1;
   border-radius: 1.12rem;
   border: 1px solid rgb(119 162 188 / 24%);
@@ -284,7 +284,7 @@
 
   .hero-logo-panel {
     justify-self: center;
-    width: clamp(130px, 42vw, 210px);
+    width: clamp(160px, 46vw, 260px);
   }
 }
 
