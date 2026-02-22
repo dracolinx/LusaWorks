@@ -122,8 +122,39 @@ h3 {
   padding: clamp(1rem, 2.4vw, 1.4rem);
 }
 
+.section-illustration {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(122 164 190 / 22%);
+  border-radius: 0.85rem;
+  background: rgb(6 20 31 / 66%);
+  padding: 0.35rem 0.45rem;
+}
+
+.section-illustration svg {
+  width: clamp(9.6rem, 24vw, 13.2rem);
+  height: auto;
+  display: block;
+}
+
+.section-illustration rect,
+.section-illustration path,
+.section-illustration circle {
+  fill: none;
+  stroke: rgb(145 188 216);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.guarantees-illustration circle,
+.opportunity-illustration circle {
+  stroke: rgb(227 157 93);
+}
+
 .guarantees-eyebrow {
-  margin: 0;
+  margin: 0.65rem 0 0;
   color: var(--color-copper-220);
   font-family: var(--font-heading);
   font-size: 0.77rem;
@@ -187,7 +218,7 @@ h3 {
 }
 
 .opportunity-title {
-  margin: 0;
+  margin: 0.62rem 0 0;
   color: var(--color-cream-060);
   font-family: var(--font-heading);
   font-size: clamp(1.12rem, 1.9vw, 1.42rem);
