@@ -66,12 +66,12 @@ export class ContentService {
           },
         ],
         guarantees: {
-          heading: 'Garantías técnicas que reducen riesgo',
+          heading: 'Garantía de ciberseguridad y cumplimiento normativo',
           subheading: 'Lo que marca la diferencia cuando el sistema ya está en producción',
           description:
-            'Un sistema útil no es el que funciona en una demo, sino el que se mantiene estable cuando cambian los procesos, crece el volumen y aumenta la exigencia operativa. Por eso el trabajo se orienta a criterios verificables.',
+            'Un sistema útil no es el que funciona en una demo, sino el que se mantiene estable cuando cambian los procesos, crece el volumen y aumenta la exigencia operativa. Por eso el trabajo se orienta a criterios verificables, con garantías técnicas de ciberseguridad y de cumplimiento normativo aplicable.',
           riskControls:
-            'En seguridad, se aplican permisos por usuario y por rol, protección de credenciales, cifrado de comunicaciones y control de acceso. En trazabilidad, se registra la actividad relevante para que exista historial de cambios y se pueda reconstruir la secuencia de acciones. En continuidad, se contemplan copias de seguridad, recuperación ante incidentes, monitorización básica y mantenimiento.',
+            'En seguridad, se aplican permisos por usuario y por rol, protección de credenciales, cifrado de comunicaciones y control de acceso. En cumplimiento normativo, se define un marco de trabajo alineado con RGPD/LOPDGDD y con los requisitos sectoriales que correspondan. En trazabilidad, se registra la actividad relevante para que exista historial de cambios y se pueda reconstruir la secuencia de acciones. En continuidad, se contemplan copias de seguridad, recuperación ante incidentes, monitorización básica y mantenimiento.',
           infrastructureNote:
             'Cuando el cliente lo requiere, se prioriza un enfoque de procesamiento local o en infraestructura controlada por el propio cliente, reduciendo exposición de datos y manteniendo gobierno del dato.',
         },
@@ -231,12 +231,12 @@ export class ContentService {
           },
         ],
         guarantees: {
-          heading: 'Technical safeguards that reduce risk',
+          heading: 'Cybersecurity and regulatory compliance assurance',
           subheading: 'What makes the difference once the system is in production',
           description:
-            'A useful system is not one that works in a demo, but one that stays stable when processes change, volume grows, and operational pressure increases. That is why delivery is guided by verifiable criteria.',
+            'A useful system is not one that works in a demo, but one that stays stable when processes change, volume grows, and operational pressure increases. That is why delivery is guided by verifiable criteria, with explicit cybersecurity and regulatory compliance safeguards.',
           riskControls:
-            'In security, user and role-based permissions, credential protection, encrypted communications, and access control are applied. In traceability, relevant activity is logged to keep a change history and reconstruct action sequences. In continuity, backups, incident recovery, basic monitoring, and maintenance are considered.',
+            'In security, user and role-based permissions, credential protection, encrypted communications, and access control are applied. For regulatory compliance, the implementation follows a working framework aligned with GDPR and applicable sector requirements. In traceability, relevant activity is logged to keep a change history and reconstruct action sequences. In continuity, backups, incident recovery, basic monitoring, and maintenance are considered.',
           infrastructureNote:
             'When required by the client, a local-processing approach or client-controlled infrastructure is prioritized, reducing data exposure and preserving data governance.',
         },
