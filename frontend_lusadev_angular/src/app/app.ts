@@ -1,5 +1,14 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { Component, computed, effect, inject, signal } from '@angular/core';
+import {
+  Component,
+  HostListener,
+  OnDestroy,
+  OnInit,
+  computed,
+  effect,
+  inject,
+  signal,
+} from '@angular/core';
 import { RevealOnScrollDirective } from './directives/reveal-on-scroll';
 import { LanguageCode, NavLink } from './models/localized-copy';
 import { ContactSectionComponent } from './sections/contact-section/contact-section';
@@ -28,17 +37,27 @@ import { LanguageService } from './services/language';
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
-export class App {
+export class App implements OnInit, OnDestroy {
   private readonly document = inject(DOCUMENT);
   private readonly languageService = inject(LanguageService);
   private readonly contentService = inject(ContentService);
+  private pointerMedia?: MediaQueryList;
 
   protected readonly language = this.languageService.currentLanguage;
   protected readonly copy = computed(() => this.contentService.getCopy(this.language()));
   protected readonly headerCtaLabel = computed(() =>
     this.language() === 'es' ? 'Hablemos' : "Let's Talk",
   );
+  protected readonly headerScrolled = signal(false);
   protected readonly mobileMenuOpen = signal(false);
+  protected readonly customCursorEnabled = signal(false);
+  private readonly cursorX = signal(-100);
+  private readonly cursorY = signal(-100);
+  protected readonly cursorTransform = computed(() => {
+    const x = this.cursorX() - 16;
+    const y = this.cursorY() - 16;
+    return `translate3d(${x}px, ${y}px, 0)`;
+  });
 
   constructor() {
     effect(() => {
@@ -47,6 +66,31 @@ export class App {
       this.document.title = localizedCopy.pageTitle;
       this.updateMetaDescription(localizedCopy.metaDescription);
     });
+  }
+
+  ngOnInit(): void {
+    if (typeof window === 'undefined') return;
+
+    this.updateHeaderOnScroll();
+    this.pointerMedia = window.matchMedia('(hover: hover) and (pointer: fine)');
+    this.applyPointerMode(this.pointerMedia.matches);
+    this.pointerMedia.addEventListener('change', this.handlePointerModeChange);
+  }
+
+  ngOnDestroy(): void {
+    this.pointerMedia?.removeEventListener('change', this.handlePointerModeChange);
+  }
+
+  @HostListener('window:scroll')
+  protected onWindowScroll(): void {
+    this.updateHeaderOnScroll();
+  }
+
+  @HostListener('document:mousemove', ['$event'])
+  protected onMouseMove(event: MouseEvent): void {
+    if (!this.customCursorEnabled()) return;
+    this.cursorX.set(event.clientX);
+    this.cursorY.set(event.clientY);
   }
 
   protected setLanguage(language: LanguageCode): void {
@@ -81,5 +125,19 @@ export class App {
     }
 
     tag.setAttribute('content', description);
+  }
+
+  private updateHeaderOnScroll(): void {
+    if (typeof window === 'undefined') return;
+    this.headerScrolled.set(window.scrollY > 22);
+  }
+
+  private readonly handlePointerModeChange = (event: MediaQueryListEvent): void => {
+    this.applyPointerMode(event.matches);
+  };
+
+  private applyPointerMode(enabled: boolean): void {
+    this.customCursorEnabled.set(enabled);
+    this.document.body.classList.toggle('cursor-custom-enabled', enabled);
   }
 }
