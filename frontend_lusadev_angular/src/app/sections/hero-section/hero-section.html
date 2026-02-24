@@ -1,5 +1,5 @@
 <div class="hero-copy">
-  <div class="hero-first-view">
+  <div class="hero-first-view" *ngIf="mode() === 'title'">
     <p class="kicker">
       <span class="status-dot-wrap" aria-hidden="true">
         <span class="status-dot status-dot-ping"></span>
@@ -12,7 +12,7 @@
     </div>
   </div>
 
-  <div class="hero-second-view">
+  <div class="hero-second-view" *ngIf="mode() === 'overview'">
     <div class="about-layout">
       <figure class="about-logo-panel">
         <img src="assets/logo/LogoV2.png" [alt]="imageAlt() || copy().kicker" />
