@@ -143,7 +143,7 @@
 }
 
 .brand-logo {
-  height: 2.55rem;
+  height: 3.55rem;
   width: auto;
   object-fit: contain;
   background: transparent;
@@ -370,7 +370,7 @@
 }
 
 .hero-logo-panel img {
-  width: clamp(5.4rem, 11vw, 7.2rem);
+  width: clamp(8.2rem, 18vw, 12.6rem);
   height: auto;
   object-fit: contain;
   filter: drop-shadow(0 12px 24px rgb(0 0 0 / 44%));
@@ -526,6 +526,10 @@
     width: calc(100% - 1rem);
   }
 
+  .brand-logo {
+    height: 3.05rem;
+  }
+
   .hero-stage {
     min-height: calc(100vh - 1rem);
     padding-top: 0.5rem;
@@ -538,6 +542,10 @@
   .hero-blob {
     width: 18rem;
     height: 18rem;
+  }
+
+  .hero-logo-panel img {
+    width: clamp(6.8rem, 26vw, 9.6rem);
   }
 
   .hero-scroll-cue {
