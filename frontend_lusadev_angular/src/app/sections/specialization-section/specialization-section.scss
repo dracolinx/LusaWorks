@@ -3,47 +3,49 @@
 }
 
 .section-header {
-  max-width: 44rem;
+  max-width: 56rem;
 }
 
 .eyebrow {
-  margin: 0 0 0.65rem;
-  color: var(--color-copper-300);
-  font-family: var(--font-heading);
-  font-size: 0.78rem;
+  margin: 0 0 0.8rem;
+  color: #9ca3af;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h2 {
   margin: 0;
-  font-family: var(--font-heading);
-  color: var(--color-cream-050);
-  font-size: clamp(1.65rem, 2.8vw, 2.75rem);
-  line-height: 1.2;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
 .section-header p:last-child {
-  margin: 0.9rem 0 0;
-  color: var(--color-cream-250);
-  line-height: 1.68;
+  margin: 0.95rem 0 0;
+  color: #a3a3a3;
+  line-height: 1.72;
 }
 
 .specialization-grid {
+  margin-top: 1.8rem;
   display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
   gap: 1rem;
-  margin-top: 1.6rem;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .specialization-card {
-  border: 1px solid rgb(96 139 167 / 24%);
-  border-radius: 1.1rem;
-  background: linear-gradient(165deg, rgb(10 31 46 / 85%), rgb(4 15 24 / 86%));
-  padding: 1.3rem;
-  box-shadow: 0 16px 36px rgb(2 8 14 / 34%);
-  transition: transform 240ms ease, border-color 240ms ease;
+  border: 1px solid rgb(255 255 255 / 8%);
+  border-radius: 1rem;
+  background: rgb(255 255 255 / 3%);
+  backdrop-filter: blur(16px);
+  padding: 1.2rem;
+  transition: border-color 220ms ease, transform 220ms ease;
 }
 
 .specialization-card:nth-child(1) {
@@ -59,23 +61,23 @@ h2 {
 }
 
 .specialization-card:hover {
-  transform: translateY(-3px);
-  border-color: rgb(150 180 199 / 42%);
+  border-color: rgb(255 255 255 / 16%);
+  transform: translateY(-2px);
 }
 
 .card-illustration {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0.65rem;
-  border-radius: 0.8rem;
-  border: 1px solid rgb(122 163 189 / 24%);
-  background: rgb(7 27 42 / 68%);
-  padding: 0.4rem 0.45rem;
+  border-radius: 0.72rem;
+  border: 1px solid rgb(255 255 255 / 10%);
+  background: rgb(255 255 255 / 4%);
+  padding: 0.32rem 0.42rem;
+  margin-bottom: 0.7rem;
 }
 
 .card-illustration svg {
-  width: 8.6rem;
+  width: 8.2rem;
   height: auto;
 }
 
@@ -83,66 +85,68 @@ h2 {
 .card-illustration path,
 .card-illustration circle {
   fill: none;
-  stroke: rgb(152 193 220);
+  stroke: #93c5fd;
   stroke-width: 4;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
 .card-illustration circle {
-  stroke: rgb(167 139 250);
+  stroke: #c084fc;
 }
 
 h3 {
   margin: 0;
-  color: var(--color-cream-100);
-  font-family: var(--font-heading);
-  font-size: 1.16rem;
+  color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.12rem;
+  font-weight: 600;
   line-height: 1.35;
 }
 
 .card-description {
-  margin: 0.78rem 0 0;
-  color: var(--color-cream-250);
-  line-height: 1.62;
+  margin: 0.72rem 0 0;
+  color: #a3a3a3;
+  line-height: 1.66;
 }
 
 .card-technical {
-  margin: 0.9rem 0 0;
-  color: var(--color-cream-170);
-  line-height: 1.64;
-  font-size: 0.95rem;
+  margin: 0.82rem 0 0;
+  color: #c4c4c4;
+  font-size: 0.96rem;
+  line-height: 1.66;
 }
 
-.guarantees-block {
-  margin-top: 1.2rem;
-  border: 1px solid rgb(118 158 184 / 24%);
-  border-radius: 1.05rem;
-  background: linear-gradient(160deg, rgb(8 24 37 / 84%), rgb(5 16 26 / 90%));
-  padding: clamp(1rem, 2.4vw, 1.4rem);
+.guarantees-block,
+.opportunity-block {
+  margin-top: 1rem;
+  border: 1px solid rgb(255 255 255 / 8%);
+  border-radius: 1rem;
+  background: rgb(255 255 255 / 3%);
+  backdrop-filter: blur(16px);
+  padding: 1.12rem;
 }
 
 .section-illustration {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgb(122 164 190 / 22%);
-  border-radius: 0.85rem;
-  background: rgb(6 20 31 / 66%);
-  padding: 0.35rem 0.45rem;
+  border-radius: 0.72rem;
+  border: 1px solid rgb(255 255 255 / 10%);
+  background: rgb(255 255 255 / 4%);
+  padding: 0.32rem 0.42rem;
 }
 
 .section-illustration svg {
-  width: clamp(9.6rem, 24vw, 13.2rem);
+  width: clamp(9rem, 28vw, 12.8rem);
   height: auto;
-  display: block;
 }
 
 .section-illustration rect,
 .section-illustration path,
 .section-illustration circle {
   fill: none;
-  stroke: rgb(145 188 216);
+  stroke: #93c5fd;
   stroke-width: 3.5;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -150,103 +154,77 @@ h3 {
 
 .guarantees-illustration circle,
 .opportunity-illustration circle {
-  stroke: rgb(167 139 250);
+  stroke: #c084fc;
 }
 
 .guarantees-eyebrow {
-  margin: 0.65rem 0 0;
-  color: var(--color-copper-220);
-  font-family: var(--font-heading);
-  font-size: 0.77rem;
+  margin: 0.62rem 0 0;
+  color: #9ca3af;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.72rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
 }
 
-.guarantees-title {
-  margin: 0.55rem 0 0;
-  color: var(--color-cream-070);
-  font-size: clamp(1.18rem, 2vw, 1.5rem);
+.guarantees-title,
+.opportunity-title {
+  margin: 0.6rem 0 0;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(1.08rem, 2vw, 1.44rem);
+  font-weight: 600;
+  line-height: 1.36;
 }
 
-.guarantees-description {
-  margin: 0.8rem 0 0;
-  color: var(--color-cream-210);
-  line-height: 1.67;
+.guarantees-description,
+.opportunity-intro,
+.guarantees-closing,
+.opportunity-closing {
+  margin: 0.75rem 0 0;
+  color: #b5b5b5;
+  line-height: 1.68;
 }
 
 .guarantees-grid {
   margin-top: 0.9rem;
   display: grid;
+  gap: 0.74rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
 }
 
 .guarantee-item {
-  border: 1px solid rgb(118 158 184 / 22%);
-  border-radius: 0.9rem;
-  background: rgb(6 21 33 / 70%);
-  padding: 0.8rem 0.85rem;
+  border: 1px solid rgb(255 255 255 / 8%);
+  border-radius: 0.86rem;
+  background: rgb(255 255 255 / 3%);
+  padding: 0.8rem 0.84rem;
 }
 
 .guarantee-item h4 {
   margin: 0;
-  color: var(--color-cream-080);
-  font-family: var(--font-heading);
-  font-size: 0.98rem;
-  line-height: 1.36;
+  color: #f5f5f5;
+  font-size: 0.96rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
 }
 
 .guarantee-item p {
-  margin: 0.48rem 0 0;
-  color: var(--color-cream-180);
+  margin: 0.44rem 0 0;
+  color: #b5b5b5;
   line-height: 1.6;
-}
-
-.guarantees-closing {
-  margin: 0.9rem 0 0;
-  color: var(--color-cream-200);
-  line-height: 1.66;
-}
-
-.opportunity-block {
-  margin-top: 1rem;
-  border: 1px solid rgb(120 160 185 / 24%);
-  border-radius: 1.05rem;
-  background: linear-gradient(150deg, rgb(9 28 42 / 82%), rgb(6 19 30 / 90%));
-  padding: clamp(1rem, 2.4vw, 1.35rem);
-}
-
-.opportunity-title {
-  margin: 0.62rem 0 0;
-  color: var(--color-cream-060);
-  font-family: var(--font-heading);
-  font-size: clamp(1.12rem, 1.9vw, 1.42rem);
-  line-height: 1.35;
-}
-
-.opportunity-intro {
-  margin: 0.72rem 0 0;
-  color: var(--color-cream-200);
-  line-height: 1.65;
 }
 
 .opportunity-list {
   margin: 0.8rem 0 0;
-  padding: 0 0 0 1.05rem;
+  padding: 0 0 0 1rem;
   display: grid;
-  gap: 0.4rem;
+  gap: 0.35rem;
 }
 
 .opportunity-list li {
-  color: var(--color-cream-160);
-  line-height: 1.55;
-}
-
-.opportunity-closing {
-  margin: 0.82rem 0 0;
-  color: var(--color-cream-120);
-  line-height: 1.62;
+  color: #c5c5c5;
+  line-height: 1.58;
 }
 
 @media (max-width: 900px) {

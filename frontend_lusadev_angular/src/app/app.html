@@ -76,27 +76,39 @@
     </section>
 
     <section id="specialization" class="section" appRevealOnScroll>
-      <app-specialization-section [copy]="copy().specialization"></app-specialization-section>
+      <div class="section-container">
+        <app-specialization-section [copy]="copy().specialization"></app-specialization-section>
+      </div>
     </section>
 
     <section id="method" class="section" appRevealOnScroll>
-      <app-method-section [copy]="copy().method"></app-method-section>
+      <div class="section-container">
+        <app-method-section [copy]="copy().method"></app-method-section>
+      </div>
     </section>
 
     <section id="team" class="section" appRevealOnScroll>
-      <app-team-experience-section [copy]="copy().team"></app-team-experience-section>
+      <div class="section-container">
+        <app-team-experience-section [copy]="copy().team"></app-team-experience-section>
+      </div>
     </section>
 
     <section id="proximity" class="section" appRevealOnScroll>
-      <app-proximity-section [copy]="copy().proximity"></app-proximity-section>
+      <div class="section-container">
+        <app-proximity-section [copy]="copy().proximity"></app-proximity-section>
+      </div>
     </section>
 
     <section id="contact" class="section section-contact" appRevealOnScroll>
-      <app-contact-section [copy]="copy().contact"></app-contact-section>
+      <div class="section-container">
+        <app-contact-section [copy]="copy().contact"></app-contact-section>
+      </div>
     </section>
   </main>
 
   <footer id="legal" class="site-footer legal-compact" appRevealOnScroll>
-    <app-legal-footer [copy]="copy().legal"></app-legal-footer>
+    <div class="section-container">
+      <app-legal-footer [copy]="copy().legal"></app-legal-footer>
+    </div>
   </footer>
 </div>

@@ -1,42 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
   color-scheme: dark;
   scroll-behavior: smooth;
 
-  --font-heading: 'Space Grotesk', 'Segoe UI', sans-serif;
-  --font-body: 'Manrope', 'Segoe UI', sans-serif;
+  --font-heading: 'Inter', 'Segoe UI', sans-serif;
+  --font-body: 'Inter', 'Segoe UI', sans-serif;
 
   --color-ink-900: #050505;
-  --color-ink-700: #0b1220;
-  --color-ink-500: #18263f;
+  --color-ink-700: #171717;
+  --color-ink-500: #202020;
 
-  --color-copper-500: #4f8dfc;
-  --color-copper-300: #a78bfa;
-  --color-copper-260: #8ea5ff;
-  --color-copper-220: #b6a5ff;
-  --color-copper-200: #c9c4ff;
-  --color-copper-100: #e8f0ff;
+  --color-copper-500: #3b82f6;
+  --color-copper-300: #8b5cf6;
+  --color-copper-260: #7c96fc;
+  --color-copper-220: #a78bfa;
+  --color-copper-200: #c4b5fd;
+  --color-copper-100: #dbeafe;
 
-  --color-cream-050: #f5f7ff;
-  --color-cream-060: #edf0fa;
-  --color-cream-070: #e5e9f5;
-  --color-cream-080: #dbe2f0;
-  --color-cream-090: #d3daea;
-  --color-cream-100: #c8d1e4;
-  --color-cream-120: #b8c2d8;
-  --color-cream-150: #a3afc7;
-  --color-cream-160: #95a2bb;
-  --color-cream-170: #8b98b3;
-  --color-cream-180: #8290ad;
-  --color-cream-190: #76849f;
-  --color-cream-200: #6e7c97;
-  --color-cream-210: #65738f;
-  --color-cream-220: #5c6882;
-  --color-cream-230: #505b74;
-  --color-cream-250: #444d61;
-  --color-cream-300: #383f53;
-  --color-cream-350: #2d3343;
+  --color-cream-050: #f5f5f5;
+  --color-cream-060: #eeeeee;
+  --color-cream-070: #e5e5e5;
+  --color-cream-080: #d4d4d4;
+  --color-cream-090: #cfcfcf;
+  --color-cream-100: #bdbdbd;
+  --color-cream-120: #b0b0b0;
+  --color-cream-150: #a3a3a3;
+  --color-cream-160: #9a9a9a;
+  --color-cream-170: #8c8c8c;
+  --color-cream-180: #7f7f7f;
+  --color-cream-190: #757575;
+  --color-cream-200: #6d6d6d;
+  --color-cream-210: #646464;
+  --color-cream-220: #5d5d5d;
+  --color-cream-230: #555;
+  --color-cream-250: #4a4a4a;
+  --color-cream-300: #404040;
+  --color-cream-350: #353535;
 
   --glass-bg: rgb(255 255 255 / 4%);
   --glass-border: rgb(255 255 255 / 12%);
@@ -58,11 +58,8 @@ body {
   font-family: var(--font-body);
   color: var(--color-cream-100);
   line-height: 1.5;
-  background:
-    radial-gradient(circle at 14% 18%, rgb(79 141 252 / 18%), transparent 32%),
-    radial-gradient(circle at 88% 14%, rgb(167 139 250 / 14%), transparent 30%),
-    linear-gradient(165deg, #040404 0%, #080a10 45%, #050508 100%);
-  background-attachment: fixed;
+  background-color: #050505;
+  overflow-x: hidden;
 }
 
 img {
@@ -80,30 +77,20 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #090d16;
+  background: #0a0a0a;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, rgb(79 141 252 / 55%), rgb(167 139 250 / 48%));
-  border-radius: 999px;
-  border: 2px solid #090d16;
+  background: #333;
+  border-radius: 4px;
 }
 
-@keyframes orbFloat {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0) scale(1);
-  }
-  35% {
-    transform: translate3d(24px, -26px, 0) scale(1.08);
-  }
-  70% {
-    transform: translate3d(-22px, 16px, 0) scale(0.94);
-  }
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -3,15 +3,15 @@
 }
 
 .legal-shell {
-  border-top: 1px solid rgb(122 158 179 / 25%);
-  padding-top: 0.82rem;
+  border-top: 1px solid rgb(255 255 255 / 8%);
+  padding-top: 0.85rem;
 }
 
 h2 {
   margin: 0;
-  color: var(--color-cream-220);
-  font-family: var(--font-heading);
-  font-size: 0.74rem;
+  color: #8a8a8a;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 600;
@@ -20,8 +20,8 @@ h2 {
 dl {
   margin: 0.62rem 0 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.4rem 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .record {
@@ -33,20 +33,20 @@ dl {
 
 dt {
   margin: 0;
-  color: var(--color-cream-250);
-  font-size: 0.69rem;
+  color: #909090;
+  font-size: 0.68rem;
   font-weight: 600;
 }
 
 dd {
   margin: 0;
-  color: var(--color-cream-300);
-  font-size: 0.68rem;
+  color: #727272;
+  font-size: 0.67rem;
   line-height: 1.45;
 }
 
 a {
-  color: var(--color-cream-250);
+  color: #9a9a9a;
   text-decoration: none;
 }
 
@@ -56,8 +56,8 @@ a:hover {
 
 .support,
 .rights {
-  margin: 0.48rem 0 0;
-  color: var(--color-cream-350);
+  margin: 0.5rem 0 0;
+  color: #666;
   font-size: 0.65rem;
   line-height: 1.45;
 }
