@@ -27,6 +27,7 @@ export class ContentService {
       hero: {
         kicker: 'LusaWorks · Ingeniería de software para empresas',
         title: 'Soluciones software a medida para procesos reales de negocio',
+        overviewTitle: 'Tecnología empresarial adaptada a tu realidad',
         description:
           'Diseñamos, desarrollamos y mantenemos soluciones digitales personalizadas que conectan operación, datos y atención al cliente. Aplicamos tecnología de vanguardia y servicios de última generación, habituales en entornos empresariales de alto nivel, aterrizados a la realidad de cualquier pyme. Somos garantía de adaptabilidad a las necesidades del cliente y demostramos que las soluciones tecnológicas más disruptivas pueden implantarse con eficiencia, sin costes desproporcionados.',
         primaryCta: 'Contactar por email',
@@ -229,6 +230,7 @@ export class ContentService {
       hero: {
         kicker: 'LusaWorks · Business software engineering',
         title: 'Tailored software solutions for real business operations',
+        overviewTitle: 'Enterprise-grade technology adapted to your reality',
         description:
           'We design, build, and maintain custom digital solutions that connect operations, data, and customer interactions. We apply cutting-edge technology and next-generation services used in top business environments, adapted to the real context of any SME. We ensure each solution is adapted to client needs and show that even disruptive technology can be implemented efficiently, without disproportionate costs.',
         primaryCta: 'Contact by email',

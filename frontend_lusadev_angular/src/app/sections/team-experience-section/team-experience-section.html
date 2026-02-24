@@ -4,39 +4,80 @@
   <p>{{ copy().intro }}</p>
 </header>
 
-<div class="team-layout">
-  <article class="pillars-card">
-    <div class="section-illustration" aria-hidden="true">
-      <svg viewBox="0 0 180 78" role="presentation">
-        <circle cx="34" cy="39" r="16" />
-        <circle cx="90" cy="22" r="12" />
-        <circle cx="146" cy="39" r="16" />
-        <path d="M50 36L78 27M102 27L130 36M90 34V62" />
-      </svg>
-    </div>
-    <h3>{{ copy().pillarsHeading }}</h3>
-    <ul>
-      <li *ngFor="let pillar of copy().pillars">{{ pillar }}</li>
-    </ul>
-  </article>
+<section class="skills-group">
+  <p class="group-title">{{ copy().pillarsHeading }}</p>
+  <div class="skills-grid">
+    <article class="skill-card" *ngFor="let pillar of copy().pillars; let i = index">
+      <div class="skill-head">
+        <span class="skill-icon" [ngSwitch]="i % 4" aria-hidden="true">
+          <svg *ngSwitchCase="0" viewBox="0 0 24 24" role="presentation">
+            <path d="M8 6H4V10" />
+            <path d="M16 6H20V10" />
+            <path d="M8 18H4V14" />
+            <path d="M16 18H20V14" />
+            <path d="M9 9H15V15H9z" />
+          </svg>
+          <svg *ngSwitchCase="1" viewBox="0 0 24 24" role="presentation">
+            <path d="M4 7H20" />
+            <path d="M4 12H20" />
+            <path d="M4 17H14" />
+          </svg>
+          <svg *ngSwitchCase="2" viewBox="0 0 24 24" role="presentation">
+            <circle cx="8" cy="8" r="2.4" />
+            <circle cx="16" cy="8" r="2.4" />
+            <circle cx="12" cy="16" r="2.4" />
+            <path d="M10 9.5L11.3 14.4M14 9.5L12.7 14.4" />
+          </svg>
+          <svg *ngSwitchDefault viewBox="0 0 24 24" role="presentation">
+            <path d="M4 12H9L11 6L14 18L16 12H20" />
+          </svg>
+        </span>
+        <h3>{{ pillar }}</h3>
+      </div>
+      <div class="skill-meter" role="presentation">
+        <span [style.width.%]="pillarLevel(i)"></span>
+      </div>
+    </article>
+  </div>
+</section>
 
-  <article class="timeline-card">
-    <div class="section-illustration" aria-hidden="true">
-      <svg viewBox="0 0 180 78" role="presentation">
-        <path d="M20 56H160" />
-        <circle cx="36" cy="56" r="7" />
-        <circle cx="90" cy="56" r="7" />
-        <circle cx="144" cy="56" r="7" />
-        <path d="M36 56V28M90 56V20M144 56V34" />
-      </svg>
-    </div>
-    <h3>{{ copy().timelineHeading }}</h3>
-    <ol>
-      <li *ngFor="let item of copy().timeline">
-        <p class="period">{{ item.period }}</p>
-        <h4>{{ item.title }}</h4>
-        <p class="description">{{ item.description }}</p>
-      </li>
-    </ol>
-  </article>
-</div>
+<section class="skills-group timeline-group">
+  <p class="group-title">{{ copy().timelineHeading }}</p>
+  <div class="skills-grid timeline-grid">
+    <article class="skill-card timeline-card" *ngFor="let item of copy().timeline; let i = index">
+      <div class="skill-head">
+        <span class="skill-icon" [ngSwitch]="(i + 1) % 4" aria-hidden="true">
+          <svg *ngSwitchCase="0" viewBox="0 0 24 24" role="presentation">
+            <path d="M8 6H4V10" />
+            <path d="M16 6H20V10" />
+            <path d="M8 18H4V14" />
+            <path d="M16 18H20V14" />
+            <path d="M9 9H15V15H9z" />
+          </svg>
+          <svg *ngSwitchCase="1" viewBox="0 0 24 24" role="presentation">
+            <path d="M4 7H20" />
+            <path d="M4 12H20" />
+            <path d="M4 17H14" />
+          </svg>
+          <svg *ngSwitchCase="2" viewBox="0 0 24 24" role="presentation">
+            <circle cx="8" cy="8" r="2.4" />
+            <circle cx="16" cy="8" r="2.4" />
+            <circle cx="12" cy="16" r="2.4" />
+            <path d="M10 9.5L11.3 14.4M14 9.5L12.7 14.4" />
+          </svg>
+          <svg *ngSwitchDefault viewBox="0 0 24 24" role="presentation">
+            <path d="M4 12H9L11 6L14 18L16 12H20" />
+          </svg>
+        </span>
+        <div class="timeline-copy">
+          <h4>{{ item.title }}</h4>
+          <p class="period">{{ item.period }}</p>
+          <p class="description">{{ item.description }}</p>
+        </div>
+      </div>
+      <div class="skill-meter" role="presentation">
+        <span [style.width.%]="timelineLevel(i)"></span>
+      </div>
+    </article>
+  </div>
+</section>

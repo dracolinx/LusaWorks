@@ -6,27 +6,33 @@
 
 <div class="specialization-grid">
   <article class="specialization-card" *ngFor="let domain of copy().domains; let i = index">
-    <div class="card-illustration" [ngSwitch]="i" aria-hidden="true">
-      <svg *ngSwitchCase="0" viewBox="0 0 160 70" role="presentation">
-        <rect x="8" y="12" width="40" height="40" rx="8" />
-        <rect x="58" y="12" width="40" height="40" rx="8" />
-        <rect x="108" y="12" width="40" height="40" rx="8" />
-        <path d="M48 32H58M98 32H108" />
+    <div class="card-media" [class]="'card-media media-' + i" [ngSwitch]="i" aria-hidden="true">
+      <svg *ngSwitchCase="0" viewBox="0 0 220 120" role="presentation">
+        <rect x="18" y="34" width="56" height="56" rx="10" />
+        <rect x="82" y="34" width="56" height="56" rx="10" />
+        <rect x="146" y="34" width="56" height="56" rx="10" />
+        <path d="M74 62H82M138 62H146" />
       </svg>
-      <svg *ngSwitchCase="1" viewBox="0 0 160 70" role="presentation">
-        <rect x="10" y="18" width="52" height="34" rx="10" />
-        <rect x="98" y="18" width="52" height="34" rx="10" />
-        <path d="M62 35H98" />
-        <circle cx="80" cy="35" r="8" />
+      <svg *ngSwitchCase="1" viewBox="0 0 220 120" role="presentation">
+        <rect x="20" y="40" width="74" height="44" rx="12" />
+        <rect x="126" y="40" width="74" height="44" rx="12" />
+        <path d="M94 62H126" />
+        <circle cx="110" cy="62" r="10" />
       </svg>
-      <svg *ngSwitchDefault viewBox="0 0 160 70" role="presentation">
-        <rect x="8" y="14" width="144" height="42" rx="10" />
-        <path d="M24 35H136M44 24V46M80 24V46M116 24V46" />
+      <svg *ngSwitchDefault viewBox="0 0 220 120" role="presentation">
+        <rect x="18" y="30" width="184" height="60" rx="12" />
+        <path d="M34 62H186M58 42V82M110 42V82M162 42V82" />
       </svg>
     </div>
-    <h3>{{ domain.title }}</h3>
-    <p class="card-description">{{ domain.overview }}</p>
-    <p class="card-technical">{{ domain.technicalFocus }}</p>
+
+    <div class="card-content">
+      <h3>{{ domain.title }}</h3>
+      <p class="card-description">{{ domain.overview }}</p>
+      <p class="card-technical">{{ domain.technicalFocus }}</p>
+      <div class="card-tags">
+        <span *ngFor="let tag of tagsFor(i)">{{ tag }}</span>
+      </div>
+    </div>
   </article>
 </div>
 

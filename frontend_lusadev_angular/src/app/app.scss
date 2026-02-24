@@ -358,23 +358,8 @@
 .hero-layout {
   position: relative;
   z-index: 2;
-  width: min(66rem, calc(100% - 1rem));
+  width: min(78rem, calc(100% - 1rem));
   text-align: center;
-}
-
-.hero-logo-panel {
-  margin: 0 auto 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-logo-panel img {
-  width: clamp(8.2rem, 18vw, 12.6rem);
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 12px 24px rgb(0 0 0 / 44%));
-  animation: heroLogoFloat 7s ease-in-out infinite alternate;
 }
 
 .hero-scroll-cue {
@@ -468,15 +453,6 @@
   }
 }
 
-@keyframes heroLogoFloat {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-5px);
-  }
-}
-
 @keyframes cuePulse {
   0%,
   100% {
@@ -542,10 +518,6 @@
   .hero-blob {
     width: 18rem;
     height: 18rem;
-  }
-
-  .hero-logo-panel img {
-    width: clamp(6.8rem, 26vw, 9.6rem);
   }
 
   .hero-scroll-cue {

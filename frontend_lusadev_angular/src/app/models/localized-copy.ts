@@ -13,6 +13,7 @@ export interface HeroMetric {
 export interface HeroSectionCopy {
   kicker: string;
   title: string;
+  overviewTitle: string;
   description: string;
   primaryCta: string;
   secondaryCta: string;

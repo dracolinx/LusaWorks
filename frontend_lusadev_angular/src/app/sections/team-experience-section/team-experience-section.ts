@@ -10,4 +10,15 @@ import { TeamExperienceSectionCopy } from '../../models/localized-copy';
 })
 export class TeamExperienceSectionComponent {
   readonly copy = input.required<TeamExperienceSectionCopy>();
+
+  private readonly pillarLevels = [96, 91, 94, 89];
+  private readonly timelineLevels = [88, 93, 97];
+
+  pillarLevel(index: number): number {
+    return this.pillarLevels[index] ?? 86;
+  }
+
+  timelineLevel(index: number): number {
+    return this.timelineLevels[index] ?? 90;
+  }
 }

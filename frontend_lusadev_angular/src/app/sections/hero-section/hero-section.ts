@@ -10,4 +10,5 @@ import { HeroSectionCopy } from '../../models/localized-copy';
 })
 export class HeroSectionComponent {
   readonly copy = input.required<HeroSectionCopy>();
+  readonly imageAlt = input<string>('');
 }
