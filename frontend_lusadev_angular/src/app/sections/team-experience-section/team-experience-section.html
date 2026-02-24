@@ -32,7 +32,21 @@
             <path d="M4 12H9L11 6L14 18L16 12H20" />
           </svg>
         </span>
-        <h3>{{ pillar }}</h3>
+        <div class="foldable-copy">
+          <h3>{{ pillar }}</h3>
+          <button
+            type="button"
+            class="fold-toggle"
+            (click)="togglePillar(i)"
+            [attr.aria-expanded]="isPillarExpanded(i)"
+            [attr.aria-controls]="'pillar-detail-' + i"
+          >
+            {{ foldLabel(isPillarExpanded(i)) }}
+          </button>
+        </div>
+      </div>
+      <div class="fold-content" [class.open]="isPillarExpanded(i)" [attr.id]="'pillar-detail-' + i">
+        <p class="detail-text">{{ pillarDetail(i) }}</p>
       </div>
       <div class="skill-meter" role="presentation">
         <span [style.width.%]="pillarLevel(i)"></span>
@@ -72,7 +86,18 @@
         <div class="timeline-copy">
           <h4>{{ item.title }}</h4>
           <p class="period">{{ item.period }}</p>
-          <p class="description">{{ item.description }}</p>
+          <button
+            type="button"
+            class="fold-toggle"
+            (click)="toggleTimeline(i)"
+            [attr.aria-expanded]="isTimelineExpanded(i)"
+            [attr.aria-controls]="'timeline-detail-' + i"
+          >
+            {{ foldLabel(isTimelineExpanded(i)) }}
+          </button>
+          <div class="fold-content timeline-fold" [class.open]="isTimelineExpanded(i)" [attr.id]="'timeline-detail-' + i">
+            <p class="description">{{ item.description }}</p>
+          </div>
         </div>
       </div>
       <div class="skill-meter" role="presentation">

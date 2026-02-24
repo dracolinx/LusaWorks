@@ -1,35 +1,39 @@
 <div class="hero-copy">
-  <p class="kicker">
-    <span class="status-dot-wrap" aria-hidden="true">
-      <span class="status-dot status-dot-ping"></span>
-      <span class="status-dot"></span>
-    </span>
-    {{ copy().kicker }}
-  </p>
-  <div class="title-motion-wrap">
-    <h1 class="headline">{{ copy().title }}</h1>
+  <div class="hero-first-view">
+    <p class="kicker">
+      <span class="status-dot-wrap" aria-hidden="true">
+        <span class="status-dot status-dot-ping"></span>
+        <span class="status-dot"></span>
+      </span>
+      {{ copy().kicker }}
+    </p>
+    <div class="title-motion-wrap">
+      <h1 class="headline">{{ copy().title }}</h1>
+    </div>
   </div>
 
-  <div class="about-layout">
-    <figure class="about-logo-panel">
-      <img src="assets/logo/LogoV2.png" [alt]="imageAlt() || copy().kicker" />
-    </figure>
+  <div class="hero-second-view">
+    <div class="about-layout">
+      <figure class="about-logo-panel">
+        <img src="assets/logo/LogoV2.png" [alt]="imageAlt() || copy().kicker" />
+      </figure>
 
-    <div class="about-copy">
-      <h2>{{ copy().overviewTitle }}</h2>
-      <p class="description">{{ copy().description }}</p>
+      <div class="about-copy">
+        <h2>{{ copy().overviewTitle }}</h2>
+        <p class="description">{{ copy().description }}</p>
 
-      <div class="cta-row">
-        <a class="btn btn-primary" href="mailto:xxxx@icloud.com">{{ copy().primaryCta }}</a>
-        <a class="btn btn-secondary" href="#specialization">{{ copy().secondaryCta }}</a>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:xxxx@icloud.com">{{ copy().primaryCta }}</a>
+          <a class="btn btn-secondary" href="#specialization">{{ copy().secondaryCta }}</a>
+        </div>
       </div>
     </div>
-  </div>
 
-  <dl class="metrics">
-    <div class="metric" *ngFor="let metric of copy().metrics">
-      <dt>{{ metric.value }}</dt>
-      <dd>{{ metric.label }}</dd>
-    </div>
-  </dl>
+    <dl class="metrics">
+      <div class="metric" *ngFor="let metric of copy().metrics">
+        <dt>{{ metric.value }}</dt>
+        <dd>{{ metric.label }}</dd>
+      </div>
+    </dl>
+  </div>
 </div>
