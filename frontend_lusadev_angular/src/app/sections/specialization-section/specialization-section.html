@@ -45,14 +45,43 @@
   </article>
 </div>
 
-<div class="domain-modal-backdrop" *ngIf="selectedDomain() as domain" (click)="closeDetails()">
+<div class="domain-modal-backdrop" *ngIf="activeModalKind() as modalKind" (click)="closeDetails()">
   <article class="domain-modal" role="dialog" aria-modal="true" (click)="$event.stopPropagation()">
     <button type="button" class="modal-close" (click)="closeDetails()" [attr.aria-label]="closeLabel()">
       ×
     </button>
-    <h3>{{ domain.title }}</h3>
-    <p>{{ domain.overview }}</p>
-    <p>{{ domain.technicalFocus }}</p>
+
+    <ng-container [ngSwitch]="modalKind">
+      <ng-container *ngSwitchCase="'domain'">
+        <ng-container *ngIf="selectedDomain() as domain">
+          <h3>{{ domain.title }}</h3>
+          <p>{{ domain.overview }}</p>
+          <p>{{ domain.technicalFocus }}</p>
+        </ng-container>
+      </ng-container>
+
+      <ng-container *ngSwitchCase="'guarantees'">
+        <p class="modal-eyebrow">{{ copy().guarantees.heading }}</p>
+        <h3>{{ copy().guarantees.subheading }}</h3>
+        <p>{{ copy().guarantees.description }}</p>
+        <div class="modal-guarantees-grid">
+          <article class="modal-guarantee-item" *ngFor="let item of copy().guarantees.items">
+            <h4>{{ item.title }}</h4>
+            <p>{{ item.text }}</p>
+          </article>
+        </div>
+        <p>{{ copy().guarantees.closingNote }}</p>
+      </ng-container>
+
+      <ng-container *ngSwitchCase="'opportunity'">
+        <h3>{{ copy().opportunity.title }}</h3>
+        <p>{{ copy().opportunity.intro }}</p>
+        <ul class="modal-opportunity-list">
+          <li *ngFor="let point of copy().opportunity.points">{{ point }}</li>
+        </ul>
+        <p>{{ copy().opportunity.closing }}</p>
+      </ng-container>
+    </ng-container>
   </article>
 </div>
 
@@ -67,18 +96,21 @@
       <circle cx="73" cy="40" r="5" />
     </svg>
   </div>
-  <p class="guarantees-eyebrow">{{ copy().guarantees.heading }}</p>
-  <h3 class="guarantees-title">{{ copy().guarantees.subheading }}</h3>
-  <p class="guarantees-description">{{ copy().guarantees.description }}</p>
-
-  <div class="guarantees-grid">
-    <article class="guarantee-item" *ngFor="let item of copy().guarantees.items">
-      <h4>{{ item.title }}</h4>
-      <p>{{ item.text }}</p>
-    </article>
+  <div class="block-head">
+    <div>
+      <p class="guarantees-eyebrow">{{ copy().guarantees.heading }}</p>
+      <h3 class="guarantees-title">{{ copy().guarantees.subheading }}</h3>
+    </div>
+    <button
+      type="button"
+      class="detail-toggle"
+      (click)="openGuaranteesDetails()"
+      [attr.aria-label]="detailsLabel() + ': ' + copy().guarantees.subheading"
+    >
+      +
+    </button>
   </div>
-
-  <p class="guarantees-closing">{{ copy().guarantees.closingNote }}</p>
+  <p class="card-hint">{{ detailsHint() }}</p>
 </section>
 
 <section class="opportunity-block">
@@ -92,10 +124,16 @@
       <path d="M172 34V40L177 43" />
     </svg>
   </div>
-  <h3 class="opportunity-title">{{ copy().opportunity.title }}</h3>
-  <p class="opportunity-intro">{{ copy().opportunity.intro }}</p>
-  <ul class="opportunity-list">
-    <li *ngFor="let point of copy().opportunity.points">{{ point }}</li>
-  </ul>
-  <p class="opportunity-closing">{{ copy().opportunity.closing }}</p>
+  <div class="block-head">
+    <h3 class="opportunity-title">{{ copy().opportunity.title }}</h3>
+    <button
+      type="button"
+      class="detail-toggle"
+      (click)="openOpportunityDetails()"
+      [attr.aria-label]="detailsLabel() + ': ' + copy().opportunity.title"
+    >
+      +
+    </button>
+  </div>
+  <p class="card-hint">{{ detailsHint() }}</p>
 </section>

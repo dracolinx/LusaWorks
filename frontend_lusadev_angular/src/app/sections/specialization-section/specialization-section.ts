@@ -2,6 +2,12 @@ import { CommonModule } from '@angular/common';
 import { Component, HostListener, input } from '@angular/core';
 import { SpecializationSectionCopy } from '../../models/localized-copy';
 
+type ModalState =
+  | { kind: 'domain'; index: number }
+  | { kind: 'guarantees' }
+  | { kind: 'opportunity' }
+  | null;
+
 @Component({
   selector: 'app-specialization-section',
   imports: [CommonModule],
@@ -10,7 +16,7 @@ import { SpecializationSectionCopy } from '../../models/localized-copy';
 })
 export class SpecializationSectionComponent {
   readonly copy = input.required<SpecializationSectionCopy>();
-  activeDomainIndex: number | null = null;
+  activeModal: ModalState = null;
 
   private readonly tagsEs: string[][] = [
     ['Workflows', 'Integración API', 'Auditable'],
@@ -31,18 +37,30 @@ export class SpecializationSectionComponent {
   }
 
   openDetails(index: number): void {
-    this.activeDomainIndex = index;
+    this.activeModal = { kind: 'domain', index };
+  }
+
+  openGuaranteesDetails(): void {
+    this.activeModal = { kind: 'guarantees' };
+  }
+
+  openOpportunityDetails(): void {
+    this.activeModal = { kind: 'opportunity' };
   }
 
   closeDetails(): void {
-    this.activeDomainIndex = null;
+    this.activeModal = null;
   }
 
   selectedDomain() {
-    if (this.activeDomainIndex === null) {
+    if (!this.activeModal || this.activeModal.kind !== 'domain') {
       return null;
     }
-    return this.copy().domains[this.activeDomainIndex] ?? null;
+    return this.copy().domains[this.activeModal.index] ?? null;
+  }
+
+  activeModalKind(): 'domain' | 'guarantees' | 'opportunity' | null {
+    return this.activeModal?.kind ?? null;
   }
 
   detailsLabel(): string {
