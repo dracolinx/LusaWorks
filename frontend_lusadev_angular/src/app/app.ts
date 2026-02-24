@@ -42,6 +42,8 @@ export class App implements OnInit, OnDestroy {
   private readonly languageService = inject(LanguageService);
   private readonly contentService = inject(ContentService);
   private pointerMedia?: MediaQueryList;
+  private sectionSnapLock = false;
+  private snapReleaseTimer?: number;
 
   protected readonly language = this.languageService.currentLanguage;
   protected readonly copy = computed(() => this.contentService.getCopy(this.language()));
@@ -79,11 +81,19 @@ export class App implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.pointerMedia?.removeEventListener('change', this.handlePointerModeChange);
+    if (typeof window !== 'undefined' && this.snapReleaseTimer) {
+      window.clearTimeout(this.snapReleaseTimer);
+    }
   }
 
   @HostListener('window:scroll')
   protected onWindowScroll(): void {
     this.updateHeaderOnScroll();
+  }
+
+  @HostListener('window:wheel', ['$event'])
+  protected onWindowWheel(event: WheelEvent): void {
+    this.handleSectionSnap(event);
   }
 
   @HostListener('document:mousemove', ['$event'])
@@ -130,6 +140,102 @@ export class App implements OnInit, OnDestroy {
   private updateHeaderOnScroll(): void {
     if (typeof window === 'undefined') return;
     this.headerScrolled.set(window.scrollY > 22);
+  }
+
+  private handleSectionSnap(event: WheelEvent): void {
+    if (typeof window === 'undefined') return;
+    if (event.defaultPrevented) return;
+    if (Math.abs(event.deltaY) < 8) return;
+    if (event.ctrlKey) return;
+    if (this.mobileMenuOpen()) return;
+    if (this.shouldIgnoreSnapTarget(event.target as HTMLElement | null)) return;
+
+    const sections = this.getSnapSections();
+    if (sections.length < 2) return;
+
+    if (this.sectionSnapLock) {
+      event.preventDefault();
+      return;
+    }
+
+    const direction = event.deltaY > 0 ? 1 : -1;
+    const headerOffset = this.getHeaderOffset();
+    const viewportTop = window.scrollY + headerOffset;
+    const viewportBottom = viewportTop + window.innerHeight;
+    const currentIndex = this.findCurrentSectionIndex(sections, viewportTop + window.innerHeight * 0.35);
+    const current = sections[currentIndex];
+    const currentTop = current.offsetTop;
+    const currentBottom = currentTop + current.offsetHeight;
+    const boundaryThreshold = 64;
+
+    if (direction > 0) {
+      if (viewportBottom < currentBottom - boundaryThreshold) return;
+      const next = sections[currentIndex + 1];
+      if (!next) return;
+      event.preventDefault();
+      this.snapToSection(next, headerOffset);
+      return;
+    }
+
+    if (viewportTop > currentTop + boundaryThreshold) return;
+    const previous = sections[currentIndex - 1];
+    if (!previous) return;
+    event.preventDefault();
+    this.snapToSection(previous, headerOffset);
+  }
+
+  private shouldIgnoreSnapTarget(target: HTMLElement | null): boolean {
+    if (!target || typeof window === 'undefined') return false;
+    if (target.closest('.domain-modal, .domain-modal-backdrop, .mobile-nav, [role="dialog"]')) {
+      return true;
+    }
+
+    let node: HTMLElement | null = target;
+    while (node && node !== this.document.body) {
+      const { overflowY } = window.getComputedStyle(node);
+      const isScrollable = (overflowY === 'auto' || overflowY === 'scroll') && node.scrollHeight > node.clientHeight;
+      if (isScrollable) return true;
+      node = node.parentElement;
+    }
+
+    return false;
+  }
+
+  private getSnapSections(): HTMLElement[] {
+    return Array.from(this.document.querySelectorAll('.site-main .section, #legal')) as HTMLElement[];
+  }
+
+  private findCurrentSectionIndex(sections: HTMLElement[], pivot: number): number {
+    let index = 0;
+    for (let i = 0; i < sections.length; i += 1) {
+      if (sections[i].offsetTop <= pivot) {
+        index = i;
+      } else {
+        break;
+      }
+    }
+    return index;
+  }
+
+  private snapToSection(section: HTMLElement, headerOffset: number): void {
+    if (typeof window === 'undefined') return;
+
+    const targetY = Math.max(section.offsetTop - headerOffset + 14, 0);
+    this.sectionSnapLock = true;
+    window.scrollTo({ top: targetY, behavior: 'smooth' });
+
+    if (this.snapReleaseTimer) {
+      window.clearTimeout(this.snapReleaseTimer);
+    }
+    this.snapReleaseTimer = window.setTimeout(() => {
+      this.sectionSnapLock = false;
+      this.snapReleaseTimer = undefined;
+    }, 760);
+  }
+
+  private getHeaderOffset(): number {
+    const header = this.document.querySelector('.site-header') as HTMLElement | null;
+    return header ? header.offsetHeight + 8 : 92;
   }
 
   private readonly handlePointerModeChange = (event: MediaQueryListEvent): void => {
