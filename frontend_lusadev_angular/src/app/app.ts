@@ -35,6 +35,9 @@ export class App {
 
   protected readonly language = this.languageService.currentLanguage;
   protected readonly copy = computed(() => this.contentService.getCopy(this.language()));
+  protected readonly headerCtaLabel = computed(() =>
+    this.language() === 'es' ? 'Hablemos' : "Let's Talk",
+  );
   protected readonly mobileMenuOpen = signal(false);
 
   constructor() {

@@ -4,9 +4,9 @@
 
 .contact-shell {
   border-radius: 1.3rem;
-  border: 1px solid rgb(130 171 197 / 27%);
-  background: linear-gradient(150deg, rgb(7 31 48 / 88%), rgb(5 13 21 / 94%));
-  box-shadow: 0 22px 42px rgb(3 10 16 / 32%);
+  border: 1px solid var(--glass-border);
+  background: linear-gradient(150deg, rgb(20 28 46 / 66%), rgb(9 12 20 / 84%));
+  box-shadow: 0 22px 42px rgb(3 10 16 / 38%);
   padding: clamp(1.2rem, 3.4vw, 2.3rem);
 }
 
@@ -23,8 +23,8 @@
 .section-illustration {
   display: inline-flex;
   border-radius: 0.8rem;
-  border: 1px solid rgb(124 165 189 / 26%);
-  background: rgb(8 29 44 / 66%);
+  border: 1px solid rgb(255 255 255 / 13%);
+  background: rgb(255 255 255 / 3%);
   padding: 0.38rem 0.44rem;
   margin: 0.55rem 0 0;
 }
@@ -39,7 +39,7 @@
 .section-illustration rect,
 .section-illustration path {
   fill: none;
-  stroke: rgb(150 191 217);
+  stroke: rgb(174 205 255);
   stroke-width: 4;
   stroke-linecap: round;
   stroke-linejoin: round;
@@ -69,11 +69,11 @@ h2 {
   border-radius: 999px;
   padding: 0.72rem 1.3rem;
   background: linear-gradient(140deg, var(--color-copper-500), var(--color-copper-300));
-  color: #1e1710;
+  color: #fff;
   font-family: var(--font-heading);
   font-size: 0.93rem;
   font-weight: 700;
-  box-shadow: 0 14px 28px rgb(227 157 93 / 28%);
+  box-shadow: 0 14px 32px rgb(79 141 252 / 34%);
   transition: transform 220ms ease, box-shadow 220ms ease;
 }
 

@@ -1,6 +1,9 @@
 <div class="hero-copy">
-  <p class="kicker">{{ copy().kicker }}</p>
-  <h1>{{ copy().title }}</h1>
+  <p class="kicker">
+    <span class="status-dot" aria-hidden="true"></span>
+    {{ copy().kicker }}
+  </p>
+  <h1 class="headline">{{ copy().title }}</h1>
   <p class="description">{{ copy().description }}</p>
 
   <div class="cta-row">

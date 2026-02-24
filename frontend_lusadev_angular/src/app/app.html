@@ -22,6 +22,10 @@
     </nav>
 
     <div class="header-actions">
+      <a class="header-cta" href="#contact" (click)="closeMobileMenu()">
+        {{ headerCtaLabel() }}
+      </a>
+
       <div class="language-switch" [attr.aria-label]="copy().languageLabel">
         <button type="button" [class.active]="isLanguageActive('es')" (click)="setLanguage('es')">ES</button>
         <button type="button" [class.active]="isLanguageActive('en')" (click)="setLanguage('en')">EN</button>
