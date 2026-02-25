@@ -46,6 +46,7 @@
   position: fixed;
   inset: 0;
   z-index: -5;
+  overflow: hidden;
   background:
     radial-gradient(circle at 18% 16%, rgb(96 165 250 / 20%), transparent 34%),
     radial-gradient(circle at 82% 12%, rgb(192 132 252 / 16%), transparent 34%),
@@ -54,13 +55,31 @@
   animation: siteBackgroundShift 20s ease-in-out infinite alternate;
 }
 
+.site-background::before {
+  content: '';
+  position: absolute;
+  inset: -6% -4%;
+  pointer-events: none;
+  background:
+    radial-gradient(circle, rgb(255 255 255 / 42%) 0.95px, transparent 1.45px) 0 0 / 76px 76px,
+    radial-gradient(circle, rgb(191 219 254 / 34%) 0.85px, transparent 1.32px) 20px 36px / 112px 112px,
+    radial-gradient(circle, rgb(196 181 253 / 30%) 1px, transparent 1.5px) 14px 22px / 148px 148px,
+    radial-gradient(circle, rgb(224 231 255 / 20%) 0.74px, transparent 1.2px) 0 0 / 54px 54px;
+  opacity: 0.74;
+  transform: translate3d(0, 0, 0);
+  animation:
+    stardustDrift 14s linear infinite,
+    stardustTwinkle 3.8s ease-in-out infinite alternate,
+    stardustFloat 7.5s ease-in-out infinite alternate;
+}
+
 .site-background::after {
   content: '';
   position: absolute;
   inset: 0;
   background-image: radial-gradient(rgb(255 255 255 / 7%) 0.55px, transparent 0.55px);
   background-size: 3px 3px;
-  opacity: 0.1;
+  opacity: 0.14;
   animation: backgroundNoiseShift 16s linear infinite;
 }
 
@@ -102,9 +121,33 @@
   z-index: 70;
   padding: 1.05rem 1.2rem;
   transition: padding 260ms ease;
+  isolation: isolate;
+}
+
+.site-header::before {
+  content: '';
+  position: absolute;
+  inset: -0.8rem 0 -1.2rem;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(circle, rgb(255 255 255 / 36%) 0.95px, transparent 1.4px) 0 0 / 82px 82px,
+    radial-gradient(circle, rgb(191 219 254 / 30%) 0.85px, transparent 1.3px) 18px 34px / 120px 120px,
+    radial-gradient(circle, rgb(196 181 253 / 26%) 0.95px, transparent 1.4px) 12px 18px / 160px 160px,
+    linear-gradient(180deg, rgb(5 8 18 / 70%), rgb(5 5 8 / 4%));
+  opacity: 0.88;
+  transform: translate3d(0, 0, 0);
+  animation:
+    stardustDrift 15s linear infinite,
+    stardustTwinkle 3.6s ease-in-out infinite alternate,
+    stardustFloat 8s ease-in-out infinite alternate;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, rgb(0 0 0 / 92%) 66%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 0%, rgb(0 0 0 / 92%) 66%, transparent 100%);
 }
 
 .header-inner {
+  position: relative;
+  z-index: 2;
   width: min(80rem, 100%);
   margin-inline: auto;
   display: flex;
@@ -112,7 +155,14 @@
   justify-content: space-between;
   gap: 1rem;
   border-radius: 1rem;
-  border: 1px solid transparent;
+  border: 1px solid rgb(255 255 255 / 6%);
+  background:
+    radial-gradient(circle, rgb(255 255 255 / 32%) 0.9px, transparent 1.35px) 0 0 / 96px 96px,
+    radial-gradient(circle, rgb(191 219 254 / 26%) 0.85px, transparent 1.3px) 24px 40px / 136px 136px,
+    radial-gradient(circle, rgb(196 181 253 / 22%) 0.95px, transparent 1.45px) 14px 20px / 176px 176px,
+    radial-gradient(circle, rgb(224 231 255 / 16%) 0.72px, transparent 1.2px) 0 0 / 62px 62px,
+    linear-gradient(180deg, rgb(5 8 18 / 46%), rgb(5 5 8 / 62%));
+  backdrop-filter: blur(14px) saturate(112%);
   padding: 0.82rem 1rem;
   transition:
     background-color 260ms ease,
@@ -120,6 +170,10 @@
     backdrop-filter 260ms ease,
     box-shadow 260ms ease,
     padding 260ms ease;
+  animation:
+    stardustDrift 15s linear infinite,
+    stardustTwinkle 3.8s ease-in-out infinite alternate,
+    stardustFloat 9s ease-in-out infinite alternate;
 }
 
 .site-header.scrolled {
@@ -129,15 +183,19 @@
 
 .site-header.scrolled .header-inner {
   background:
-    radial-gradient(circle, rgb(255 255 255 / 28%) 0.85px, transparent 1.35px) 0 0 / 130px 130px,
-    radial-gradient(circle, rgb(191 219 254 / 24%) 0.8px, transparent 1.3px) 48px 62px / 180px 180px,
-    radial-gradient(circle, rgb(196 181 253 / 18%) 0.95px, transparent 1.45px) 22px 16px / 220px 220px,
+    radial-gradient(circle, rgb(255 255 255 / 40%) 0.95px, transparent 1.4px) 0 0 / 92px 92px,
+    radial-gradient(circle, rgb(191 219 254 / 34%) 0.9px, transparent 1.35px) 22px 36px / 128px 128px,
+    radial-gradient(circle, rgb(196 181 253 / 30%) 1px, transparent 1.45px) 12px 16px / 164px 164px,
+    radial-gradient(circle, rgb(224 231 255 / 24%) 0.8px, transparent 1.25px) 0 0 / 58px 58px,
     linear-gradient(180deg, rgb(5 8 18 / 62%), rgb(5 5 8 / 74%));
-  backdrop-filter: blur(20px) saturate(115%);
+  backdrop-filter: blur(18px) saturate(122%);
   border-color: rgb(255 255 255 / 8%);
   box-shadow: 0 14px 40px rgb(0 0 0 / 45%);
   padding-block: 0.62rem;
-  animation: stardustDrift 30s linear infinite;
+  animation:
+    stardustDrift 12s linear infinite,
+    stardustTwinkle 3.2s ease-in-out infinite alternate,
+    stardustFloat 7.4s ease-in-out infinite alternate;
 }
 
 .brand {
@@ -255,16 +313,22 @@
   border-top: 1px solid rgb(255 255 255 / 10%);
   border-radius: 0.9rem;
   background:
-    radial-gradient(circle, rgb(255 255 255 / 24%) 0.85px, transparent 1.35px) 0 0 / 130px 130px,
-    radial-gradient(circle, rgb(191 219 254 / 22%) 0.8px, transparent 1.3px) 48px 62px / 180px 180px,
+    radial-gradient(circle, rgb(255 255 255 / 38%) 0.92px, transparent 1.35px) 0 0 / 96px 96px,
+    radial-gradient(circle, rgb(191 219 254 / 30%) 0.86px, transparent 1.3px) 22px 34px / 132px 132px,
+    radial-gradient(circle, rgb(196 181 253 / 26%) 0.98px, transparent 1.4px) 14px 18px / 168px 168px,
+    radial-gradient(circle, rgb(224 231 255 / 20%) 0.78px, transparent 1.2px) 0 0 / 56px 56px,
     linear-gradient(180deg, rgb(5 8 18 / 62%), rgb(5 5 8 / 74%));
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(18px) saturate(118%);
   max-height: 0;
   overflow: hidden;
   opacity: 0;
   padding: 0;
   transition: max-height 260ms ease, opacity 260ms ease, padding 260ms ease;
   pointer-events: none;
+  animation:
+    stardustDrift 13s linear infinite,
+    stardustTwinkle 3.4s ease-in-out infinite alternate,
+    stardustFloat 7.2s ease-in-out infinite alternate;
 }
 
 .mobile-nav.open {
@@ -320,17 +384,21 @@
 .hero-stage::after {
   content: '';
   position: absolute;
-  inset: 16% -8% 10% -8%;
+  inset: -6% -12% 6% -12%;
   pointer-events: none;
   background:
-    radial-gradient(circle, rgb(255 255 255 / 86%) 0.9px, transparent 1.4px) 0 0 / 140px 140px,
-    radial-gradient(circle, rgb(191 219 254 / 74%) 0.85px, transparent 1.3px) 50px 72px / 190px 190px,
-    radial-gradient(circle, rgb(196 181 253 / 66%) 1px, transparent 1.5px) 20px 26px / 230px 230px,
-    radial-gradient(circle at 16% 32%, rgb(96 165 250 / 20%), transparent 40%),
-    radial-gradient(circle at 82% 45%, rgb(192 132 252 / 18%), transparent 38%);
-  opacity: 0.58;
+    radial-gradient(circle, rgb(255 255 255 / 98%) 0.95px, transparent 1.4px) 0 0 / 80px 80px,
+    radial-gradient(circle, rgb(191 219 254 / 82%) 0.9px, transparent 1.34px) 22px 34px / 112px 112px,
+    radial-gradient(circle, rgb(196 181 253 / 76%) 1px, transparent 1.45px) 12px 18px / 144px 144px,
+    radial-gradient(circle, rgb(224 231 255 / 52%) 0.75px, transparent 1.2px) 0 0 / 52px 52px,
+    radial-gradient(circle at 14% 30%, rgb(96 165 250 / 12%), transparent 42%),
+    radial-gradient(circle at 84% 44%, rgb(192 132 252 / 11%), transparent 40%);
+  opacity: 0.78;
   transform: translate3d(0, 0, 0);
-  animation: stardustDrift 28s linear infinite, stardustTwinkle 6.5s ease-in-out infinite alternate;
+  animation:
+    stardustDrift 10.5s linear infinite,
+    stardustTwinkle 2.9s ease-in-out infinite alternate,
+    stardustFloat 5.8s ease-in-out infinite alternate;
 }
 
 .hero-stage-title {
@@ -485,17 +553,29 @@
   0% {
     background-position:
       0 0,
-      50px 72px,
-      20px 26px,
+      28px 44px,
+      16px 22px,
+      0 0,
+      0 0,
+      0 0;
+  }
+
+  50% {
+    background-position:
+      190px 130px,
+      -150px 196px,
+      224px -170px,
+      -110px 74px,
       0 0,
       0 0;
   }
 
   100% {
     background-position:
-      160px 120px,
-      -120px 180px,
-      220px -140px,
+      360px 250px,
+      -280px 340px,
+      420px -320px,
+      -200px 136px,
       0 0,
       0 0;
   }
@@ -512,6 +592,20 @@
 
   100% {
     opacity: 0.58;
+  }
+}
+
+@keyframes stardustFloat {
+  0% {
+    transform: translate3d(-1.6%, -1.2%, 0);
+  }
+
+  50% {
+    transform: translate3d(1.8%, 1.3%, 0);
+  }
+
+  100% {
+    transform: translate3d(-1.3%, 1.1%, 0);
   }
 }
 
@@ -588,7 +682,7 @@
   }
 
   .hero-stage::after {
-    inset: 12% -12% 6% -12%;
+    inset: -8% -14% 4% -14%;
   }
 
   .hero-blob {
