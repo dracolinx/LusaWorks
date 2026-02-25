@@ -128,11 +128,16 @@
 }
 
 .site-header.scrolled .header-inner {
-  background: rgb(5 5 5 / 70%);
-  backdrop-filter: blur(20px);
+  background:
+    radial-gradient(circle, rgb(255 255 255 / 28%) 0.85px, transparent 1.35px) 0 0 / 130px 130px,
+    radial-gradient(circle, rgb(191 219 254 / 24%) 0.8px, transparent 1.3px) 48px 62px / 180px 180px,
+    radial-gradient(circle, rgb(196 181 253 / 18%) 0.95px, transparent 1.45px) 22px 16px / 220px 220px,
+    linear-gradient(180deg, rgb(5 8 18 / 62%), rgb(5 5 8 / 74%));
+  backdrop-filter: blur(20px) saturate(115%);
   border-color: rgb(255 255 255 / 8%);
   box-shadow: 0 14px 40px rgb(0 0 0 / 45%);
   padding-block: 0.62rem;
+  animation: stardustDrift 30s linear infinite;
 }
 
 .brand {
@@ -249,7 +254,10 @@
   z-index: 68;
   border-top: 1px solid rgb(255 255 255 / 10%);
   border-radius: 0.9rem;
-  background: rgb(5 5 5 / 74%);
+  background:
+    radial-gradient(circle, rgb(255 255 255 / 24%) 0.85px, transparent 1.35px) 0 0 / 130px 130px,
+    radial-gradient(circle, rgb(191 219 254 / 22%) 0.8px, transparent 1.3px) 48px 62px / 180px 180px,
+    linear-gradient(180deg, rgb(5 8 18 / 62%), rgb(5 5 8 / 74%));
   backdrop-filter: blur(20px);
   max-height: 0;
   overflow: hidden;
@@ -315,12 +323,14 @@
   inset: 16% -8% 10% -8%;
   pointer-events: none;
   background:
-    radial-gradient(circle at 16% 32%, rgb(96 165 250 / 18%), transparent 40%),
-    radial-gradient(circle at 82% 45%, rgb(192 132 252 / 15%), transparent 38%),
-    repeating-linear-gradient(100deg, rgb(255 255 255 / 5%) 0 1px, transparent 1px 16px);
-  opacity: 0.42;
-  transform: translate3d(-6%, 0, 0);
-  animation: heroGridSweep 14s linear infinite;
+    radial-gradient(circle, rgb(255 255 255 / 86%) 0.9px, transparent 1.4px) 0 0 / 140px 140px,
+    radial-gradient(circle, rgb(191 219 254 / 74%) 0.85px, transparent 1.3px) 50px 72px / 190px 190px,
+    radial-gradient(circle, rgb(196 181 253 / 66%) 1px, transparent 1.5px) 20px 26px / 230px 230px,
+    radial-gradient(circle at 16% 32%, rgb(96 165 250 / 20%), transparent 40%),
+    radial-gradient(circle at 82% 45%, rgb(192 132 252 / 18%), transparent 38%);
+  opacity: 0.58;
+  transform: translate3d(0, 0, 0);
+  animation: stardustDrift 28s linear infinite, stardustTwinkle 6.5s ease-in-out infinite alternate;
 }
 
 .hero-stage-title {
@@ -471,12 +481,37 @@
   }
 }
 
-@keyframes heroGridSweep {
+@keyframes stardustDrift {
   0% {
-    transform: translate3d(-7%, -1%, 0);
+    background-position:
+      0 0,
+      50px 72px,
+      20px 26px,
+      0 0,
+      0 0;
   }
+
   100% {
-    transform: translate3d(7%, 1%, 0);
+    background-position:
+      160px 120px,
+      -120px 180px,
+      220px -140px,
+      0 0,
+      0 0;
+  }
+}
+
+@keyframes stardustTwinkle {
+  0% {
+    opacity: 0.46;
+  }
+
+  50% {
+    opacity: 0.72;
+  }
+
+  100% {
+    opacity: 0.58;
   }
 }
 
