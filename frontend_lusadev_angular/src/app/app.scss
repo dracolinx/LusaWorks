@@ -325,6 +325,15 @@
 
 .hero-stage-title {
   scroll-margin-top: 5.6rem;
+  align-items: center;
+  padding-top: 0;
+}
+
+.hero-stage-title .hero-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 6.8rem);
 }
 
 .hero-blob {
@@ -527,6 +536,14 @@
   .hero-stage {
     min-height: calc(100vh - 1rem);
     padding-top: 0.5rem;
+  }
+
+  .hero-stage-title {
+    padding-top: 0;
+  }
+
+  .hero-stage-title .hero-layout {
+    min-height: calc(100vh - 6rem);
   }
 
   .hero-overview-stage {
