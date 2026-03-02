@@ -191,7 +191,7 @@ export class ContentService {
         title: 'Hablemos de la solución que necesita tu empresa',
         description:
           'Si buscas una solución software adaptada a tu realidad operativa, podemos ayudarte a diseñar, implementar y mantener una plataforma alineada con tus objetivos, con precios económicos, transparentes y justos.',
-        ctaLabel: 'Escribir a xxxx@icloud.com',
+        ctaLabel: 'Escribir a lusaworks@icloud.com',
         responseNote: 'Atención técnica y funcional con enfoque de largo recorrido.',
       },
       legalPolicy: {
@@ -208,7 +208,7 @@ export class ContentService {
             title: 'Responsable del tratamiento',
             paragraphs: [
               'Nombre comercial: LusaWorks. Razón social: PUNTO DE COMERCIO SL. CIF: B93372324. Domicilio de actividad: Jaén, España.',
-              'Contacto para privacidad y protección de datos: xxxx@icloud.com.',
+              'Contacto para privacidad y protección de datos: lusaworks@icloud.com.',
             ],
           },
           {
@@ -256,7 +256,7 @@ export class ContentService {
             title: 'Derechos de los usuarios',
             paragraphs: [
               'La persona interesada puede ejercer derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad, así como retirar el consentimiento cuando proceda.',
-              'Las solicitudes se atienden en xxxx@icloud.com, aportando identificación suficiente para su tramitación.',
+              'Las solicitudes se atienden en lusaworks@icloud.com, aportando identificación suficiente para su tramitación.',
             ],
           },
           {
@@ -273,7 +273,7 @@ export class ContentService {
           { label: 'Nombre comercial', value: 'LusaWorks' },
           { label: 'Razón social', value: 'PUNTO DE COMERCIO SL' },
           { label: 'CIF', value: 'B93372324' },
-          { label: 'Email', value: 'xxxx@icloud.com' },
+          { label: 'Email', value: 'lusaworks@icloud.com' },
           { label: 'Ubicación', value: 'Jaén, España' },
         ],
         supportMessage:
@@ -468,7 +468,7 @@ export class ContentService {
         title: 'Let us design the right solution for your business',
         description:
           'If your company needs software aligned with real operational constraints, we can help you design, implement, and sustain it with affordable, transparent, and fair pricing.',
-        ctaLabel: 'Write to xxxx@icloud.com',
+        ctaLabel: 'Write to lusaworks@icloud.com',
         responseNote: 'Technical and functional support with a long-term perspective.',
       },
       legalPolicy: {
@@ -485,7 +485,7 @@ export class ContentService {
             title: 'Data controller',
             paragraphs: [
               'Trade name: LusaWorks. Corporate name: PUNTO DE COMERCIO SL. Tax ID (CIF): B93372324. Operational base: Jaén, Spain.',
-              'Privacy contact: xxxx@icloud.com.',
+              'Privacy contact: lusaworks@icloud.com.',
             ],
           },
           {
@@ -533,7 +533,7 @@ export class ContentService {
             title: 'User rights',
             paragraphs: [
               'Data subjects may exercise rights of access, rectification, erasure, objection, restriction, and portability, and may withdraw consent where applicable.',
-              'Requests are handled via xxxx@icloud.com with sufficient identity verification.',
+              'Requests are handled via lusaworks@icloud.com with sufficient identity verification.',
             ],
           },
           {
@@ -550,7 +550,7 @@ export class ContentService {
           { label: 'Trade name', value: 'LusaWorks' },
           { label: 'Corporate name', value: 'PUNTO DE COMERCIO SL' },
           { label: 'Tax ID (CIF)', value: 'B93372324' },
-          { label: 'Email', value: 'xxxx@icloud.com' },
+          { label: 'Email', value: 'lusaworks@icloud.com' },
           { label: 'Location', value: 'Jaén, Spain' },
         ],
         supportMessage:
