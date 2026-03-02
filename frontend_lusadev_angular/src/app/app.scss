@@ -488,6 +488,14 @@
   padding-top: 4rem;
 }
 
+.section-legal {
+  padding-bottom: 3rem;
+}
+
+.legal-followup {
+  margin-top: 1.1rem;
+}
+
 .site-footer {
   width: min(72rem, calc(100% - 2rem));
   margin: 0 auto;
@@ -656,6 +664,10 @@
   .section-container,
   .site-footer {
     width: calc(100% - 1rem);
+  }
+
+  .legal-followup {
+    margin-top: 0.9rem;
   }
 
   .brand-logo {

@@ -108,16 +108,13 @@
       </div>
     </section>
 
-    <section id="legal-policy" class="section" appRevealOnScroll>
+    <section id="legal-policy" class="section section-legal" appRevealOnScroll>
       <div class="section-container">
         <app-legal-policy-section [copy]="copy().legalPolicy"></app-legal-policy-section>
+        <div class="legal-followup legal-compact">
+          <app-legal-footer [copy]="copy().legal"></app-legal-footer>
+        </div>
       </div>
     </section>
   </main>
-
-  <footer id="legal" class="site-footer legal-compact" appRevealOnScroll>
-    <div class="section-container">
-      <app-legal-footer [copy]="copy().legal"></app-legal-footer>
-    </div>
-  </footer>
 </div>

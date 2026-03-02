@@ -18,8 +18,7 @@ export class ContentService {
         { id: 'team', label: 'Equipo' },
         { id: 'proximity', label: 'Jaén y proximidad' },
         { id: 'contact', label: 'Contacto' },
-        { id: 'legal-policy', label: 'Aviso legal y política de privacidad' },
-        { id: 'legal', label: 'Datos legales' },
+        { id: 'legal-policy', label: 'Aviso legal y políticas' },
       ],
       mobileMenuLabel: 'Abrir menú',
       closeMenuLabel: 'Cerrar menú',
@@ -196,11 +195,9 @@ export class ContentService {
       },
       legalPolicy: {
         eyebrow: 'Cumplimiento',
-        title: 'Aviso legal y política de privacidad',
+        title: 'Aviso legal y políticas',
         intro:
           'Esta sección describe cómo LusaWorks utiliza, revela, protege y gestiona los datos de los usuarios en sus servicios y en sus integraciones tecnológicas, incluyendo canales de mensajería.',
-        metaUrlNote:
-          'Este apartado está diseñado para usarse como URL pública de política de privacidad ante Meta.',
         updatedLabel: 'Última actualización',
         updatedValue: '2 de marzo de 2026',
         blocks: [
@@ -295,8 +292,7 @@ export class ContentService {
         { id: 'team', label: 'Team' },
         { id: 'proximity', label: 'Jaén & proximity' },
         { id: 'contact', label: 'Contact' },
-        { id: 'legal-policy', label: 'Legal notice & privacy policy' },
-        { id: 'legal', label: 'Legal details' },
+        { id: 'legal-policy', label: 'Legal notice & policies' },
       ],
       mobileMenuLabel: 'Open menu',
       closeMenuLabel: 'Close menu',
@@ -473,11 +469,9 @@ export class ContentService {
       },
       legalPolicy: {
         eyebrow: 'Compliance',
-        title: 'Legal notice and privacy policy',
+        title: 'Legal notice and policies',
         intro:
           'This section explains how LusaWorks uses, discloses, protects, and manages user data in its services and technical integrations, including messaging channels.',
-        metaUrlNote:
-          'This section is intended to be used as the public privacy policy URL for Meta requirements.',
         updatedLabel: 'Last update',
         updatedValue: 'March 2, 2026',
         blocks: [

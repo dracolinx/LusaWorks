@@ -123,7 +123,6 @@ export interface LegalPolicySectionCopy {
   eyebrow: string;
   title: string;
   intro: string;
-  metaUrlNote: string;
   updatedLabel: string;
   updatedValue: string;
   blocks: LegalPolicyBlock[];

@@ -204,7 +204,7 @@ export class App implements OnInit, OnDestroy {
   }
 
   private getSnapSections(): HTMLElement[] {
-    return Array.from(this.document.querySelectorAll('.site-main .section, #legal')) as HTMLElement[];
+    return Array.from(this.document.querySelectorAll('.site-main .section')) as HTMLElement[];
   }
 
   private findCurrentSectionIndex(sections: HTMLElement[], pivot: number): number {
