@@ -1,0 +1,17 @@
+<header class="section-header">
+  <p class="eyebrow">{{ copy().eyebrow }}</p>
+  <h2>{{ copy().title }}</h2>
+  <p class="intro">{{ copy().intro }}</p>
+  <p class="meta-url-note">{{ copy().metaUrlNote }}</p>
+  <p class="updated">{{ copy().updatedLabel }}: {{ copy().updatedValue }}</p>
+</header>
+
+<div class="policy-grid">
+  <article class="policy-card" *ngFor="let block of copy().blocks">
+    <h3>{{ block.title }}</h3>
+    <p *ngFor="let paragraph of block.paragraphs">{{ paragraph }}</p>
+    <ul *ngIf="block.bullets?.length">
+      <li *ngFor="let bullet of block.bullets">{{ bullet }}</li>
+    </ul>
+  </article>
+</div>

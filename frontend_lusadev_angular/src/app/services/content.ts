@@ -18,6 +18,7 @@ export class ContentService {
         { id: 'team', label: 'Equipo' },
         { id: 'proximity', label: 'Jaén y proximidad' },
         { id: 'contact', label: 'Contacto' },
+        { id: 'legal-policy', label: 'Aviso legal y política de privacidad' },
         { id: 'legal', label: 'Datos legales' },
       ],
       mobileMenuLabel: 'Abrir menú',
@@ -193,6 +194,79 @@ export class ContentService {
         ctaLabel: 'Escribir a xxxx@icloud.com',
         responseNote: 'Atención técnica y funcional con enfoque de largo recorrido.',
       },
+      legalPolicy: {
+        eyebrow: 'Cumplimiento',
+        title: 'Aviso legal y política de privacidad',
+        intro:
+          'Esta sección describe cómo LusaWorks utiliza, revela, protege y gestiona los datos de los usuarios en sus servicios y en sus integraciones tecnológicas, incluyendo canales de mensajería.',
+        metaUrlNote:
+          'Este apartado está diseñado para usarse como URL pública de política de privacidad ante Meta.',
+        updatedLabel: 'Última actualización',
+        updatedValue: '2 de marzo de 2026',
+        blocks: [
+          {
+            title: 'Responsable del tratamiento',
+            paragraphs: [
+              'Nombre comercial: LusaWorks. Razón social: PUNTO DE COMERCIO SL. CIF: B93372324. Domicilio de actividad: Jaén, España.',
+              'Contacto para privacidad y protección de datos: xxxx@icloud.com.',
+            ],
+          },
+          {
+            title: 'Finalidad y alcance del tratamiento',
+            paragraphs: [
+              'Los datos se tratan para prestar servicios de desarrollo e integración de software, automatización operativa, gestión de agenda y atención al cliente, soporte técnico y mejora continua del servicio.',
+            ],
+          },
+          {
+            title: 'Datos que se pueden tratar',
+            paragraphs: ['El tratamiento puede incluir información facilitada por el usuario o por el cliente empresarial en cada proyecto.'],
+            bullets: [
+              'Datos identificativos y de contacto (nombre, teléfono, email).',
+              'Datos de interacción operativa (solicitudes, citas, incidencias y mensajes).',
+              'Metadatos técnicos y de seguridad (logs de acceso, trazas y eventos de sistema).',
+            ],
+          },
+          {
+            title: 'Uso de datos en integraciones con Meta y mensajería',
+            paragraphs: [
+              'Cuando se usan canales como WhatsApp, los datos se procesan exclusivamente para atender conversaciones, gestionar citas, enviar confirmaciones y ofrecer soporte asociado al servicio contratado.',
+              'No se venden datos personales ni se ceden con fines comerciales ajenos al servicio.',
+            ],
+          },
+          {
+            title: 'Comunicación a terceros y encargados',
+            paragraphs: [
+              'Los datos solo se comparten con proveedores necesarios para la prestación técnica del servicio (infraestructura, mensajería, monitorización o soporte), bajo acuerdos contractuales y medidas de confidencialidad.',
+            ],
+          },
+          {
+            title: 'Base jurídica',
+            paragraphs: ['El tratamiento se fundamenta en la ejecución de contrato, el consentimiento cuando corresponde, el interés legítimo en continuidad y seguridad operativa, y el cumplimiento de obligaciones legales.'],
+          },
+          {
+            title: 'Conservación y seguridad',
+            paragraphs: ['Los datos se conservan durante el tiempo necesario para la finalidad del servicio y durante los plazos legales aplicables.'],
+            bullets: [
+              'Control de acceso por perfiles y roles.',
+              'Cifrado de comunicaciones y protección de credenciales.',
+              'Registro de actividad, copias de seguridad y continuidad operativa.',
+            ],
+          },
+          {
+            title: 'Derechos de los usuarios',
+            paragraphs: [
+              'La persona interesada puede ejercer derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad, así como retirar el consentimiento cuando proceda.',
+              'Las solicitudes se atienden en xxxx@icloud.com, aportando identificación suficiente para su tramitación.',
+            ],
+          },
+          {
+            title: 'Cambios en esta política',
+            paragraphs: [
+              'La política podrá actualizarse por cambios legales, técnicos u operativos. La versión vigente será siempre la publicada en esta URL.',
+            ],
+          },
+        ],
+      },
       legal: {
         heading: 'Datos legales y corporativos',
         records: [
@@ -221,6 +295,7 @@ export class ContentService {
         { id: 'team', label: 'Team' },
         { id: 'proximity', label: 'Jaén & proximity' },
         { id: 'contact', label: 'Contact' },
+        { id: 'legal-policy', label: 'Legal notice & privacy policy' },
         { id: 'legal', label: 'Legal details' },
       ],
       mobileMenuLabel: 'Open menu',
@@ -395,6 +470,79 @@ export class ContentService {
           'If your company needs software aligned with real operational constraints, we can help you design, implement, and sustain it with affordable, transparent, and fair pricing.',
         ctaLabel: 'Write to xxxx@icloud.com',
         responseNote: 'Technical and functional support with a long-term perspective.',
+      },
+      legalPolicy: {
+        eyebrow: 'Compliance',
+        title: 'Legal notice and privacy policy',
+        intro:
+          'This section explains how LusaWorks uses, discloses, protects, and manages user data in its services and technical integrations, including messaging channels.',
+        metaUrlNote:
+          'This section is intended to be used as the public privacy policy URL for Meta requirements.',
+        updatedLabel: 'Last update',
+        updatedValue: 'March 2, 2026',
+        blocks: [
+          {
+            title: 'Data controller',
+            paragraphs: [
+              'Trade name: LusaWorks. Corporate name: PUNTO DE COMERCIO SL. Tax ID (CIF): B93372324. Operational base: Jaén, Spain.',
+              'Privacy contact: xxxx@icloud.com.',
+            ],
+          },
+          {
+            title: 'Purpose and scope of processing',
+            paragraphs: [
+              'Data is processed to deliver software development and integration services, workflow automation, appointment handling, customer support, technical maintenance, and service quality improvement.',
+            ],
+          },
+          {
+            title: 'Data categories that may be processed',
+            paragraphs: ['Processing may include information provided by users or by client organizations in each project context.'],
+            bullets: [
+              'Identification and contact data (name, phone number, email).',
+              'Operational interaction data (requests, appointments, incidents, and messages).',
+              'Technical and security metadata (access logs, traces, and system events).',
+            ],
+          },
+          {
+            title: 'Data usage in Meta and messaging integrations',
+            paragraphs: [
+              'When channels such as WhatsApp are used, data is processed only to handle conversations, schedule appointments, send confirmations, and provide support related to the contracted service.',
+              'Personal data is not sold or disclosed for unrelated commercial purposes.',
+            ],
+          },
+          {
+            title: 'Disclosure to third parties and processors',
+            paragraphs: [
+              'Data is only shared with providers required for technical service delivery (infrastructure, messaging, monitoring, or support), under contractual safeguards and confidentiality obligations.',
+            ],
+          },
+          {
+            title: 'Legal basis',
+            paragraphs: ['Processing is based on contract performance, consent when applicable, legitimate interest for operational continuity and security, and compliance with legal obligations.'],
+          },
+          {
+            title: 'Retention and security controls',
+            paragraphs: ['Data is retained only for the time required by service purposes and applicable legal retention periods.'],
+            bullets: [
+              'Role-based access controls.',
+              'Encrypted communications and credential protection.',
+              'Activity logging, backups, and operational continuity controls.',
+            ],
+          },
+          {
+            title: 'User rights',
+            paragraphs: [
+              'Data subjects may exercise rights of access, rectification, erasure, objection, restriction, and portability, and may withdraw consent where applicable.',
+              'Requests are handled via xxxx@icloud.com with sufficient identity verification.',
+            ],
+          },
+          {
+            title: 'Policy updates',
+            paragraphs: [
+              'This policy may be updated due to legal, technical, or operational changes. The current version will always be the one published at this URL.',
+            ],
+          },
+        ],
       },
       legal: {
         heading: 'Legal and corporate details',

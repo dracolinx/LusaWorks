@@ -113,6 +113,22 @@ export interface LegalFooterCopy {
   rights: string;
 }
 
+export interface LegalPolicyBlock {
+  title: string;
+  paragraphs: string[];
+  bullets?: string[];
+}
+
+export interface LegalPolicySectionCopy {
+  eyebrow: string;
+  title: string;
+  intro: string;
+  metaUrlNote: string;
+  updatedLabel: string;
+  updatedValue: string;
+  blocks: LegalPolicyBlock[];
+}
+
 export interface LocalizedCopy {
   pageTitle: string;
   metaDescription: string;
@@ -128,6 +144,7 @@ export interface LocalizedCopy {
   team: TeamExperienceSectionCopy;
   proximity: ProximitySectionCopy;
   contact: ContactSectionCopy;
+  legalPolicy: LegalPolicySectionCopy;
   legal: LegalFooterCopy;
   logoAlt: string;
   heroImageAlt: string;

@@ -14,6 +14,7 @@ import { LanguageCode, NavLink } from './models/localized-copy';
 import { ContactSectionComponent } from './sections/contact-section/contact-section';
 import { HeroSectionComponent } from './sections/hero-section/hero-section';
 import { LegalFooterComponent } from './sections/legal-footer/legal-footer';
+import { LegalPolicySectionComponent } from './sections/legal-policy-section/legal-policy-section';
 import { MethodSectionComponent } from './sections/method-section/method-section';
 import { ProximitySectionComponent } from './sections/proximity-section/proximity-section';
 import { SpecializationSectionComponent } from './sections/specialization-section/specialization-section';
@@ -31,6 +32,7 @@ import { LanguageService } from './services/language';
     TeamExperienceSectionComponent,
     ProximitySectionComponent,
     ContactSectionComponent,
+    LegalPolicySectionComponent,
     LegalFooterComponent,
     RevealOnScrollDirective,
   ],
