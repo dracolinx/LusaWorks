@@ -139,16 +139,21 @@ Desde LusaWorks se ofrecen este tipo de soluciones con rápido despliegue, forma
 ## Preguntas Frecuentes (FAQ) sobre la gestión documental de operaciones UAS
 
 **¿Es obligatorio llevar un registro de vuelos y mantenimiento de drones (UAS)?**
+
 Sí. La normativa de AESA y el Real Decreto 517/2024 exigen a los operadores mantener un control estricto de las operaciones, pilotos, aeronaves y mantenimiento preventivo para garantizar la seguridad operacional, especialmente en categoría específica.
 
 **¿Qué ocurre si no dispongo de los registros de mis operaciones con drones ante una inspección?**
+
 La falta de documentación estructurada, como el libro de vuelo o los historiales de mantenimiento de baterías y aeronaves, puede derivar en sanciones económicas por parte de la Agencia Estatal de Seguridad Aérea (AESA) y la paralización temporal o definitiva de las operaciones.
 
 **¿Puedo llevar los registros de mis drones en hojas de cálculo como Excel?**
+
 Aunque es posible al inicio, no es recomendable cuando aumenta el volumen de vuelos. El uso de software especializado para drones centraliza el dato, evita pérdida de información y permite la trazabilidad real, conectando baterías, horas de vuelo y averías de forma automática.
 
 **¿Cómo ayuda una plataforma digital a la trazabilidad de las baterías UAS?**
+
 Una aplicación a medida vincula cada ciclo de carga y descarga al historial de la aeronave y del piloto, emitiendo alertas cuando una batería alcanza su límite de vida útil o necesita inspección, un factor crítico para evitar accidentes en pleno vuelo.
 
 **¿Puede el seguro de responsabilidad civil negarse a cubrir un accidente si falta documentación?**
+
 Sí, y este es uno de los mayores riesgos ocultos. Si se produce un siniestro con daños a terceros (que más allá de la tragedia humana puede suponer la ruina de una empresa o del piloto), la compañía aseguradora investigará el incidente. Si el operador no puede demostrar documentalmente con registros trazables que la aeronave y las baterías habían pasado sus revisiones y que el vuelo cumplía con los procedimientos declarados, el seguro puede alegar "falta de diligencia" o negligencia grave para denegar la cobertura. Un software de gestión UAS blinda esta responsabilidad al certificar que se ha cumplido la normativa.

@@ -92,13 +92,17 @@ Desde LusaWorks se ofrecen este tipo de soluciones con rápido despliegue, máxi
 ## Preguntas Frecuentes (FAQ) sobre el uso de IA local en despachos de detectives
 
 **¿Es legal utilizar inteligencia artificial en una investigación privada?**
+
 Sí, siempre que su uso cumpla con el Reglamento General de Protección de Datos (RGPD) y la Ley de Seguridad Privada. La clave está en garantizar que los datos sensibles no se exponen a plataformas externas sin garantías, motivo por el cual la IA de ejecución local es la opción más segura.
 
 **¿Qué ventajas tiene la IA local frente a opciones en la nube para un detective?**
+
 La principal ventaja es la privacidad y el control absoluto de los datos. La información procesada (audios, imágenes, textos) no sale de los servidores o equipos del despacho, evitando brechas de seguridad y asegurando el cumplimiento estricto de la normativa de protección de datos.
 
 **¿Sustituye la IA el criterio del detective en el informe final de investigación?**
+
 No. La inteligencia artificial actúa como un asistente que organiza los datos, transcribe notas de voz y prepara un borrador estructurado por orden cronológico. La validación final y la firma del informe siempre corresponden al profesional habilitado.
 
 **¿Necesito conocimientos avanzados de informática para usar estas herramientas en mi agencia de detectives?**
+
 En absoluto. Las soluciones desarrolladas por LusaWorks están diseñadas para integrarse en el flujo de trabajo habitual del detective, permitiendo registrar observaciones mediante el teléfono móvil de manera tan sencilla como enviar un mensaje de texto o una nota de voz.

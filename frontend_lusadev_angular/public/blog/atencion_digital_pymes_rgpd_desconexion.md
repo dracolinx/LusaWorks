@@ -140,13 +140,17 @@ Además, se garantiza una atención telemática próxima y efectiva, junto con a
 ## Preguntas Frecuentes (FAQ) sobre atención digital para pymes
 
 **¿Es obligatorio el cumplimiento del RGPD al usar WhatsApp u otras apps de mensajería para gestionar citas?**
+
 Sí. Cualquier tratamiento de datos personales de clientes (como números de teléfono, nombres o historiales clínicos) debe cumplir con la normativa. Centralizar las comunicaciones en herramientas digitales profesionales ayuda a evitar sanciones y fugas de información que suelen ocurrir al usar aplicaciones personales.
 
 **¿Qué es exactamente el derecho a la desconexión digital y cómo afecta a los pequeños negocios?**
+
 Es el derecho que tienen los trabajadores y responsables a no responder comunicaciones laborales o de clientes fuera de su horario de trabajo. Usar sistemas automatizados que recogen peticiones 24 horas al día permite respetar este descanso sin perder oportunidades comerciales.
 
 **¿Perderé cercanía con mis clientes al usar un sistema digital de gestión de reservas?**
+
 Al contrario. La automatización se encarga de lo repetitivo (recordar citas, enviar confirmaciones), dejando al responsable más tiempo y energía para ofrecer un trato verdaderamente personalizado cuando el cliente acude físicamente al negocio.
 
 **¿Es muy costoso o complicado implementar este tipo de software para una pyme local?**
+
 Las soluciones actuales, como las que desarrolla LusaWorks, están diseñadas para ser sumamente accesibles, sin requerir conocimientos informáticos avanzados. Se adaptan al flujo del negocio y la inversión inicial se recupera rápidamente al reducir las ausencias y huecos vacíos en la agenda.
