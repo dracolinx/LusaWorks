@@ -24,17 +24,17 @@ La inteligencia artificial queda en segundo plano. El usuario no necesita conoce
 
 En el ámbito de la investigación privada, la protección de datos no es un elemento accesorio. Es una condición esencial. Los servicios pueden implicar tratamiento de imágenes, horarios, desplazamientos, conductas, ubicaciones, comunicaciones operativas y otra información vinculada a personas físicas.
 
-El Reglamento General de Protección de Datos exige que los datos personales se traten de forma lícita, leal y transparente, con fines determinados, datos adecuados y limitados a lo necesario, exactitud, conservación limitada y medidas adecuadas de seguridad. Además, exige que el responsable pueda demostrar el cumplimiento de esos principios. Fuente: https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX%3A02016R0679-20160504
+El Reglamento General de Protección de Datos exige que los datos personales se traten de forma lícita, leal y transparente, con fines determinados, datos adecuados y limitados a lo necesario, exactitud, conservación limitada y medidas adecuadas de seguridad. Además, exige que el responsable pueda demostrar el cumplimiento de esos principios.
 
 Por eso, la ejecución local de la inteligencia artificial tiene un valor diferencial. Cuando el sistema funciona en un ordenador, servidor o infraestructura controlada por el propio despacho, se reduce la necesidad de enviar información sensible a plataformas externas. Esto permite mantener mayor control sobre los datos, los accesos, los expedientes, los permisos internos y los tiempos de conservación.
 
-La Agencia Española de Protección de Datos ha advertido sobre la necesidad de usar la inteligencia artificial de forma responsable y prudente, especialmente cuando se maneja información personal o delicada. En sus recomendaciones sobre IA recuerda la importancia de no introducir datos personales o sensibles en herramientas sin garantías suficientes. Fuente: https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/aepd-publica-decalogo-recomendaciones-proteger-privacidad-al-usar-ia
+La Agencia Española de Protección de Datos ha advertido sobre la necesidad de usar la inteligencia artificial de forma responsable y prudente, especialmente cuando se maneja información personal o delicada. En sus recomendaciones sobre IA recuerda la importancia de no introducir datos personales o sensibles en herramientas sin garantías suficientes.
 
 Para una empresa de detectives privados, esta idea es especialmente importante. No basta con usar inteligencia artificial. Hay que usarla bien, con control, con trazabilidad y con una arquitectura pensada para reducir riesgos.
 
 ## Informes automáticos, pero siempre revisables
 
-La Ley 5/2014 de Seguridad Privada regula los servicios de investigación privada y los informes de investigación de los detectives privados. La norma contempla expresamente los servicios de los despachos de detectives privados y dedica artículos específicos a los servicios de investigación, los informes y el deber de reserva profesional. Fuente: https://boe.es/buscar/act.php?id=BOE-A-2014-3649
+La Ley 5/2014 de Seguridad Privada regula los servicios de investigación privada y los informes de investigación de los detectives privados. La norma contempla expresamente los servicios de los despachos de detectives privados y dedica artículos específicos a los servicios de investigación, los informes y el deber de reserva profesional.
 
 Por tanto, la automatización debe respetar una idea básica: el informe final debe seguir siendo profesional, verificable y revisado por el detective. La inteligencia artificial puede generar un borrador estructurado, pero la validación final corresponde al profesional.
 
@@ -83,3 +83,8 @@ Estas soluciones permiten trabajar desde ordenador y teléfono móvil, integrar 
 El enfoque es claro: herramientas fáciles de usar, pensadas para usuarios con nivel básico de informática y telecomunicaciones, sin añadir complejidad al trabajo diario y con capacidad real para hacer crecer el negocio de forma segura.
 
 Desde LusaWorks se ofrecen este tipo de soluciones con rápido despliegue, máxima personalización, formación en su uso y soporte técnico correspondiente. Además, se garantiza una atención telemática próxima y efectiva, junto con atención directa en Jaén.
+
+## Fuentes públicas recomendadas
+- [Reglamento General de Protección de Datos](https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX%3A02016R0679-20160504)
+- [Recomendaciones AEPD sobre IA](https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/aepd-publica-decalogo-recomendaciones-proteger-privacidad-al-usar-ia)
+- [Ley 5/2014 de Seguridad Privada](https://boe.es/buscar/act.php?id=BOE-A-2014-3649)
