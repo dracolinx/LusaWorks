@@ -5,12 +5,12 @@
   </div>
 
   <div class="blog-grid" *ngIf="posts().length > 0; else loading">
-    <article class="blog-card" *ngFor="let post of posts()">
+    <article class="blog-card" *ngFor="let post of posts()" [routerLink]="['/blog', post.slug]">
       <div class="blog-card-content">
         <span class="blog-date">{{ post.date | date:'longDate' }}</span>
         <h3>{{ post.title }}</h3>
         <p>{{ post.summary }}</p>
-        <a [routerLink]="['/blog', post.slug]" class="read-more">Leer artículo →</a>
+        <span class="read-more">Leer artículo →</span>
       </div>
     </article>
   </div>
