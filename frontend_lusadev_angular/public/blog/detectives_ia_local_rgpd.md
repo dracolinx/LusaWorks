@@ -1,4 +1,4 @@
-# Cómo una empresa de detectives privados puede aumentar su productividad con inteligencia artificial local y cumplir el RGPD
+# IA para detectives privados: software local para informes de investigación y cumplimiento RGPD
 
 ## Automatización sencilla para vigilancias, observaciones e informes normalizados
 
@@ -88,3 +88,17 @@ Desde LusaWorks se ofrecen este tipo de soluciones con rápido despliegue, máxi
 - [Reglamento General de Protección de Datos](https://eur-lex.europa.eu/legal-content/ES/TXT/HTML/?uri=CELEX%3A02016R0679-20160504)
 - [Recomendaciones AEPD sobre IA](https://www.aepd.es/prensa-y-comunicacion/notas-de-prensa/aepd-publica-decalogo-recomendaciones-proteger-privacidad-al-usar-ia)
 - [Ley 5/2014 de Seguridad Privada](https://boe.es/buscar/act.php?id=BOE-A-2014-3649)
+
+## Preguntas Frecuentes (FAQ) sobre el uso de IA local en despachos de detectives
+
+**¿Es legal utilizar inteligencia artificial en una investigación privada?**
+Sí, siempre que su uso cumpla con el Reglamento General de Protección de Datos (RGPD) y la Ley de Seguridad Privada. La clave está en garantizar que los datos sensibles no se exponen a plataformas externas sin garantías, motivo por el cual la IA de ejecución local es la opción más segura.
+
+**¿Qué ventajas tiene la IA local frente a opciones en la nube para un detective?**
+La principal ventaja es la privacidad y el control absoluto de los datos. La información procesada (audios, imágenes, textos) no sale de los servidores o equipos del despacho, evitando brechas de seguridad y asegurando el cumplimiento estricto de la normativa de protección de datos.
+
+**¿Sustituye la IA el criterio del detective en el informe final de investigación?**
+No. La inteligencia artificial actúa como un asistente que organiza los datos, transcribe notas de voz y prepara un borrador estructurado por orden cronológico. La validación final y la firma del informe siempre corresponden al profesional habilitado.
+
+**¿Necesito conocimientos avanzados de informática para usar estas herramientas en mi agencia de detectives?**
+En absoluto. Las soluciones desarrolladas por LusaWorks están diseñadas para integrarse en el flujo de trabajo habitual del detective, permitiendo registrar observaciones mediante el teléfono móvil de manera tan sencilla como enviar un mensaje de texto o una nota de voz.

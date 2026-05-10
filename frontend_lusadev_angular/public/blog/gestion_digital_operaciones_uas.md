@@ -1,4 +1,4 @@
-# Operar drones ya no va solo de volar: el reto invisible de gestionar seguridad, datos y cumplimiento normativo
+# Gestión de drones UAS: software para seguridad, mantenimiento y normativa AESA
 
 ## Cómo las entidades que trabajan con UAS pueden transformar una obligación documental compleja en una gestión segura, móvil y centralizada
 
@@ -135,3 +135,17 @@ Desde LusaWorks se ofrecen este tipo de soluciones con rápido despliegue, forma
 - [AESA. Operaciones con UAS drones categoría específica](https://www.seguridadaerea.gob.es/es/ambitos/drones/operaciones-uas-drones/operaciones-con-uas-drones---categoria-especifica)
 - [AESA. Registro de operador de drones UAS](https://www.seguridadaerea.gob.es/es/ambitos/drones/registro-de-operador-de-drones-uas)
 - [Real Decreto 517/2024, de 4 de junio](https://www.boe.es/buscar/doc.php?id=BOE-A-2024-11377)
+
+## Preguntas Frecuentes (FAQ) sobre la gestión documental de operaciones UAS
+
+**¿Es obligatorio llevar un registro de vuelos y mantenimiento de drones (UAS)?**
+Sí. La normativa de AESA y el Real Decreto 517/2024 exigen a los operadores mantener un control estricto de las operaciones, pilotos, aeronaves y mantenimiento preventivo para garantizar la seguridad operacional, especialmente en categoría específica.
+
+**¿Qué ocurre si no dispongo de los registros de mis operaciones con drones ante una inspección?**
+La falta de documentación estructurada, como el libro de vuelo o los historiales de mantenimiento de baterías y aeronaves, puede derivar en sanciones económicas por parte de la Agencia Estatal de Seguridad Aérea (AESA) y la paralización temporal o definitiva de las operaciones.
+
+**¿Puedo llevar los registros de mis drones en hojas de cálculo como Excel?**
+Aunque es posible al inicio, no es recomendable cuando aumenta el volumen de vuelos. El uso de software especializado para drones centraliza el dato, evita pérdida de información y permite la trazabilidad real, conectando baterías, horas de vuelo y averías de forma automática.
+
+**¿Cómo ayuda una plataforma digital a la trazabilidad de las baterías UAS?**
+Una aplicación a medida vincula cada ciclo de carga y descarga al historial de la aeronave y del piloto, emitiendo alertas cuando una batería alcanza su límite de vida útil o necesita inspección, un factor crítico para evitar accidentes en pleno vuelo.
