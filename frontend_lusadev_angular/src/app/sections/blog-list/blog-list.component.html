@@ -1,0 +1,21 @@
+<section class="section blog-list-section">
+  <div class="blog-header">
+    <h2>LusaWorks Blog</h2>
+    <p>Artículos sobre tecnología, desarrollo y soluciones operativas</p>
+  </div>
+
+  <div class="blog-grid" *ngIf="posts().length > 0; else loading">
+    <article class="blog-card" *ngFor="let post of posts()">
+      <div class="blog-card-content">
+        <span class="blog-date">{{ post.date | date:'longDate' }}</span>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.summary }}</p>
+        <a [routerLink]="['/blog', post.slug]" class="read-more">Leer artículo →</a>
+      </div>
+    </article>
+  </div>
+
+  <ng-template #loading>
+    <div class="blog-loading">Cargando artículos...</div>
+  </ng-template>
+</section>

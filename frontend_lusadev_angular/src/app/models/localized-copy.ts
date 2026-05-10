@@ -3,6 +3,7 @@ export type LanguageCode = 'es' | 'en';
 export interface NavLink {
   id: string;
   label: string;
+  isRoute?: boolean;
 }
 
 export interface HeroMetric {

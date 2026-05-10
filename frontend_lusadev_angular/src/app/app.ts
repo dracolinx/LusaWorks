@@ -8,36 +8,24 @@ import {
   effect,
   inject,
   signal,
+  ViewEncapsulation,
 } from '@angular/core';
 import { RevealOnScrollDirective } from './directives/reveal-on-scroll';
 import { LanguageCode, NavLink } from './models/localized-copy';
-import { ContactSectionComponent } from './sections/contact-section/contact-section';
-import { HeroSectionComponent } from './sections/hero-section/hero-section';
-import { LegalFooterComponent } from './sections/legal-footer/legal-footer';
-import { LegalPolicySectionComponent } from './sections/legal-policy-section/legal-policy-section';
-import { MethodSectionComponent } from './sections/method-section/method-section';
-import { ProximitySectionComponent } from './sections/proximity-section/proximity-section';
-import { SpecializationSectionComponent } from './sections/specialization-section/specialization-section';
-import { TeamExperienceSectionComponent } from './sections/team-experience-section/team-experience-section';
+import { RouterModule } from '@angular/router';
 import { ContentService } from './services/content';
 import { LanguageService } from './services/language';
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [
     CommonModule,
-    HeroSectionComponent,
-    SpecializationSectionComponent,
-    MethodSectionComponent,
-    TeamExperienceSectionComponent,
-    ProximitySectionComponent,
-    ContactSectionComponent,
-    LegalPolicySectionComponent,
-    LegalFooterComponent,
-    RevealOnScrollDirective,
+    RouterModule,
   ],
   templateUrl: './app.html',
   styleUrl: './app.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class App implements OnInit, OnDestroy {
   private readonly document = inject(DOCUMENT);

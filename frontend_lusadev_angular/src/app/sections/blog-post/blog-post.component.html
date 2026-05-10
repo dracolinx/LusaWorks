@@ -1,0 +1,16 @@
+<section class="section blog-post-section">
+  <div class="blog-post-nav">
+    <a [routerLink]="['/blog']" class="back-link">← Volver al Blog</a>
+  </div>
+
+  <div *ngIf="error()" class="blog-error">
+    <p>Hubo un error al cargar el artículo.</p>
+  </div>
+
+  <article *ngIf="content(); else loading" class="markdown-content" [innerHTML]="content()">
+  </article>
+
+  <ng-template #loading>
+    <div *ngIf="!error()" class="blog-loading">Cargando artículo...</div>
+  </ng-template>
+</section>
