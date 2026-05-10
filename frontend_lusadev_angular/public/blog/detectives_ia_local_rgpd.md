@@ -1,4 +1,4 @@
-# IA para detectives privados: software local para informes de investigación y cumplimiento RGPD
+# Cómo una empresa de detectives privados puede aumentar su productividad con inteligencia artificial local y cumplir el RGPD
 
 ## Automatización sencilla para vigilancias, observaciones e informes normalizados
 

@@ -1,4 +1,4 @@
-# Software de gestión de reservas para pymes: atención digital 24h, RGPD y derecho a la desconexión
+# Atención digital para pymes de servicios: más disponibilidad para el cliente y más desconexión para el responsable
 
 ## Cómo pequeños negocios pueden dinamizar la atención por canales digitales, cumplir el RGPD y proteger el descanso sin perder oportunidades comerciales
 
