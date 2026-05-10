@@ -149,3 +149,6 @@ Aunque es posible al inicio, no es recomendable cuando aumenta el volumen de vue
 
 **¿Cómo ayuda una plataforma digital a la trazabilidad de las baterías UAS?**
 Una aplicación a medida vincula cada ciclo de carga y descarga al historial de la aeronave y del piloto, emitiendo alertas cuando una batería alcanza su límite de vida útil o necesita inspección, un factor crítico para evitar accidentes en pleno vuelo.
+
+**¿Puede el seguro de responsabilidad civil negarse a cubrir un accidente si falta documentación?**
+Sí, y este es uno de los mayores riesgos ocultos. Si se produce un siniestro con daños a terceros (que más allá de la tragedia humana puede suponer la ruina de una empresa o del piloto), la compañía aseguradora investigará el incidente. Si el operador no puede demostrar documentalmente con registros trazables que la aeronave y las baterías habían pasado sus revisiones y que el vuelo cumplía con los procedimientos declarados, el seguro puede alegar "falta de diligencia" o negligencia grave para denegar la cobertura. Un software de gestión UAS blinda esta responsabilidad al certificar que se ha cumplido la normativa.
