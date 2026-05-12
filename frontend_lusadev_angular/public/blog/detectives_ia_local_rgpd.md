@@ -1,10 +1,10 @@
 # Cómo una empresa de detectives privados puede aumentar su productividad con inteligencia artificial local y cumplir el RGPD
 
-## Automatización sencilla para vigilancias, observaciones e informes estructurados y revisables
+## Automatización sencilla para vigilancias, observaciones e informes correctamente estructurados listos para revisión y entrega al cliente
 
 La actividad de los detectives privados se encuentra en plena transformación. La vigilancia tradicional, la toma de notas manual, la revisión posterior de fotografías, vídeos, audios y documentos, y la elaboración final del informe siguen siendo tareas esenciales. Sin embargo, la forma de gestionarlas puede mejorar de manera radical mediante soluciones de inteligencia artificial de ejecución local.
 
-El objetivo no es sustituir al detective privado ni alterar su criterio profesional. El objetivo es liberar tiempo, reducir tareas repetitivas, ordenar mejor la información y generar borradores de informe claros, estructurados y homogéneos, siempre revisables por el profesional antes de su entrega.
+El objetivo no es sustituir al detective privado ni alterar su criterio profesional. El objetivo es liberar tiempo, reducir tareas repetitivas, ordenar mejor la información y generar informes correctamente estructurados listos para revisión y entrega al cliente.
 
 En un servicio de vigilancia o control de actividades, el detective puede generar información desde múltiples fuentes. Puede dictar una nota de voz desde el vehículo, escribir una observación breve desde el teléfono móvil, subir una fotografía, incorporar un vídeo, añadir una ubicación, registrar una matrícula o adjuntar documentación relacionada con el servicio. La dificultad aparece cuando todo ese material debe convertirse después en un informe claro, cronológico y útil para el cliente.
 
@@ -78,7 +78,7 @@ La inteligencia artificial local actúa como una capa de apoyo operativo. Ordena
 
 Desde LusaWorks se ofrecen soluciones de inteligencia artificial local orientadas a empresas de detectives privados que necesitan mejorar su productividad, proteger la información y profesionalizar la elaboración de informes.
 
-Estas soluciones permiten trabajar desde ordenador y teléfono móvil, integrar información procedente de voz, texto, imagen y vídeo, organizar observaciones de vigilancia, estructurar expedientes, preparar borradores de informe revisables y facilitar la coordinación de varios servicios y detectives de forma simultánea.
+Estas soluciones permiten trabajar desde ordenador y teléfono móvil, integrar información procedente de voz, texto, imagen y vídeo, organizar observaciones de vigilancia, estructurar expedientes, preparar informes correctamente estructurados listos para revisión y entrega al cliente, y facilitar la coordinación de varios servicios y detectives de forma simultánea.
 
 El enfoque es claro: herramientas fáciles de usar, pensadas para usuarios con nivel básico de informática y telecomunicaciones, sin añadir complejidad al trabajo diario y con capacidad real para hacer crecer el negocio de forma segura.
 
