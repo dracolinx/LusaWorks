@@ -7,9 +7,9 @@ import { LanguageCode, LocalizedCopy } from '../models/localized-copy';
 export class ContentService {
   private readonly copy: Record<LanguageCode, LocalizedCopy> = {
     es: {
-      pageTitle: 'LusaWorks | Soluciones software a medida para empresas',
+      pageTitle: 'LusaWorks | Empresa de Desarrollo de Software a Medida en Jaén',
       metaDescription:
-        'LusaWorks desarrolla soluciones software con tecnología de vanguardia para procesos internos y atención al cliente, adaptadas a cualquier pyme con precios económicos, transparentes y justos.',
+        'Empresa de desarrollo de software a medida en Jaén: automatización, plataformas web, bots conversacionales y soluciones RGPD.',
       languageLabel: 'Idioma',
       nav: [
         { id: 'hero', label: 'Inicio' },
@@ -282,9 +282,9 @@ export class ContentService {
       heroImageAlt: 'Identidad visual de LusaWorks sobre entorno tecnológico',
     },
     en: {
-      pageTitle: 'LusaWorks | Tailored software solutions for businesses',
+      pageTitle: 'LusaWorks | Custom Software Development Company in Jaén',
       metaDescription:
-        'LusaWorks builds bespoke software using cutting-edge technology for internal processes and customer interactions, tailored to any SME with affordable, transparent, and fair pricing.',
+        'Custom software development company in Jaén: automation, web platforms, conversational bots, and GDPR-ready digital solutions.',
       languageLabel: 'Language',
       nav: [
         { id: 'hero', label: 'Home' },

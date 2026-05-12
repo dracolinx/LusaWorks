@@ -1,10 +1,10 @@
 # Cómo una empresa de detectives privados puede aumentar su productividad con inteligencia artificial local y cumplir el RGPD
 
-## Automatización sencilla para vigilancias, observaciones e informes normalizados
+## Automatización sencilla para vigilancias, observaciones e informes estructurados y revisables
 
 La actividad de los detectives privados se encuentra en plena transformación. La vigilancia tradicional, la toma de notas manual, la revisión posterior de fotografías, vídeos, audios y documentos, y la elaboración final del informe siguen siendo tareas esenciales. Sin embargo, la forma de gestionarlas puede mejorar de manera radical mediante soluciones de inteligencia artificial de ejecución local.
 
-El objetivo no es sustituir al detective privado ni alterar su criterio profesional. El objetivo es liberar tiempo, reducir tareas repetitivas, ordenar mejor la información y generar informes normalizados de manera más rápida, segura y homogénea.
+El objetivo no es sustituir al detective privado ni alterar su criterio profesional. El objetivo es liberar tiempo, reducir tareas repetitivas, ordenar mejor la información y generar borradores de informe claros, estructurados y homogéneos, siempre revisables por el profesional antes de su entrega.
 
 En un servicio de vigilancia o control de actividades, el detective puede generar información desde múltiples fuentes. Puede dictar una nota de voz desde el vehículo, escribir una observación breve desde el teléfono móvil, subir una fotografía, incorporar un vídeo, añadir una ubicación, registrar una matrícula o adjuntar documentación relacionada con el servicio. La dificultad aparece cuando todo ese material debe convertirse después en un informe claro, cronológico y útil para el cliente.
 
@@ -16,7 +16,7 @@ Una de las claves de estas soluciones es que pueden operarse tanto desde un orde
 
 Desde el teléfono móvil puede introducir una nota de voz, escribir una anotación, subir una imagen, añadir un vídeo o registrar un dato relevante en el momento en que se produce la observación. Después, desde el ordenador, puede revisar, corregir, completar y validar el informe antes de su entrega.
 
-La solución tecnológica debe estar diseñada para usuarios con un nivel absolutamente básico de informática y telecomunicaciones. No se trata de imponer una herramienta compleja ni de añadir más carga administrativa al detective. Al contrario, la finalidad es que el sistema se integre en los flujos actuales sin generar fricción. El detective sigue trabajando como hasta ahora, pero la información queda ordenada automáticamente, preparada para revisión y lista para incorporarse a un informe normalizado.
+La solución tecnológica debe estar diseñada para usuarios con un nivel absolutamente básico de informática y telecomunicaciones. No se trata de imponer una herramienta compleja ni de añadir más carga administrativa al detective. Al contrario, la finalidad es que el sistema se integre en los flujos actuales sin generar fricción. El detective sigue trabajando como hasta ahora, pero la información queda ordenada automáticamente, preparada para revisión y lista para incorporarse a un informe con una estructura común: cronología de hechos, evidencias asociadas, observaciones relevantes y conclusiones revisadas por el profesional.
 
 La inteligencia artificial queda en segundo plano. El usuario no necesita conocer cómo funciona el modelo, cómo se procesa la voz o cómo se estructura internamente la información. Solo necesita aportar los datos del servicio de forma sencilla. El sistema hace el trabajo pesado.
 
@@ -38,7 +38,7 @@ La Ley 5/2014 de Seguridad Privada regula los servicios de investigación privad
 
 Por tanto, la automatización debe respetar una idea básica: el informe final debe seguir siendo profesional, verificable y revisado por el detective. La inteligencia artificial puede generar un borrador estructurado, pero la validación final corresponde al profesional.
 
-Un sistema bien diseñado puede organizar automáticamente los hechos por fecha y hora, asociar cada observación a sus evidencias, distinguir entre información relevante y material accesorio, generar apartados normalizados y preparar una redacción técnica inicial. Después, el detective revisa el contenido, elimina lo que no proceda, completa lo necesario y emite el informe definitivo.
+Un sistema bien diseñado puede organizar automáticamente los hechos por fecha y hora, asociar cada observación a sus evidencias, distinguir entre información relevante y material accesorio, generar apartados coherentes entre expedientes y preparar una redacción técnica inicial. Después, el detective revisa el contenido, elimina lo que no proceda, completa lo necesario y emite el informe definitivo.
 
 Este modelo mejora la productividad sin perder control. También reduce el riesgo de omisiones, repeticiones, errores de orden temporal o diferencias excesivas de estilo entre informes elaborados por distintos profesionales del mismo despacho.
 
@@ -78,7 +78,7 @@ La inteligencia artificial local actúa como una capa de apoyo operativo. Ordena
 
 Desde LusaWorks se ofrecen soluciones de inteligencia artificial local orientadas a empresas de detectives privados que necesitan mejorar su productividad, proteger la información y profesionalizar la elaboración de informes.
 
-Estas soluciones permiten trabajar desde ordenador y teléfono móvil, integrar información procedente de voz, texto, imagen y vídeo, organizar observaciones de vigilancia, estructurar expedientes, generar informes normalizados y facilitar la coordinación de varios servicios y detectives de forma simultánea.
+Estas soluciones permiten trabajar desde ordenador y teléfono móvil, integrar información procedente de voz, texto, imagen y vídeo, organizar observaciones de vigilancia, estructurar expedientes, preparar borradores de informe revisables y facilitar la coordinación de varios servicios y detectives de forma simultánea.
 
 El enfoque es claro: herramientas fáciles de usar, pensadas para usuarios con nivel básico de informática y telecomunicaciones, sin añadir complejidad al trabajo diario y con capacidad real para hacer crecer el negocio de forma segura.
 

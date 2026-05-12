@@ -15,6 +15,7 @@ import { LanguageCode, NavLink } from './models/localized-copy';
 import { RouterModule } from '@angular/router';
 import { ContentService } from './services/content';
 import { LanguageService } from './services/language';
+import { SeoService } from './services/seo';
 
 @Component({
   selector: 'app-root',
@@ -31,6 +32,7 @@ export class App implements OnInit, OnDestroy {
   private readonly document = inject(DOCUMENT);
   private readonly languageService = inject(LanguageService);
   private readonly contentService = inject(ContentService);
+  private readonly seoService = inject(SeoService);
   private pointerMedia?: MediaQueryList;
   private sectionSnapLock = false;
   private snapReleaseTimer?: number;
@@ -55,8 +57,13 @@ export class App implements OnInit, OnDestroy {
     effect(() => {
       const localizedCopy = this.copy();
       this.document.documentElement.lang = this.language();
-      this.document.title = localizedCopy.pageTitle;
-      this.updateMetaDescription(localizedCopy.metaDescription);
+      if (!this.document.location.pathname.includes('/blog')) {
+        this.seoService.setPage({
+          title: localizedCopy.pageTitle,
+          description: localizedCopy.metaDescription,
+          path: '/',
+        });
+      }
     });
   }
 
@@ -112,19 +119,6 @@ export class App implements OnInit, OnDestroy {
 
   protected trackNavLink(_: number, link: NavLink): string {
     return link.id;
-  }
-
-  private updateMetaDescription(description: string): void {
-    const selector = 'meta[name="description"]';
-    let tag = this.document.querySelector(selector);
-
-    if (!tag) {
-      tag = this.document.createElement('meta');
-      tag.setAttribute('name', 'description');
-      this.document.head.appendChild(tag);
-    }
-
-    tag.setAttribute('content', description);
   }
 
   private updateHeaderOnScroll(): void {

@@ -44,11 +44,22 @@ jobs:
         working-directory: frontend_lusadev_angular
         run: npm ci
 
-      - name: Build Angular app for GitHub Pages
+      - name: Build Angular app for custom domain
         working-directory: frontend_lusadev_angular
-        run: npm run build:pages
+        run: npm run build:pages:root
 
-      - name: Prepare pages artifact
+      - name: Prepare root pages artifact
+        shell: bash
+        run: |
+          mkdir -p .deploy
+          cp -r frontend_lusadev_angular/dist/frontend_lusadev_angular/browser/* .deploy/
+          echo "lusaworks.com" > .deploy/CNAME
+
+      - name: Build Angular app for legacy project path
+        working-directory: frontend_lusadev_angular
+        run: npm run build:pages:legacy
+
+      - name: Prepare legacy pages artifact
         shell: bash
         run: |
           mkdir -p .deploy/lusadev

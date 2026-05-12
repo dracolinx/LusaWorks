@@ -4,8 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "build:pages": "ng build --configuration production --base-href /LusaWorks/lusadev/ --deploy-url /LusaWorks/lusadev/",
+    "build": "ng build && node scripts/create-static-seo-pages.mjs",
+    "build:pages": "npm run build:pages:root",
+    "build:pages:root": "ng build --configuration production --base-href / --deploy-url / && node scripts/create-static-seo-pages.mjs",
+    "build:pages:legacy": "ng build --configuration production --base-href /LusaWorks/lusadev/ --deploy-url /LusaWorks/lusadev/ && node scripts/create-static-seo-pages.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
