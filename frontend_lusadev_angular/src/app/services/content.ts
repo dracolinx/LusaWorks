@@ -26,8 +26,8 @@ export class ContentService {
       mobileMenuText: 'MENU',
       closeMenuText: 'CERRAR',
       hero: {
-        kicker: 'LusaWorks · Ingeniería de software para empresas',
-        title: 'Soluciones software a medida para procesos reales de negocio',
+        kicker: 'LusaWorks · Desarrollo de software y automatización en Jaén',
+        title: 'Empresa de desarrollo de software a medida en Jaén',
         overviewTitle: 'Tecnología empresarial adaptada a tu realidad',
         description:
           'Diseñamos, desarrollamos y mantenemos soluciones digitales personalizadas que conectan operación, datos y atención al cliente. Aplicamos tecnología de vanguardia y servicios de última generación, habituales en entornos empresariales de alto nivel, aterrizados a la realidad de cualquier pyme. Somos garantía de adaptabilidad a las necesidades del cliente y demostramos que las soluciones tecnológicas más disruptivas pueden implantarse con eficiencia, sin costes desproporcionados.',
@@ -37,12 +37,14 @@ export class ContentService {
           { value: '100%', label: 'Adaptación a procesos reales' },
           {
             value: 'Experiencia',
-            label: 'Conocimiento y experiencia técnica, operativa y multidisciplinar para garantizar el éxito del servicio',
+            label:
+              'Conocimiento y experiencia técnica, operativa y multidisciplinar para garantizar el éxito del servicio',
           },
           { value: 'Jaén', label: 'Base operativa y proximidad ágil' },
           {
             value: 'Automatizaciones',
-            label: 'Programas de gestión integrales con enfoque de productividad, desconexión digital y atención al cliente',
+            label:
+              'Programas de gestión integrales con enfoque de productividad, desconexión digital y atención al cliente',
           },
           { value: 'RGPD', label: 'Cumplimiento, trazabilidad y control' },
         ],
@@ -102,7 +104,8 @@ export class ContentService {
             'Cuando el cliente lo requiere, se prioriza un enfoque de procesamiento local o en infraestructura controlada por el propio cliente, reforzando gobierno del dato y reduciendo exposición.',
         },
         opportunity: {
-          title: 'Automatización aplicable a cualquier gestión, incluso en escenarios muy específicos',
+          title:
+            'Automatización aplicable a cualquier gestión, incluso en escenarios muy específicos',
           intro:
             'En necesidades de cumplimiento normativo, generación de informes personalizados para organismos públicos o privados y cualquier flujo administrativo u operativo, la automatización puede aportar orden, velocidad y trazabilidad.',
           points: [
@@ -217,7 +220,9 @@ export class ContentService {
           },
           {
             title: 'Datos que se pueden tratar',
-            paragraphs: ['El tratamiento puede incluir información facilitada por el usuario o por el cliente empresarial en cada proyecto.'],
+            paragraphs: [
+              'El tratamiento puede incluir información facilitada por el usuario o por el cliente empresarial en cada proyecto.',
+            ],
             bullets: [
               'Datos identificativos y de contacto (nombre, teléfono, email).',
               'Datos de interacción operativa (solicitudes, citas, incidencias y mensajes).',
@@ -239,11 +244,15 @@ export class ContentService {
           },
           {
             title: 'Base jurídica',
-            paragraphs: ['El tratamiento se fundamenta en la ejecución de contrato, el consentimiento cuando corresponde, el interés legítimo en continuidad y seguridad operativa, y el cumplimiento de obligaciones legales.'],
+            paragraphs: [
+              'El tratamiento se fundamenta en la ejecución de contrato, el consentimiento cuando corresponde, el interés legítimo en continuidad y seguridad operativa, y el cumplimiento de obligaciones legales.',
+            ],
           },
           {
             title: 'Conservación y seguridad',
-            paragraphs: ['Los datos se conservan durante el tiempo necesario para la finalidad del servicio y durante los plazos legales aplicables.'],
+            paragraphs: [
+              'Los datos se conservan durante el tiempo necesario para la finalidad del servicio y durante los plazos legales aplicables.',
+            ],
             bullets: [
               'Control de acceso por perfiles y roles.',
               'Cifrado de comunicaciones y protección de credenciales.',
@@ -301,8 +310,8 @@ export class ContentService {
       mobileMenuText: 'MENU',
       closeMenuText: 'CLOSE',
       hero: {
-        kicker: 'LusaWorks · Business software engineering',
-        title: 'Tailored software solutions for real business operations',
+        kicker: 'LusaWorks · Software development and automation in Jaén',
+        title: 'Custom software development company in Jaén',
         overviewTitle: 'Enterprise-grade technology adapted to your reality',
         description:
           'We design, build, and maintain custom digital solutions that connect operations, data, and customer interactions. We apply cutting-edge technology and next-generation services used in top business environments, adapted to the real context of any SME. We ensure each solution is adapted to client needs and show that even disruptive technology can be implemented efficiently, without disproportionate costs.',
@@ -312,12 +321,14 @@ export class ContentService {
           { value: '100%', label: 'Real-process adaptation' },
           {
             value: 'Expertise',
-            label: 'Technical, operational, and multidisciplinary expertise to ensure service success',
+            label:
+              'Technical, operational, and multidisciplinary expertise to ensure service success',
           },
           { value: 'Jaén', label: 'Operational base and agile proximity' },
           {
             value: 'Automation',
-            label: 'Integrated management programs focused on productivity, digital disconnection, and customer service',
+            label:
+              'Integrated management programs focused on productivity, digital disconnection, and customer service',
           },
           { value: 'GDPR', label: 'Compliance, traceability, and control' },
         ],
@@ -492,7 +503,9 @@ export class ContentService {
           },
           {
             title: 'Data categories that may be processed',
-            paragraphs: ['Processing may include information provided by users or by client organizations in each project context.'],
+            paragraphs: [
+              'Processing may include information provided by users or by client organizations in each project context.',
+            ],
             bullets: [
               'Identification and contact data (name, phone number, email).',
               'Operational interaction data (requests, appointments, incidents, and messages).',
@@ -514,11 +527,15 @@ export class ContentService {
           },
           {
             title: 'Legal basis',
-            paragraphs: ['Processing is based on contract performance, consent when applicable, legitimate interest for operational continuity and security, and compliance with legal obligations.'],
+            paragraphs: [
+              'Processing is based on contract performance, consent when applicable, legitimate interest for operational continuity and security, and compliance with legal obligations.',
+            ],
           },
           {
             title: 'Retention and security controls',
-            paragraphs: ['Data is retained only for the time required by service purposes and applicable legal retention periods.'],
+            paragraphs: [
+              'Data is retained only for the time required by service purposes and applicable legal retention periods.',
+            ],
             bullets: [
               'Role-based access controls.',
               'Encrypted communications and credential protection.',

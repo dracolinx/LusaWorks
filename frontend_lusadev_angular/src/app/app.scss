@@ -49,8 +49,7 @@
   overflow: hidden;
   background:
     radial-gradient(circle at 18% 16%, rgb(96 165 250 / 20%), transparent 34%),
-    radial-gradient(circle at 82% 12%, rgb(192 132 252 / 16%), transparent 34%),
-    #050505;
+    radial-gradient(circle at 82% 12%, rgb(192 132 252 / 16%), transparent 34%), #050505;
   background-size: 120% 120%;
   animation: siteBackgroundShift 20s ease-in-out infinite alternate;
 }
@@ -62,7 +61,8 @@
   pointer-events: none;
   background:
     radial-gradient(circle, rgb(255 255 255 / 42%) 0.95px, transparent 1.45px) 0 0 / 76px 76px,
-    radial-gradient(circle, rgb(191 219 254 / 34%) 0.85px, transparent 1.32px) 20px 36px / 112px 112px,
+    radial-gradient(circle, rgb(191 219 254 / 34%) 0.85px, transparent 1.32px) 20px 36px / 112px
+      112px,
     radial-gradient(circle, rgb(196 181 253 / 30%) 1px, transparent 1.5px) 14px 22px / 148px 148px,
     radial-gradient(circle, rgb(224 231 255 / 20%) 0.74px, transparent 1.2px) 0 0 / 54px 54px;
   opacity: 0.74;
@@ -132,8 +132,10 @@
   z-index: 0;
   background:
     radial-gradient(circle, rgb(255 255 255 / 36%) 0.95px, transparent 1.4px) 0 0 / 82px 82px,
-    radial-gradient(circle, rgb(191 219 254 / 30%) 0.85px, transparent 1.3px) 18px 34px / 120px 120px,
-    radial-gradient(circle, rgb(196 181 253 / 26%) 0.95px, transparent 1.4px) 12px 18px / 160px 160px,
+    radial-gradient(circle, rgb(191 219 254 / 30%) 0.85px, transparent 1.3px) 18px 34px / 120px
+      120px,
+    radial-gradient(circle, rgb(196 181 253 / 26%) 0.95px, transparent 1.4px) 12px 18px / 160px
+      160px,
     linear-gradient(180deg, rgb(5 8 18 / 70%), rgb(5 5 8 / 4%));
   opacity: 0.88;
   transform: translate3d(0, 0, 0);
@@ -158,8 +160,10 @@
   border: 1px solid rgb(255 255 255 / 6%);
   background:
     radial-gradient(circle, rgb(255 255 255 / 32%) 0.9px, transparent 1.35px) 0 0 / 96px 96px,
-    radial-gradient(circle, rgb(191 219 254 / 26%) 0.85px, transparent 1.3px) 24px 40px / 136px 136px,
-    radial-gradient(circle, rgb(196 181 253 / 22%) 0.95px, transparent 1.45px) 14px 20px / 176px 176px,
+    radial-gradient(circle, rgb(191 219 254 / 26%) 0.85px, transparent 1.3px) 24px 40px / 136px
+      136px,
+    radial-gradient(circle, rgb(196 181 253 / 22%) 0.95px, transparent 1.45px) 14px 20px / 176px
+      176px,
     radial-gradient(circle, rgb(224 231 255 / 16%) 0.72px, transparent 1.2px) 0 0 / 62px 62px,
     linear-gradient(180deg, rgb(5 8 18 / 46%), rgb(5 5 8 / 62%));
   backdrop-filter: blur(14px) saturate(112%);
@@ -184,7 +188,8 @@
 .site-header.scrolled .header-inner {
   background:
     radial-gradient(circle, rgb(255 255 255 / 40%) 0.95px, transparent 1.4px) 0 0 / 92px 92px,
-    radial-gradient(circle, rgb(191 219 254 / 34%) 0.9px, transparent 1.35px) 22px 36px / 128px 128px,
+    radial-gradient(circle, rgb(191 219 254 / 34%) 0.9px, transparent 1.35px) 22px 36px / 128px
+      128px,
     radial-gradient(circle, rgb(196 181 253 / 30%) 1px, transparent 1.45px) 12px 16px / 164px 164px,
     radial-gradient(circle, rgb(224 231 255 / 24%) 0.8px, transparent 1.25px) 0 0 / 58px 58px,
     linear-gradient(180deg, rgb(5 8 18 / 62%), rgb(5 5 8 / 74%));
@@ -314,8 +319,10 @@
   border-radius: 0.9rem;
   background:
     radial-gradient(circle, rgb(255 255 255 / 38%) 0.92px, transparent 1.35px) 0 0 / 96px 96px,
-    radial-gradient(circle, rgb(191 219 254 / 30%) 0.86px, transparent 1.3px) 22px 34px / 132px 132px,
-    radial-gradient(circle, rgb(196 181 253 / 26%) 0.98px, transparent 1.4px) 14px 18px / 168px 168px,
+    radial-gradient(circle, rgb(191 219 254 / 30%) 0.86px, transparent 1.3px) 22px 34px / 132px
+      132px,
+    radial-gradient(circle, rgb(196 181 253 / 26%) 0.98px, transparent 1.4px) 14px 18px / 168px
+      168px,
     radial-gradient(circle, rgb(224 231 255 / 20%) 0.78px, transparent 1.2px) 0 0 / 56px 56px,
     linear-gradient(180deg, rgb(5 8 18 / 62%), rgb(5 5 8 / 74%));
   backdrop-filter: blur(18px) saturate(118%);
@@ -323,7 +330,10 @@
   overflow: hidden;
   opacity: 0;
   padding: 0;
-  transition: max-height 260ms ease, opacity 260ms ease, padding 260ms ease;
+  transition:
+    max-height 260ms ease,
+    opacity 260ms ease,
+    padding 260ms ease;
   pointer-events: none;
   animation:
     stardustDrift 13s linear infinite,
@@ -358,7 +368,9 @@
 
 .section {
   padding-block: 6rem;
-  transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1), filter 320ms ease;
+  transition:
+    transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 320ms ease;
 }
 
 .section:hover {
@@ -369,6 +381,91 @@
 .section-container {
   width: min(72rem, calc(100% - 2rem));
   margin-inline: auto;
+}
+
+.section-service-links {
+  padding-block: 4.6rem;
+}
+
+.seo-service-links {
+  display: grid;
+  gap: 2rem;
+}
+
+.seo-service-copy {
+  max-width: 48rem;
+}
+
+.seo-service-eyebrow {
+  margin: 0 0 0.55rem;
+  color: #93c5fd;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.seo-service-copy h2 {
+  margin: 0;
+  color: #fff;
+  font-size: 2.25rem;
+  line-height: 1.08;
+  letter-spacing: 0;
+}
+
+.seo-service-copy p:not(.seo-service-eyebrow) {
+  margin: 0.9rem 0 0;
+  max-width: 44rem;
+  color: #bdbdbd;
+  font-size: 0.98rem;
+}
+
+.seo-service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.seo-service-card {
+  display: grid;
+  gap: 0.45rem;
+  min-height: 11.5rem;
+  padding: 1rem;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid rgb(255 255 255 / 8%);
+  border-radius: 0.5rem;
+  background: rgb(255 255 255 / 3%);
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease;
+}
+
+.seo-service-card:hover {
+  transform: translateY(-2px);
+  border-color: rgb(147 197 253 / 40%);
+  background: rgb(255 255 255 / 5%);
+}
+
+.seo-service-card span {
+  color: #93c5fd;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.seo-service-card strong {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.seo-service-card small {
+  color: #a3a3a3;
+  font-size: 0.84rem;
+  line-height: 1.45;
 }
 
 .hero-stage {
@@ -388,7 +485,8 @@
   pointer-events: none;
   background:
     radial-gradient(circle, rgb(255 255 255 / 98%) 0.95px, transparent 1.4px) 0 0 / 80px 80px,
-    radial-gradient(circle, rgb(191 219 254 / 82%) 0.9px, transparent 1.34px) 22px 34px / 112px 112px,
+    radial-gradient(circle, rgb(191 219 254 / 82%) 0.9px, transparent 1.34px) 22px 34px / 112px
+      112px,
     radial-gradient(circle, rgb(196 181 253 / 76%) 1px, transparent 1.45px) 12px 18px / 144px 144px,
     radial-gradient(circle, rgb(224 231 255 / 52%) 0.75px, transparent 1.2px) 0 0 / 52px 52px,
     radial-gradient(circle at 14% 30%, rgb(96 165 250 / 12%), transparent 42%),
@@ -541,10 +639,16 @@
 
 @keyframes siteBackgroundShift {
   0% {
-    background-position: 0% 0%, 100% 0%, 0% 0%;
+    background-position:
+      0% 0%,
+      100% 0%,
+      0% 0%;
   }
   100% {
-    background-position: 12% 8%, 88% 10%, 4% 6%;
+    background-position:
+      12% 8%,
+      88% 10%,
+      4% 6%;
   }
 }
 
@@ -635,6 +739,10 @@
     display: none;
   }
 
+  .seo-service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .menu-toggle {
     display: inline-flex;
     align-items: center;
@@ -664,6 +772,22 @@
   .section-container,
   .site-footer {
     width: calc(100% - 1rem);
+  }
+
+  .seo-service-links {
+    gap: 1.2rem;
+  }
+
+  .seo-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .seo-service-copy h2 {
+    font-size: 1.7rem;
+  }
+
+  .seo-service-card {
+    min-height: auto;
   }
 
   .legal-followup {

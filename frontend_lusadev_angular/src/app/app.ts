@@ -20,10 +20,7 @@ import { SeoService } from './services/seo';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    CommonModule,
-    RouterModule,
-  ],
+  imports: [CommonModule, RouterModule],
   templateUrl: './app.html',
   styleUrl: './app.scss',
   encapsulation: ViewEncapsulation.None,
@@ -57,7 +54,7 @@ export class App implements OnInit, OnDestroy {
     effect(() => {
       const localizedCopy = this.copy();
       this.document.documentElement.lang = this.language();
-      if (!this.document.location.pathname.includes('/blog')) {
+      if (this.isHomePath()) {
         this.seoService.setPage({
           title: localizedCopy.pageTitle,
           description: localizedCopy.metaDescription,
@@ -121,6 +118,14 @@ export class App implements OnInit, OnDestroy {
     return link.id;
   }
 
+  private isHomePath(): boolean {
+    const normalizedPath = this.document.location.pathname
+      .replace(/^\/LusaWorks\/lusadev\/?/, '/')
+      .replace(/\/index\.html$/, '/');
+
+    return normalizedPath === '/' || normalizedPath === '';
+  }
+
   private updateHeaderOnScroll(): void {
     if (typeof window === 'undefined') return;
     this.headerScrolled.set(window.scrollY > 22);
@@ -146,7 +151,10 @@ export class App implements OnInit, OnDestroy {
     const headerOffset = this.getHeaderOffset();
     const viewportTop = window.scrollY + headerOffset;
     const viewportBottom = viewportTop + window.innerHeight;
-    const currentIndex = this.findCurrentSectionIndex(sections, viewportTop + window.innerHeight * 0.35);
+    const currentIndex = this.findCurrentSectionIndex(
+      sections,
+      viewportTop + window.innerHeight * 0.35,
+    );
     const current = sections[currentIndex];
     const currentTop = current.offsetTop;
     const currentBottom = currentTop + current.offsetHeight;
@@ -177,7 +185,8 @@ export class App implements OnInit, OnDestroy {
     let node: HTMLElement | null = target;
     while (node && node !== this.document.body) {
       const { overflowY } = window.getComputedStyle(node);
-      const isScrollable = (overflowY === 'auto' || overflowY === 'scroll') && node.scrollHeight > node.clientHeight;
+      const isScrollable =
+        (overflowY === 'auto' || overflowY === 'scroll') && node.scrollHeight > node.clientHeight;
       if (isScrollable) return true;
       node = node.parentElement;
     }

@@ -18,7 +18,7 @@ interface BlogPostMeta {
   standalone: true,
   imports: [CommonModule, RouterModule],
   templateUrl: './blog-list.component.html',
-  styleUrl: './blog-list.component.scss'
+  styleUrl: './blog-list.component.scss',
 })
 export class BlogListComponent implements OnInit {
   private http = inject(HttpClient);
@@ -28,13 +28,14 @@ export class BlogListComponent implements OnInit {
   ngOnInit() {
     this.seoService.setPage({
       title: 'Blog de software a medida, automatización y RGPD en Jaén | LusaWorks',
-      description: 'Artículos sobre software a medida en Jaén, automatización, IA local, RGPD, bots y gestión UAS.',
+      description:
+        'Artículos sobre software a medida en Jaén, automatización, IA local, RGPD, bots y gestión UAS.',
       path: '/blog',
     });
 
     this.http.get<BlogPostMeta[]>('blog/posts.json').subscribe({
       next: (data) => this.posts.set(data),
-      error: (err) => console.error('Error loading posts', err)
+      error: (err) => console.error('Error loading posts', err),
     });
   }
 }

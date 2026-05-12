@@ -1,13 +1,16 @@
 <section class="section blog-list-section">
   <div class="blog-header">
-    <h1>LusaWorks Blog</h1>
-    <p>Artículos sobre tecnología, desarrollo y soluciones operativas</p>
+    <h1>Blog de software a medida, automatización e IA en Jaén</h1>
+    <p>
+      Artículos técnicos sobre desarrollo de software a medida, automatización de procesos, bots
+      para clínicas, gestión UAS, RGPD e IA local para empresas.
+    </p>
   </div>
 
   <div class="blog-grid" *ngIf="posts().length > 0; else loading">
     <article class="blog-card" *ngFor="let post of posts()" [routerLink]="['/blog', post.slug]">
       <div class="blog-card-content">
-        <span class="blog-date">{{ post.date | date:'longDate' }}</span>
+        <span class="blog-date">{{ post.date | date: 'longDate' }}</span>
         <h3>{{ post.title }}</h3>
         <p>{{ post.summary }}</p>
         <a [routerLink]="['/blog', post.slug]" class="read-more">Leer artículo →</a>

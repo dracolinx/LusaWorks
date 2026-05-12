@@ -1,0 +1,70 @@
+<section class="section service-landing-section" *ngIf="page() as page">
+  <div class="service-shell">
+    <nav class="breadcrumb" aria-label="Migas de pan">
+      <a [routerLink]="['/']">Inicio</a>
+      <span>/</span>
+      <span>{{ page.primaryKeyword }}</span>
+    </nav>
+
+    <header class="service-hero">
+      <p class="eyebrow">{{ page.eyebrow }}</p>
+      <h1>{{ page.title }}</h1>
+      <p class="summary">{{ page.summary }}</p>
+      <div class="keyword-strip" aria-label="Palabras clave relacionadas">
+        <span>{{ page.primaryKeyword }}</span>
+        <span *ngFor="let keyword of page.relatedKeywords">{{ keyword }}</span>
+      </div>
+      <a class="service-cta" href="mailto:info@lusaworks.com">{{ page.cta }}</a>
+    </header>
+
+    <div class="content-grid">
+      <article class="main-copy">
+        <p *ngFor="let paragraph of page.intro">{{ paragraph }}</p>
+
+        <section>
+          <h2>Qué aporta este servicio</h2>
+          <ul class="check-list">
+            <li *ngFor="let benefit of page.benefits">{{ benefit }}</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Cómo se trabaja</h2>
+          <div class="process-grid">
+            <article class="process-card" *ngFor="let step of page.process">
+              <h3>{{ step.title }}</h3>
+              <p>{{ step.text }}</p>
+            </article>
+          </div>
+        </section>
+
+        <section>
+          <h2>Casos de uso habituales</h2>
+          <ul class="use-case-list">
+            <li *ngFor="let useCase of page.useCases">{{ useCase }}</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Preguntas frecuentes</h2>
+          <div class="faq-list">
+            <article *ngFor="let item of page.faq">
+              <h3>{{ item.question }}</h3>
+              <p>{{ item.answer }}</p>
+            </article>
+          </div>
+        </section>
+      </article>
+
+      <aside class="side-panel">
+        <h2>Servicios relacionados en Jaén</h2>
+        <ul>
+          <li *ngFor="let related of relatedPages()">
+            <a [routerLink]="['/', related.slug]">{{ related.title }}</a>
+          </li>
+        </ul>
+        <a class="side-contact" [routerLink]="['/']" fragment="contact">Contacto</a>
+      </aside>
+    </div>
+  </div>
+</section>

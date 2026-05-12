@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, computed, inject } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { SERVICE_PAGES } from '../../data/service-pages';
 import { RevealOnScrollDirective } from '../../directives/reveal-on-scroll';
 import { ContactSectionComponent } from '../contact-section/contact-section';
 import { HeroSectionComponent } from '../hero-section/hero-section';
@@ -17,6 +19,7 @@ import { LanguageService } from '../../services/language';
   standalone: true,
   imports: [
     CommonModule,
+    RouterModule,
     HeroSectionComponent,
     SpecializationSectionComponent,
     MethodSectionComponent,
@@ -27,11 +30,12 @@ import { LanguageService } from '../../services/language';
     LegalFooterComponent,
     RevealOnScrollDirective,
   ],
-  templateUrl: './home.component.html'
+  templateUrl: './home.component.html',
 })
 export class HomeComponent {
   private readonly languageService = inject(LanguageService);
   private readonly contentService = inject(ContentService);
   protected readonly language = this.languageService.currentLanguage;
   protected readonly copy = computed(() => this.contentService.getCopy(this.language()));
+  protected readonly servicePages = SERVICE_PAGES;
 }
